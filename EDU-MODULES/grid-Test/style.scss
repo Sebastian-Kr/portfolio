@@ -1,0 +1,15 @@
+.container {
+border: 1px solid #333
+}
+
+.item {
+    border: 1px solid gray;
+    background-color: #333;
+}
+
+.item::nth-child(odd){
+    background-color: #444;
+    color: #fff;
+}
+
+

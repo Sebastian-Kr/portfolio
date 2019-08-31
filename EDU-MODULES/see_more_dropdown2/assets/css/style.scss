@@ -1,0 +1,90 @@
+
+
+  .progremo_seeMoreBox_module {
+
+ .seeMore-Head {
+    transition-duration: 0.3s;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 15px;
+    position: relative;
+    font-weight: bold;
+    padding-right: 170px;
+    @media (max-width: 567px) {
+      padding-right: 50px;
+    }
+
+    .moreButton {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: calc(100% - 170px);
+      background-color: #92D300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 567px) {
+          left: calc(100% - 50px);
+          span {
+            display: none;
+          }
+      }
+      img {
+       margin-left: 10px;
+       height: 20px;
+       width: 20px;
+       transform: rotate(0deg);
+       transition-duration: 0.3s;
+       @media (max-width: 567px) {
+         margin: 0;
+       }
+      }
+      h6 {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .seeMore-desc {
+    padding: 30px;
+    display: none;
+    @media (max-width: 567px) {
+      text-align: center;
+    }
+    .content {
+      width: 65%;
+      float: left;
+      @media (max-width: 567px) {
+        float: none;
+        width: 100%;
+      }
+    }
+    img {
+      max-width: 30%;
+      height: auto;
+      float: right;
+      margin-left: 4%;
+      @media (max-width: 567px) {
+        margin: 15px auto;
+        float: none;
+        max-width: 90%;
+      }
+    }
+    &:after{
+      display: block;
+      clear: both;
+      content: '';
+    }
+  }
+
+
+
+  .offer-head-open {
+    .moreButton img {
+     transform: rotate(90deg);
+     transition-duration: 0.3s;
+    }
+  }
+}

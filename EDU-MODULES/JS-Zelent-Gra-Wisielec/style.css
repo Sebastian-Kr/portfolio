@@ -1,0 +1,86 @@
+body
+{
+	background-color: black; 
+	font-size: 24px;
+	color: lightgray;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+}
+
+#kontener
+{
+	margin: 0 auto;
+	padding: 50px;
+	width: 900px;
+	border: 1px solid white;
+}
+
+
+
+#haselko
+{
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 78px;
+	border: 1px solid white;
+	padding-bottom: 20px;
+}
+
+#klawiatura
+{
+float: right;
+text-align: center;
+min-height: 280px;
+margin: auto auto;
+padding: 10px;
+width: 49%;
+}
+
+#klawiatura > img
+{
+	width: 70%;
+
+}
+
+#klawiatura > span
+{
+	border: 1px solid white;
+	border-radius: 40px;
+	height: 50px;
+	width: auto;
+    padding: 5px 25px;
+}
+
+#klawiatura > span:hover
+{
+  color: aqua;
+  border-color: aqua;
+  cursor: pointer;
+}
+
+#grafika
+{
+	float: left;
+	width: 48%;
+	
+	min-height: 280px;
+}
+
+.literka
+{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.literka:hover
+{
+	border-color: white;
+	color: white;
+}

@@ -1,0 +1,204 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*SEKCJA GALERY SQUARE */
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+#gallery-square-fixed .hover-box {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+#gallery-square-fixed .hover-box {
+  /*border: 1px solid red;*/
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#gallery-square-fixed .big-box:hover .hover-box,
+#gallery-square-fixed .small-box:hover .hover-box {
+  opacity: 1;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+#gallery-square-fixed .hover-box > div::before {
+  content: '';
+  display: block;
+  background-image: url("img/loupe.svg");
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+#gallery-square-fixed p {
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 8px 40px;
+}
+
+#gallery-square-fixed div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gallery-square-fixed .row {
+  display: flex;
+  flex-direction: row;
+}
+
+#gallery-square-fixed .big-column {
+  width: calc(50% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#gallery-square-fixed .small-box {
+  height: 260px;
+  width: calc(50% - 15px);
+  float: left;
+  transition-duration: 0.3s;
+}
+
+#gallery-square-fixed a:first-child .small-box {
+  margin-right: 30px;
+}
+
+#gallery-square-fixed .big-box {
+  height: 550px;
+  width: 100%;
+  transition-duration: 0.3s;
+  /*border: 1px solid*/
+}
+
+#gallery-square-fixed a:first-child .small-box {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1359px) {
+  #gallery-square-fixed .big-box {
+    height: 540px;
+    transition-duration: 0.5s;
+  }
+  #gallery-square-fixed .small-box {
+    height: 255px;
+    transition-duration: 0.5s;
+  }
+}
+
+@media (max-width: 1199px) {
+  #gallery-square-fixed .big-box {
+    height: 450px;
+    transition-duration: 0.5s;
+  }
+  #gallery-square-fixed .small-box {
+    height: 210px;
+    transition-duration: 0.5s;
+  }
+}
+
+@media (max-width: 992px) {
+  #gallery-square-fixed .big-box {
+    height: 330px;
+    transition-duration: 0.5s;
+  }
+  #gallery-square-fixed .small-box {
+    height: 150px;
+    transition-duration: 0.5s;
+  }
+  #gallery-square-fixed .hover-box > div::before {
+    height: 50px;
+    width: 50px;
+  }
+  #gallery-square-fixed p {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #gallery-square-fixed .big-column {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #gallery-square-fixed .big-box {
+    transition-duration: 0.5s;
+    margin-bottom: 10px;
+    height: 510px;
+  }
+  #gallery-square-fixed .small-box {
+    height: 250px;
+    transition-duration: 0.5s;
+    width: calc(50% - 5px);
+  }
+  #gallery-square-fixed .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  #gallery-square-fixed a:first-child .small-box {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #gallery-square-fixed .big-box {
+    transition-duration: 0.5s;
+    height: 300px;
+  }
+  #gallery-square-fixed .small-box {
+    height: 150px;
+    transition-duration: 0.5s;
+  }
+}
+
+#gallery-square-fixed {
+  background-image: url(img/jasny-pattern.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#gallery-square-fixed .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  #gallery-square-fixed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  #gallery-square-fixed {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.ekko-lightbox.modal {
+  z-index: 9999;
+  position: fixed;
+  top: 60px;
+}
+
+@media (max-width: 700px) {
+
+  .ekko-lightbox.modal {
+    top: 20px;
+  max-height: 90vh;
+  }
+
+}

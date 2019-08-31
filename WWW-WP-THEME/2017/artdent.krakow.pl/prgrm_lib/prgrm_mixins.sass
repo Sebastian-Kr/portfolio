@@ -1,0 +1,754 @@
+// bootstrap mixins
+@mixin center-block()
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+@mixin clearfix()
+  &:before,
+  &:after
+    content: " " // 1
+    display: table // 2
+  &:after
+    clear: both
+
+@mixin opacity($opacity)
+  opacity: $opacity
+  // IE8 filter
+  $opacity-ie: ($opacity * 100)
+  filter: alpha(opacity=$opacity-ie)
+
+@mixin reset-text()
+  font-family: $font-family-base
+  // We deliberately do NOT reset font-size.
+  font-style: normal
+  font-weight: normal
+  letter-spacing: normal
+  line-break: auto
+  line-height: $line-height-base
+  text-align: left // Fallback for where `start` is not supported
+  text-align: start
+  text-decoration: noe
+  text-shadow: none
+  text-transform: none
+  white-space: normal
+  word-break: normal
+  word-spacing: normal
+  word-wrap: normal
+// ============================================================
+// prgrm_mixins
+// ============================================================
+//CALCULATE TEXT SIZE TO REM
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+
+@mixin font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+
+// BREKAPOINTS BASE ON BOTSTRAP
+
+@mixin bp-xlarge
+  @media only screen and (min-width: 1200px)
+    @content
+
+@mixin bp-large
+  @media only screen and (max-width: 1200px)
+    @content
+
+
+@mixin bp-medium
+  @media only screen and (max-width: 992px)
+    @content
+
+
+@mixin bp-small
+  @media only screen and (max-width: 768px)
+    @content
+
+@mixin bp-xsmall
+  @media only screen and (max-width: 576px)
+    @content
+
+// how to use
+// .sidebar
+//   width: 60%
+//   float: left
+//   @include bp-small
+//     width: 100%
+
+
+// KEYFRAMES ANIMATIONS
+@mixin keyframes($animation-name)
+    @-webkit-keyframes #{$animation-name}
+        @content
+
+    @-moz-keyframes #{$animation-name}
+        @content
+
+    @-ms-keyframes #{$animation-name}
+        @content
+
+    @-o-keyframes #{$animation-name}
+        @content
+
+    @keyframes #{$animation-name}
+        @content
+
+
+@mixin animation($str)
+  -webkit-animation: #{$str}
+  -moz-animation: #{$str}
+  -ms-animation: #{$str}
+  -o-animation: #{$str}
+  animation: #{$str}
+
+// HOW TO USE
+// @include keyframes(slide-down)
+//   0% { opacity: 1 }
+//   90% { opacity: 0 }
+//
+//
+// .element
+//   width: 100px
+//   height: 100px
+//   @include animation('slide-down 5s 3')
+
+
+// CROSS BROWSER opacity
+@mixin opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie) //IE8
+
+
+%clearfix
+  *zoom: 1
+  &:before, &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both
+
+// DEFINE VERTICAL, HORIZONAL OR BOTH POSITION
+@mixin center($position)
+  position: absolute
+
+  @if $position == 'v'
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+  @else if $position == 'h'
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    -ms-transform: translateX(-50%)
+    transform: translate(-50%)
+
+  @else if $position == 'both'
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+
+
+// // HOW TO USE
+// .foo
+//   @include center(both)
+//
+// .foo-parent
+//   position: relative
+
+
+
+/// Mixin helper to prefix `@keyframes`
+
+@mixin keyframes($name)
+    @-webkit-keyframes #{$name}
+        @content
+
+    @keyframes #{$name}
+        @content
+
+/// Background size helper
+/// @access public
+/// @param {Length} $width - Background width
+/// @param {Length} $height [$width] - Background height
+/// @example scss - Usage
+///   .foo {
+///     @include background-size(100%)
+///   }
+/// @example scss - Result
+///   .foo {
+///     -webkit-background-size: 100% 100%
+///     -moz-background-size: 100% 100%
+///     background-size: 100% 100%
+///   }
+@mixin background-size($width, $height: $width)
+    @include prefix(background-size, $width $height, 'webkit' 'moz')
+
+
+/// Separated border-radius helpers
+/// @access public
+/// @param {Length} $top-left-radius - Top left radius
+/// @param {Length} $top-right-radius - Top right radius
+/// @param {Length} $bottom-right-radius - Bottom right radius
+/// @param {Length} $bottom-left-radius - Bottom left radius
+/// @example scss - Usage
+///   .foo {
+///     @include border-radius-separate(1px, 2px, 3px, 4px)
+///   }
+/// @example css - Result
+///   .foo {
+///     -webkit-border-top-left-radius: 1px
+///     -moz-border-top-left-radius: 1px
+///     border-top-left-radius: 1px
+///     -webkit-border-top-right-radius: 2px
+///     -moz-border-top-right-radius: 2px
+///     border-top-right-radius: 2px
+///     -webkit-border-bottom-right-radius: 3px
+///     -moz-border-bottom-right-radius: 3px
+///     border-bottom-right-radius: 3px
+///     -webkit-border-bottom-left-radius: 4px
+///     -moz-border-bottom-left-radius: 4px
+///     border-bottom-left-radius: 4px
+///   }
+@mixin border-radius-separate($top-left-radius, $top-right-radius, $bottom-right-radius, $bottom-left-radius)
+    @include prefix(border-top-left-radius, $top-left-radius, 'webkit' 'moz')
+    @include prefix(border-top-right-radius, $top-right-radius, 'webkit' 'moz')
+    @include prefix(border-bottom-right-radius, $bottom-right-radius, 'webkit' 'moz')
+    @include prefix(border-bottom-left-radius, $bottom-left-radius, 'webkit' 'moz')
+
+/// Box-sizing helper
+/// @access public
+/// @param {String} $type - Either `border-box`, `padding-box` or `content-box`
+/// @example scss - Usage
+///   .foo {
+///     @include box-sizing(border-box)
+///   }
+/// @example css - Result
+///   .foo {
+///     -moz-box-sizing: border-box
+///     box-sizing: border-box
+///   }
+@mixin box-sizing($type)
+    @include prefix(box-sizing, $type, 'moz')
+
+
+
+/// Generates the color white, with, optionally, a set opacity.
+/// @access public
+/// @param {Float} $opacity - Opacity
+/// @example scss - Usage
+///   .foo {
+///     border-color: white(0.1)
+///   }
+/// @example css - Result
+///   .foo {
+///     border-color: rgba(255, 255, 255, 0.1)
+///   }
+@function white($opacity)
+    @return rgba(255, 255, 255, $opacity)
+
+
+@function black($opacity)
+    @return rgba(0, 0, 0, $opacity)
+
+
+
+/// Automatically prefix any transform
+/// @access public
+/// @param {String} $transformation - The transform to apply
+/// @example scss - Usage
+///   .foo {
+///     @include transform(translateX(10px))
+///   }
+/// @example css - Result
+///   .foo {
+///     -webkit-transform: translateX(10px)
+///     -ms-transform: translateX(10px)
+///     transform: translateX(10px)
+///   }
+@mixin transform($transformation)
+  @include prefix(transform, $transformation, 'webkit' 'ms')
+
+
+
+/// Slide-in-from creates and calls an animation that slides an element on a given axis for a given amount of space. The offset is measured in the distance from the location the element would naturally fall in, were transforms not applied to it.
+/// @access public
+/// @param {String} $slide-axis [x] - The axis on which to slide 'x' or 'y'.
+/// @param {Length} $slide-offset [-100px] - The offset from the natural element position from which to begin the animation.
+/// @param {List} $animation-properties [3s ease-out] - Any animation properties to be included.
+/// @example scss - Usage
+///   .foo {
+///     @include slide-in-from(y, -200px, 3s ease alternate infinite)
+///   }
+/// @example css - Result
+///   .foo {
+///     -webkit-animation: slide-in-y--200px 3s linear infinite alternate
+///     animation: slide-in-y--200px 3s linear infinite alternate
+///   }
+///
+/// // (the @keyframes are also generated with a -webkit- vendor prefix)
+///   @keyframes slide-in-y--200px {
+///     0% {
+///       opacity: 0
+///       -webkit-transform: translateY(-200px)
+///       -ms-transform: translateY(-200px)
+///       transform: translateY(-200px)
+///     }
+///     75% {
+///       -webkit-transform: translateY(0)
+///       -ms-transform: translateY(0)
+///       transform: translateY(0)
+///     }
+///     100% {
+///       opacity: 1
+///     }
+///   }
+@mixin slide-in-from($slide-axis: x, $slide-offset: -100px, $animation-properties: 3s ease-out)
+  $slide-start: if($slide-axis == x, translateX($slide-offset), translateY($slide-offset))
+  $slide-end: if($slide-axis == x, translateX(0), translateY(0))
+
+  @include keyframes(slide-in-#{$slide-axis}-#{$slide-offset})
+    0%
+      @include opacity(0)
+      @include transform($slide-start)
+
+    75%
+      @include transform($slide-end)
+
+    100%
+      @include opacity(1)
+
+
+
+
+  @include prefix(animation, slide-in-#{$slide-axis}-#{$slide-offset} $animation-properties, 'webkit')
+
+
+
+// Transition mixin
+// Add CSS transition to any element
+@mixin transition($transition...)
+    -webkit-transition: $transition
+    -moz-transition: $transition
+    -o-transition: $transition
+    -ms-transition: $transition
+    transition: $transition
+
+
+// Animation mixin
+// Animate an element
+@mixin animation($animation...)
+	-webkit-animation: $animation
+	-moz-animation: $animation
+	-o-animation: $animation
+	animation: $animation
+
+
+
+// Background Opacity mixin
+// Add opacity to a background color
+@mixin backgroundOpacity($color, $opacity)
+    background-color: rgba($color, $opacity)
+
+
+// Background Size mixin
+// Set background size for a background image
+@mixin backgroundSize($width: auto, $height: auto)
+	@if $width == cover or $width == contain
+		-webkit-background-size: $width
+		-moz-background-size: $width
+		-o-background-size: $width
+		background-size: $width
+
+	@else if ($width != cover and $height != cover) and ($width != contain and $height != contain)
+		-webkit-background-size: $width $height
+		-moz-background-size: $width $height
+		-o-background-size: $width $height
+		background-size: $width $height
+
+
+
+// Background linear gradient mixin
+// Add a linear gradient to any element's background
+@mixin linearGradient($gradientValues...)
+	background: -webkit-linear-gradient($gradientValues)
+	background: -moz-linear-gradient($gradientValues)
+	background: -o-linear-gradient($gradientValues)
+	background: linear-gradient($gradientValues)
+
+
+// Background repeating linear gradient mixin
+// Add a repeating linear gradient to any element's background
+@mixin repeatingLinearGradient($gradientValues...)
+	background: -webkit-repeating-linear-gradient($gradientValues)
+	background: -moz-repeating-linear-gradient($gradientValues)
+	background: -o-repeating-linear-gradient($gradientValues)
+	background: repeating-linear-gradient($gradientValues)
+
+
+// Background radial gradient mixin
+// Add a radial gradient to any element's background
+@mixin radialGradient($gradientValues...)
+	background: -webkit-radial-gradient($gradientValues)
+	background: -o-radial-gradient($gradientValues)
+	background: -moz-radial-gradient($gradientValues)
+	background: radial-gradient($gradientValues)
+
+
+// Background repeating radial gradient mixin
+// Add a repeating radial gradient to any element's background
+@mixin repeatingRadialGradient($gradientValues...)
+	background: -webkit-repeating-radial-gradient($gradientValues)
+	background: -o-repeating-radial-gradient($gradientValues)
+	background: -moz-repeating-radial-gradient($gradientValues)
+	background: repeating-radial-gradient($gradientValues)
+
+
+
+// Border mixin
+// Add a border to any element
+@mixin border($width, $style, $color)
+    border: $width $style $color
+
+
+// Border radius mixin
+// Add border radius to an element
+@mixin borderRadius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+
+
+// Edge border radius mixin
+// Add border radius to a specifix edge(left/right) of an element
+@mixin borderRadiusEdge($edge, $radius)
+    @if $edge == 'right'
+        border-top-right-radius: $radius
+        border-bottom-right-radius: $radius
+
+    @else if $edge == 'left'
+        border-top-left-radius: $radius
+        border-bottom-left-radius: $radius
+
+
+
+
+// Border + Radius mixin
+// Add border and a radius to any side(top/bottom/left/right) of an element
+@mixin sideBorderAndRadius($side, $width, $type, $color, $radius: 0)
+    @if $side == 'top'
+        border-top: $width $type $color
+        border-bottom: none
+        border-left: none
+        border-right: none
+        @include borderRadius($radius)
+
+    @else if $side == 'right'
+        border-right: $width $type $color
+        border-bottom: none
+        border-left: none
+        border-top: none
+        @include borderRadius($radius)
+
+    @else if $side == 'bottom'
+        border-bottom: $width $type $color
+        border-left: none
+        border-top: none
+        border-right: none
+        @include borderRadius($radius)
+
+    @else if $side == 'left'
+        border-left: $width $type $color
+        border-top: none
+        border-right: none
+        border-bottom: none
+        @include borderRadius($radius)
+
+
+
+// Border image mixin
+// Add a border image to any element
+@mixin borderImage($borderWidth, $url, $mode, $sliceTop, $sliceRight: 0, $sliceBottom: 0, $sliceLeft: 0)
+    border-width: $borderWidth
+    @if $sliceRight != 0 and $sliceBottom != 0 and $sliceLeft != 0
+        -webkit-border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode
+        -moz-border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode
+        -o-border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode
+        border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode
+
+    @else if $sliceRight == 0 and $sliceBottom == 0 and $sliceLeft == 0
+        -webkit-border-image: url($url) $sliceTop $mode
+        -moz-border-image: url($url) $sliceTop $mode
+        -o-border-image: url($url) $sliceTop $mode
+        border-image: url($url) $sliceTop $mode
+
+    @else if $sliceRight != 0 and $sliceBottom != 0 and $sliceLeft == 0
+        -webkit-border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode
+        -moz-border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode
+        -o-border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode
+        border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode
+
+    @else if $sliceRight != 0 and $sliceBottom == 0 and $sliceLeft == 0
+        -webkit-border-image: url($url) $sliceTop $sliceRight $mode
+        -moz-border-image: url($url) $sliceTop $sliceRight $mode
+        -o-border-image: url($url) $sliceTop $sliceRight $mode
+        border-image: url($url) $sliceTop $sliceRight $mode
+
+
+
+
+// Clearfix hack mixin
+// Add clearfix hack - to contain floats within containers
+@mixin clearfix
+    &:before,
+    &:after
+        content: ""
+        clear: both
+        display: table
+
+
+
+// Display flex mixin
+// Add flex display property to any element
+@mixin displayFlex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+
+
+// Box sizing mixin
+// Set box sizing for an element
+@mixin boxSizing($sizing)
+	-webkit-box-sizing: $sizing
+	-moz-box-sizing: $sizing
+	box-sizing: $sizing
+
+
+// Truncate mixin
+// Truncate single line text
+@mixin truncate
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+
+
+// Blur filter mixin
+// Blur an element
+@mixin blur($value)
+	-webkit-filter: blur($value) // Add value in px
+	filter: blur($value)
+
+
+// Grayscale filter mixin
+// Add grayscale filter to an element
+@mixin grayscale($value)
+	-webkit-filter: grayscale($value) // Add value in %
+	filter: grayscale($value)
+
+
+// Sepia filter mixin
+// Add sepia filter to an element
+@mixin sepia($value)
+	-webkit-filter: sepia($value) // Add value in %
+	filter: sepia($value)
+
+
+// Saturate filter mixin
+// Add saturation filter to an element
+@mixin saturate($value)
+	-webkit-filter: saturate($value) //Add value in % or whole number
+	filter: saturate($value)
+
+
+// Hue rotate filter mixin
+// Rotate hue of an element
+@mixin hueRotate($value)
+	-webkit-filter: hue-rotate($value) //Add value in deg
+	filter: hue-rotate($value)
+
+// Invert filter mixin
+// Invert colors of an element
+@mixin invert($value)
+	-webkit-filter: invert($value) //Add value in %
+	filter: invert($value)
+
+// Opacity filter mixin
+// Set opacity of an element
+@mixin opacity($value)
+	-webkit-filter: opacity($value) //Add value in %
+	filter: opacity($value)
+
+// Brightness filter mixin
+// Set brightness of an element
+@mixin brightness($value)
+	-webkit-filter: brightness($value) //Add value in %
+	filter: brightness($value)
+
+// Contrast filter mixin
+// Set contrast of an element
+@mixin contrast($value)
+	-webkit-filter: contrast($value) //Add value in %
+	filter: contrast($value)
+
+// Drop shadow filter mixin
+// Add drop shadow filter to an element
+@mixin dropShadow($value)
+	-webkit-filter: drop-shadow($value)
+	filter: drop-shadow($value)
+
+// URL filter mixin
+// Add an SVG filter via URL
+@mixin url($value)
+	-webkit-filter: url($value)
+	filter: url($value)
+
+
+// Load Font face mixin
+// Load a web-safe font with fallbacks
+@mixin fontFace($font)
+	$font: to-lower-case($font)
+	// Web safe serif fonts
+	@if $font == georgia or $font == palatino or $font == times New Roman or $font == times
+		font-family: $font, serif
+
+	// Web safe sans-serif fonts
+	@else if $font == arial or $font == helvetica or $font == gill sans or $font == impact or $font == lucida grande or $font == tahoma or $font == geneva or $font == verdana
+		font-family: $font, sans-serif
+
+
+
+// Box shadow mixin
+// Add box shadow to any element
+@mixin boxShadow($shadows...)
+    -webkit-box-shadow: $shadows
+    -moz-box-shadow: $shadows
+    box-shadow: $shadows
+
+
+// Inset box shadow mixin
+// Add inset box shadow to any element
+@mixin insetBoxShadow($x, $y, $blur, $color)
+    -webkit-box-shadow: inset $x $y $blur $color
+    -moz-box-shadow: inset $x $y $blur $color
+    box-shadow: inset $x $y $blur $color
+
+
+
+
+// User select mixin
+// Set user select property for an element
+@mixin userSelect($value)
+	-webkit-user-select: $value
+	-moz-user-select: $value
+	-ms-user-select: $value
+
+
+// Text select mixin
+// Modify css for text selection
+@mixin textSelection
+	&::selection
+		@content
+
+	&::-moz-selection
+		@content
+
+
+
+// Placeholder mixin
+// Style placeholders within input fields
+@mixin placeholder
+	&::-webkit-input-placeholder
+		@content
+
+	&:-moz-placeholder
+		@content
+
+	&::-moz-placeholder
+		@content
+
+	&:-ms-input-placeholder
+		@content
+
+
+
+
+// Translate transform mixin
+// Translate an element
+@mixin translate($x, $y: 0)
+	-webkit-transform: translate($x, $y)
+	-moz-transform: translate($x, $y)
+	-o-transform: translate($x, $y)
+	-ms-transform: translate($x, $y)
+	transform: translate($x, $y)
+
+
+// Rotate transform mixin
+// Rotate an element
+@mixin rotate($deg)
+	-webkit-transform: rotate($deg+deg)
+	-moz-transform: rotate($deg+deg)
+	-o-transform: rotate($deg+deg)
+	-ms-transform: rotate($deg+deg)
+	transform: rotate($deg+deg)
+	-webkit-backface-visibility: hidden
+
+
+// Skew transform mixin
+// Skew an element
+@mixin skew($x, $y: 0)
+	-webkit-transform: skew($x+deg, $y+deg)
+	-moz-transform: skew($x+deg, $y+deg)
+	-o-transform: skew($x+deg, $y+deg)
+	-ms-transform: skew($x+deg, $y+deg)
+	transform: skew($x+deg, $y+deg)
+	-webkit-backface-visibility: hidden
+
+
+// Cursor pointer mixin
+// Add a pointer cursor to the hover state of an element
+@mixin cursorPointer
+	&:hover
+		cursor: pointer
+
+
+
+// No focus mixin
+// Remove focus from a button or input field while in focused state
+@mixin noFocus
+	&:focus
+		outline: none
+		box-shadow: none
+
+
+// NOWE DOMIESZKI PROGREMO
+
+
+@mixin bg-cover
+ background-color: transparent
+ background-repeat: no-repeat
+ background-size: cover
+ background-position: center
+
+
+
+@mixin bg-contain
+ background-color: transparent
+ background-repeat: no-repeat
+ background-size: contain
+ background-position: center
+
+
+@mixin mbt ($px)
+  margin-top: $px+px
+  margin-bottom: $px+px

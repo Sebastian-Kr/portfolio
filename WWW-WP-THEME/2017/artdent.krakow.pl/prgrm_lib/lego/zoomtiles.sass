@@ -1,0 +1,111 @@
+
+// /* ====================================
+// ZOOM TILES
+// ======================================= */
+
+
+.zoombox
+  position: relative
+  overflow: hidden
+  border: 1px solid lightgray
+  // max-width: 450px
+  margin: 0 auto
+  margin-bottom: 30px
+  max-width: 600px
+  div
+      background-position: center
+      background-size: cover
+      transition: all 1s ease
+      -moz-transition: all 1s ease
+      -ms-transition: all 1s ease
+      -webkit-transition: all 1s ease
+      // -o-transition: all 1s ease
+      min-height: 300px
+
+
+  div:hover
+    transform: scale(1.07)
+    -moz-transform: scale(1.07)
+    -webkit-transform: scale(1.07)
+    // -o-transform: scale(1.5)
+    -ms-transform: scale(1.07)
+
+.zoombox-x3>div
+  min-height: 200px
+
+#zoom-tiles
+
+  .item-filtr
+    background-color: orange
+    position: absolute
+    opacity: 0.7
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    transition-duration: 1s
+
+  .item
+    position: relative
+    color: #fff
+    height: 300px
+    text-align: center
+    transition-duration: 1s
+    h2
+      color: #fff
+      transition-duration: 1s
+    .content
+      opacity: 0
+      margin-left: 20%
+      margin-right: 20%
+
+  .item:hover
+    .content
+      opacity: 1
+      transition-duration: 1s
+    h2
+      opacity: 0
+    .item-filtr
+      opacity: 0.95
+      transition-duration: 1s
+
+
+    .gtiles
+      background-position: center
+      background-size: cover
+      transition: all 1s ease
+      -moz-transition: all 1s ease
+      -ms-transition: all 1s ease
+      -webkit-transition: all 1s ease
+      // -o-transition: all 1s ease
+
+  .zoom:hover
+    .gtiles
+      transform: scale(1.3)
+      -moz-transform: scale(1.3)
+      -webkit-transform: scale(1.3)
+      // -o-transform: scale(1.5)
+      -ms-transform: scale(1.3)
+
+@media (min-width: 768px) and (max-width: 992px)
+
+  .zoombox
+    min-height: 200px
+  #zoom-tiles
+    .content
+      font-size: 12px
+    h2
+      font-size: 26px
+    .item
+      height: 230px
+
+@media (max-width: 568px)
+
+  .zoombox
+    min-height: 200px
+  #zoom-tiles
+    .item
+      height: 200px
+// /* ====================================
+// ZOOM TILES END
+// ======================================= */

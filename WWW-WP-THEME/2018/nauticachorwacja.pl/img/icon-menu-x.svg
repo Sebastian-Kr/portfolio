@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="28.6875 0" i:rulerOrigin="-28.6875 19" i:pageBounds="28.6875 0 48.6875 -19"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="20px" height="19px" viewBox="0 0 20 19" enable-background="new 0 0 20 19" xml:space="preserve">
+<metadata>
+	<variableSets  xmlns="&ns_vars;">
+		<variableSet  varSetName="binding1" locked="none">
+			<variables></variables>
+			<v:sampleDataSets  xmlns="&ns_custom;" xmlns:v="&ns_vars;"></v:sampleDataSets>
+		</variableSet>
+	</variableSets>
+</metadata>
+<g id="Warstwa_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
+	<rect x="-28.688" y="0" i:knockout="Off" width="20" height="19"/>
+	
+		<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-miterlimit="10" x1="-27.5" y1="1.129" x2="-9.875" y2="17.872"/>
+	
+		<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-miterlimit="10" x1="-9.875" y1="1.129" x2="-27.5" y2="17.872"/>
+	<polygon i:knockout="Off" fill="#FFFFFF" points="19.674,2.035 17.951,0.223 10,7.776 2.049,0.223 0.326,2.035 8.185,9.5 
+		0.326,16.966 2.049,18.778 10,11.225 17.951,18.778 19.674,16.966 11.815,9.5 	"/>
+</g>
+</svg>

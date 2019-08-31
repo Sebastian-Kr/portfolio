@@ -1,0 +1,1031 @@
+/*
+Theme Name:prgrm-theme
+*/
+/* ==============================
+UNIVERAL CLASS / MIXINS
+================================= */
+.hidden {
+  display: none;
+}
+@media (max-width: 480px) {
+  .hidden-xxs {
+    display: none !important;
+  }
+}
+/*vertical center container*/
+.vcc {
+  position: relative;
+}
+.vc {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -ms-transform: translate(50%, -100%);
+  /* IE 9 */
+  -webkit-transform: translate(50%, -100%);
+  /* Safari */
+  transform: translate(50%, -100%);
+}
+.vc2 {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0%, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(0%, -50%);
+  /* Safari */
+  transform: translate(0%, -50%);
+}
+.vcr {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%);
+  /* IE 9 */
+  -webkit-transform: translate(-50%);
+  /* Safari */
+  transform: translateY(-50%);
+  right: 0px;
+}
+.semisepar {
+  height: 80px;
+}
+.unsemisepar {
+  margin-bottom: -50px !important;
+}
+.separ {
+  height: 100px;
+}
+.mt {
+  margin-top: 150px;
+}
+.padtb {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 480px) {
+  .semisepar {
+    height: 30px;
+  }
+  .separ {
+    height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .mobihide {
+    display: none;
+  }
+  .mobisemisepar {
+    height: 50px;
+  }
+}
+.noborder {
+  border: none !important;
+}
+.fullimg {
+  width: auto !important;
+}
+
+.quarsepar {
+  height: 25px;
+}
+
+/* ==============================
+END UNIVERAL CLASS / MIXINS
+================================= */
+/* ==============================
+CUSTOM GLOBAL STYLE
+================================= */
+/*TYPOGRAFIA*/
+.title {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.subtitle {
+  font-size: 34px;
+  color: #57595b;
+}
+.text-block {
+  font-size: 16px;
+}
+.block {
+  background-color: #fff;
+}
+html {
+  background-image: url('img/architektura-wnetrz-warszawa-tlo.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 250px;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 16px
+  color: #333;
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.2;
+  font-weight: 300 !important;
+  min-width: 250px;
+  font-size: 18px;
+  min-height: 100vh;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 50px
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-weight: 300 !important;
+}
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 2px #a5a5a5;
+}
+h2,
+h5 {
+  color: #333333;
+  text-shadow: 2px 2px 2px #a5a5a5;
+  text-align: center;
+}
+h5 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 24px;
+}
+img {
+  max-width: 100%;
+}
+.shadow {
+  text-shadow: 2px 2px 2px #a5a5a5;
+}
+a {
+  color: #333;
+  transition-duration: 0.2s;
+}
+a:hover {
+  transition-duration: 0.2s;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #80546D !important;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  p,
+  div {
+    font-size: 21px;
+    color: #333;
+  }
+  h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  p,
+  div {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  p,
+  div {
+    font-size: 18px;
+  }
+  h1,
+  h2,
+  .title {
+    font-size: 36px;
+  }
+  .mt {
+    margin-top: 100px;
+  }
+}
+/*========================================================================
+	END -- GLOBAL CSSS
+   =========================================================================*/
+/*========================================================================
+     MAIN MENU
+      =========================================================================*/
+#wrapper {
+  min-width: 250px;
+  height: 63px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 222;
+  background-color: #fff;
+}
+#wrapper #menu-menu-glowne2 {
+  top: 10px;
+  right: 20px;
+  margin: 0 auto;
+
+}
+nav {
+
+  margin: 0 auto;
+}
+#wrapper ul {
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+#wrapper ul li {
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style-type: none;
+}
+#sidebar-wrapper {
+  height: 60px;
+}
+#sidebar-wrapper ul li a {
+  line-height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 15px;
+  /*color: #b9a327;*/
+}
+#wrapper .logo {
+
+  width: 216px;
+  background-image: url('img/architekt-wnetrz-warszawa-logo.png');
+  background-size: contain;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  padding: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 0;
+}
+#wrapper ul li a img {
+  display: none;
+}
+@media (min-width: 992px) {
+  #wrapper .logo2 {
+    display: relative;
+    float: left;
+  }
+  .content-header {
+    display: none;
+  }
+  #wrapper ul li {
+    float: left;
+  }
+  #wrapper ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    padding-right: 0px;
+    position: relative;
+    padding-top: 9px;
+  }
+  .bg-scroll {
+    background-color: #fff;
+  }
+}
+@media (max-width: 992px) {
+  #wrapper .logo2 {
+    display: none;
+  }
+  #wrapper ul {
+    padding-bottom: 20px;
+  }
+  .content-header {
+    display: inherit;
+    text-align: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 900;
+  }
+  #sidebar-wrapper {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: auto;
+    overflow-y: auto;
+    z-index: 700;
+    transition: all 0.4s ease 0s;
+    top: -250px;
+  }
+  #wrapper .active {
+    top: 60px;
+  }
+  #wrapper .glyphicon {
+    background-color: none;
+    padding: 10px;
+    font-size: 36px;
+  }
+  #hsome {
+    line-height: 50px;
+    position: fixed;
+    right: 10px;
+    top: -16px;
+  }
+  #hsome .glyphicon {
+    top: 0px;
+    right: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+}
+#menu-menu-glowne2 {
+  text-align: center;
+}
+@media (max-width: 325px) {
+  #wrapper .logo {
+    width: 150px;
+    background-size: 150px;
+  }
+}
+/*========================================================================
+     END -- MAIN MENU
+      =========================================================================*/
+/* ====================================
+      CHARACTER SECTION
+      ======================================= */
+.character {
+  text-align: center;
+}
+.character img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+.character h2 {
+  height: 60px;
+}
+@media (max-width: 576px) {
+  .character img {
+    height: 70px;
+    width: 70px;
+  }
+}
+/* ====================================
+      END CHARACTER SECTION
+      ======================================= */
+/*========================================================================
+  CONTACT SECTION
+=========================================================================*/
+:focus::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: transparent;
+}
+:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  color: transparent;
+}
+:focus::-ms-input-placeholder {
+  /* IE 10+ */
+  color: transparent;
+}
+:focus::-moz-placeholder {
+  /* Firefox 18- */
+  color: transparent;
+}
+/*// #contact-form #code #code2 input {
+//     z-index: 999;
+//     position: relative;
+//   }*/
+.wpcf7 .wpcf7-form-control,
+.wpcf7 label,
+.wpcf7 span {
+  width: 100%;
+  background-color: #fff;
+}
+.wpcf7 {
+  float: right;
+  width: 90%;
+}
+
+@media (max-width:992px) {
+  .wpcf7 {
+    float: none;
+    width: 100%;
+  }
+}
+.wpcf7 input,
+.wpcf7 textarea {
+  color: #333;
+  border: 1px solid #333;
+  font-weight: 300;
+}
+img.wpcf7-form-control {
+  width: auto;
+}
+.wpcf7 textarea {
+  height: 170px;
+}
+label span input,
+#code span input,
+textarea {
+  padding: 5px;
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+}
+input.wpcf7-submit {
+  border: 0px;
+  padding: 5px;
+  border: none;
+  transition-duration: 0.5s;
+  margin-top: 5px;
+  text-align: right;
+  font-size: 24px;
+}
+.wpcf7-submit:hover {
+  color: #80546D;
+  transition-duration: 0.5s;
+}
+.screen-reader-response {
+  display: none;
+}
+div.wpcf7-mail-sent-ok,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-validation-errors {
+  border: none;
+}
+span.wpcf7-not-valid-tip {
+  color: red;
+  float: right;
+  font-size: 18px;
+}
+div.wpcf7-response-output {
+  margin: 0;
+  padding: 0;
+}
+/*========================================================================
+  CONTACT SECTION
+=========================================================================*/
+/* ====================================
+FOOTER SECTION
+======================================= */
+footer {
+  background-color: #fff;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 4
+}
+footer .social {
+  float: left;
+  margin-left: 10px;
+}
+footer #copyright {
+  float: right;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+footer #to-top {
+  margin-top: 5px;
+}
+
+footer .footer-cont {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 90%;
+
+}
+@media (max-width: 576px) {
+  footer {
+    height: auto;
+  }
+  footer .social,
+  footer #copyright,
+  footer #to-top {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+  }
+}
+/* ====================================
+END FOOTER SECTION
+======================================= */
+/* ====================================
+ABOUTUS SECTION
+======================================= */
+#aboutus p {
+  text-align: justify;
+
+  margin: auto;
+  margin-left: 0;
+}
+#aboutus img {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#aboutus .container {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+#aboutus .intro {
+  text-align: left;
+  margin-bottom: 50px;
+}
+#aboutus .intro p {
+  color: #80546D;
+  font-size: 50px;
+}
+#aboutus .intro p span {
+  font-size: 36px;
+}
+@media (max-width: 576px) {
+  #aboutus .intro {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  #aboutus .intro p {
+    color: #80546D;
+    font-size: 36px;
+  }
+  #aboutus .intro p span {
+    font-size: 20px;
+  }
+}
+#aboutus .row {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+/* ====================================
+ABOUTUS SECTION
+======================================= */
+/* ====================================
+STAGE-OFFER SECTION
+======================================= */
+.stage-offer {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: justify;
+}
+.stage-offer .row {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.stage-offer .col-sm-2 {
+  text-align: center;
+
+}
+
+.stage-offer img {
+  display: inline;
+
+}
+@media (max-width: 768px) {
+  .stage-offer img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media (max-width: 768px) {
+  .stage-offer img {
+    width: 70px;
+  }
+}
+/* ====================================
+END STAGE-OFFER SECTION
+======================================= */
+/* ====================================
+REFFERENCE
+======================================= */
+#reffer {
+  padding: 40px 0px;
+  text-align: center;
+  font-size: 32px;
+}
+#reffer .glyphicon {
+  color: #6b6a6a;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+#reffer p {
+  font-size: 24px
+}
+/* ====================================
+END REFFERENCE
+======================================= */
+/* ====================================
+PORTFOLIO
+======================================= */
+#portfolio .item {
+  text-align: center;
+}
+#portfolio .item .vc-cont {
+  position: relative;
+  height: 70px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
+#portfolio .item h4 {
+  font-size: 20px;
+  background-color: #fff;
+  width: 99.5%;
+  transition-duration: 0.5s;
+  padding: 0px 10px;
+  margin: auto;
+}
+#portfolio .item .item-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  background-repeat: no-repeat;
+}
+#portfolio .uper {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #portfolio .item {
+    width: 70%;
+    margin: 0  auto;
+    transition-duration: 0.5s;
+  }
+}
+@media (max-width: 576px) {
+  #portfolio .item h4 {
+    font-size: 18px;
+  }
+}
+/* ====================================
+END PORTFOLIO
+======================================= */
+/* ====================================
+ CONTACT
+======================================= */
+#contact {
+  font-size: 18px;
+}
+#contact span.adress {
+  font-size: 38px;
+}
+#contact .glyphicon {
+  color: #6b6a6a;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+@media (max-width: 992px) {
+  address {
+    text-align: center;
+  }
+}
+/* ====================================
+END CONTACT
+======================================= */
+.carousel {
+  height: 80vh;
+}
+#main-slider {
+
+  margin: 0 auto;
+
+}
+#main-slider .carousel-control.right,
+#main-slider .carousel-control.left,
+#main-slider .carousel-contro:hover {
+  background-image: none;
+  color: #fff !important;
+  /*opacity: 1;*/
+
+}
+#main-slider .item {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+}
+#main-slider h2 {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 5px 5px 10px #000;
+  font-weight: 400 !important;
+}
+#main-slider h2 img {
+  width: auto;
+  height: auto;
+}
+#main-slider .carousel-caption {
+  top: 30%;
+}
+@media (max-width: 768px) {
+  #main-slider h2 {
+    font-size: 38px;
+  }
+  #main-slider .carousel-caption {
+    top: 40%;
+  }
+  #main-slider .carousel-indicators {
+    display: none;
+  }
+}
+@media (max-height: 450px) {
+  #main-slider h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 320px) {
+  #main-slider h2 {
+    font-size: 28px;
+  }
+  #main-slider .carousel-caption {
+    top: 35%;
+  }
+  #main-slider .carousel-indicators {
+    display: none;
+  }
+}
+
+
+.portfolio #main-slider {
+  max-width: 850px;
+  position: relative;
+}
+
+.portfolio #main-slider .glass {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.portfolio #main-slider .glass a {
+  color: #fff;
+
+}
+.portfolio #main-slider .glass h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+#news-body .portfolio #main-slider .item {
+  height: 80vh;
+  max-height: 450px
+}
+
+.portfolio #main-slider .next-prf {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  text-align: right;
+}
+
+.portfolio #main-slider .next-prf h5{
+ display: inline;
+}
+
+
+@media (min-width:568px) {
+  #main-slider .carousel-control.right {
+    z-index: 5;
+    right: 250px;
+  }
+}
+
+@media (max-width:568px){
+  .portfolio #main-slider .glass{
+    display: none
+  }
+}
+
+
+/* ====================================
+single post
+======================================= */
+#news-body h1 {
+  margin-bottom: 60px;
+  margin-bottom: 110px;
+}
+#news-body #main-slider .item {
+  height: 80vh;
+}
+#news-body .carousel {
+  height: inherit;
+  margin-bottom: 50px;
+}
+#seealso #portfolio .item .item-img {
+  height: auto;
+  width: 100%;
+}
+#seealso #portfolio .col-news {
+  width: 50%;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#seealso #portfolio .alsopost {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+@media (max-width: 768px) {
+  #seealso #portfolio .col-news {
+    float: none;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  #seealso #portfolio img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* ====================================
+end single post
+======================================= */
+.rsep {
+  max-width: 600px;
+  margin: auto;
+}
+.carousel-indicators {
+  bottom: 10%;
+}
+/* ====================================
+Gallery
+======================================= */
+#gallery {
+  margin: 0 auto;
+  text-align: center;
+  display: inline;
+}
+#gallery .container-fluid {
+  /*max-width: 1450px;*/
+}
+#gallery .gallery-item {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 0px;
+  padding: 4px;
+}
+#gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 992px) {
+  #gallery .gallery-item {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  #gallery .gallery-item {
+    width: 100%;
+  }
+  #gallery-1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.realize .row>div {
+  padding: 4px;
+}
+
+.realize .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+/* ====================================
+end Gallery
+======================================= */
+/* ====================================
+preloader
+======================================= */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  animation-name: prel;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#loader-wrapper .load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  color: #fff;
+  opacity: 0;
+  animation-name: imghov;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#loader-wrapper #progress-bar {
+  border: 1px solid #B5890E;
+  width: 0px;
+  margin: 0 auto;
+  background-color: #B5890E;
+  margin-left: 145px;
+  margin-top: 20px;
+  animation-name: bar;
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@media (max-width: 460px) {
+  #loader-wrapper .load {
+    width: 200px;
+  }
+  #loader-wrapper #progress-bar {
+    margin-left: 0px;
+  }
+}
+@keyframes bar {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@keyframes prel {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  99% {
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0%;
+  }
+}
+@keyframes imghov {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ====================================
+end preloader
+======================================= */
+
+
+.rw {
+  padding: 0px 20px
+}
+
+
+#wp {
+  max-width: 450px;
+  margin: 0 auto
+
+}

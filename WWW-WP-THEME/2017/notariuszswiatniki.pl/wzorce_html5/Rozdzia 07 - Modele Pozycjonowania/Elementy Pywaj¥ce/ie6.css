@@ -1,0 +1,7 @@
+/* Przeglądarka Internet Explorer 6 zawiera błąd, który powoduje, że czasami elementy pływające nie są rysowane.
+   Można to naprawić poprzez zastosowanie ustawienia zoom:1;
+*/
+
+div { zoom:1; }
+
+

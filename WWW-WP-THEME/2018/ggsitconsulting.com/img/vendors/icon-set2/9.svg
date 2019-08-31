@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="34px" viewBox="0 0 39 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.9531 0.785 12.08 0.785 12.08 11.1029646 0.9531 11.1029646"></polygon>
+        <polygon id="path-3" points="0.584405871 0.138758649 11.4795 0.138758649 11.4795 10 0.584405871 10"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vendors" transform="translate(-961.000000, -2170.000000)">
+            <g id="Group-17" transform="translate(961.000000, 2169.000000)">
+                <g id="Page-1">
+                    <path d="M23.332,22.5615 L14.084,22.5615 C13,13.8295 15.191,11.6915 24.789,12.8465 C24.321,15.9635 23.855,19.0695 23.332,22.5615" id="Fill-1" fill="#FEFEFE"></path>
+                    <path d="M36.2979,13.4502 C34.4829,23.8392 33.6839,24.4272 25.0899,21.9912 C26.0729,12.3842 27.3309,11.3902 36.2979,13.4502" id="Fill-3" fill="#FEFEFE"></path>
+                    <path d="M11.1602,24.8818 C10.9102,26.7708 10.7332,28.7028 10.3702,30.6008 C10.1582,31.7058 9.6482,32.7538 9.2542,33.8798 L0.0452,33.8798 C-0.3608,24.5068 1.8852,22.7098 11.1602,24.8818" id="Fill-5" fill="#FEFEFE"></path>
+                    <g id="Group-9" transform="translate(26.000000, 0.214800)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-8"></g>
+                        <path d="M0.9531,10.4375 C3.1331,-0.0185 3.2301,-0.0965 12.0801,1.6105 C11.3071,11.9585 12.5231,11.8185 0.9531,10.4375" id="Fill-7" fill="#FEFEFE" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M34.1563,24.9326 C33.5763,27.9116 32.9963,30.8916 32.3983,33.9596 L23.3213,33.9596 C21.9723,25.0256 24.2973,23.0306 34.1563,24.9326" id="Fill-10" fill="#FEFEFE"></path>
+                    <g id="Group-14" transform="translate(11.000000, 24.214800)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-13"></g>
+                        <path d="M11.4795,0.4775 C10.7945,10.3975 10.7945,10.3975 1.0685,9.7765 C-0.5585,1.2815 1.6735,-0.7805 11.4795,0.4775" id="Fill-12" fill="#FEFEFE" mask="url(#mask-4)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

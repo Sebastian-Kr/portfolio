@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/project.css">
+    <script src="js/jquery3.1.1.js"></script>
+
+	<style>
+		/* div {border: 1px solid #000; min-width: 20px;} */
+    .col-sm-12 {padding: 10px;}
+    .row  {min-height: 50px; padding: 20px;}
+    .special {color: red;}
+	</style>
+</head>
+<body>
+/////////////////////////////////////////////////////////////////////////////////////	
+<!-- jQUERY ANIMATIONS -->
+<div class="container wzory">
+<div class="row">jQUERY ANIMATIONS</div>
+  <div class="row">
+    <div class="col-sm-12"><button id="btn1" class="btn btn-success">#btn1 Kliknij i animuj</button></div>
+    <div id="obraz1" class="col-sm-4">hide / show <img src="img/kwadrat1.jpg"></div>
+    <div id="obraz2" class="col-sm-4">slideUp / slideDown <img src="img/kwadrat2.jpg"></div>
+    <div id="obraz3" class="col-sm-4">fadeToggle / fadeToggle <img src="img/kwadrat3.jpg"></div>
+    
+<script>
+    // trzy pokazowe animacje 
+$(function() {
+
+    $('#btn1').on('click',function(){
+
+    $('#obraz1').hide(2000).show(2000);
+    $('#obraz2').slideUp(2000).slideDown(2000);
+    $('#obraz3').fadeToggle(2000).fadeToggle(2000);
+
+    });
+});
+</script>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+    <div class="col-sm-12"><botton class="btn btn-success" id="btn2">#btn1 Klikinij i aniumuj </botton></div>
+
+    <div id="obraz4" class="col-sm-4">#obraz4 <img src="img/kwadrat4.jpg"></div>
+    <div id="obraz5" class="col-sm-4">#obraz5 <img src="img/kwadrat2.jpg"></div>
+    <div id="obraz6" class="col-sm-4">#obraz6 <img src="img/kwadrat3.jpg"></div>
+
+
+  <script>
+        
+// drugie trzy pokazowe animacje -- dwa wolne do wykorzystania
+$(function() {
+    $('#btn2').on('click', function() {
+
+        $('#obraz4').fadeOut(3000).fadeIn(3000);
+      
+    });
+});
+</script>
+////////////////////////////////////////////////////////////////////////////////////////////
+  <div class="row"><br>  <br></div>
+    <div class="col-sm-4"><button class="btn btn-success" id="btn3">Ukryj fotkę 1</button></div>
+    <div class="col-sm-4"><button class="btn-primary btn" id="btn4">Ukryj fotkę 2</button></div>
+    <div class="col-sm-4"><button class="btn-warning btn" id="btn5">Ukryj fotkę 3</button></div>
+    <div  class="col-sm-4">#obraz7 <img id="obraz7" src="img/kwadrat1.jpg"></div>
+    <div  class="col-sm-4">#obraz8 <img id="obraz8" src="img/kwadrat4.jpg"></div>
+    <div  class="col-sm-4">#obraz9 <img id="obraz9" src="img/kwadrat3.jpg"></div>
+
+
+<script>// włączanie i wyłączanie widoczności elementów 
+// dziala tylko na jednym efekcie znikania / pojawiania się 
+
+$(function() {
+    $('#btn3').on('click', function(){
+
+        $('#obraz7').toggle(100);
+    });
+
+
+    $('#btn4').on('click', function(){
+
+        $('#obraz8').toggle(100);
+    });
+
+
+    $('#btn5').on('click', function(){
+
+        $('#obraz9').toggle(100);
+    });
+
+  
+
+});</script>
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+<div class="row"></div>
+      <div class="row"><br> TO SAMO TYLKO BARDZIEJ 'DRY' <br></div>
+
+
+    <div class="col-sm-4"><button class="btn btn-success hideButton" panelid="7">Ukryj fotkę 1</button></div>
+    <div class="col-sm-4"><button class="btn-primary btn hideButton" panelid="8">Ukryj fotkę 2</button></div>
+    <div class="col-sm-4"><button class="btn-warning btn hideButton" panelid="9">Ukryj fotkę 3</button></div>
+    <div  class="col-sm-4">#dryobraz7 <img id="dryobraz7" src="img/kwadrat1.jpg"></div>
+    <div  class="col-sm-4">#dryobraz8 <img id="dryobraz8" src="img/kwadrat4.jpg"></div>
+    <div  class="col-sm-4">#dryobraz9 <img id="dryobraz9" src="img/kwadrat3.jpg"></div>
+
+    <script>
+
+
+
+
+// to samo co wyżej tylko bardziej DRY
+
+$(function(){
+$('.hideButton').on('click', function(){
+
+var panelid = $(this).attr('panelid');
+$('#dryobraz' + panelid).toggle(1000);
+
+});
+
+});
+
+
+</script>
+////////////////////////////////////////////////////////////////////////////////////
+
+<h1>DOM model</h1>
+
+
+<ul>
+
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>
+<ul>
+    <li>z1</li>
+    <li>z2</li>
+    <li>z3</li>
+</ul>
+</li>
+
+</ul>
+
+
+<script>
+    
+$(function () {
+    $('li').on('click', function(){
+     $(this).find('li').addClass('special');
+        
+    });
+});
+
+</script>
+
+
+
+  
+</div>
+</div>
+
+
+</body>
+</html>

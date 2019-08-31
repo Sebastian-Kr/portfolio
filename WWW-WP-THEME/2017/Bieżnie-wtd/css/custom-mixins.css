@@ -1,0 +1,169 @@
+/* ==========================================================================
+   SK custom default styles
+
+ * Version - 3.5.1
+ * Copyright (c) 2016 Sebastian Krajewski
+
+   ========================================================================== */
+/* ==========================================================================
+LESS VARIABLES LESS
+============================================================================= */
+/* ==========================================================================
+UNIWERSAL MIXINS LESS
+============================================================================= */
+.copyright {
+  color: #fff;
+  background-color: #121212;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  width: 100%;
+}
+.footer {
+  color: #fff;
+  background-color: #333333;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  min-height: 200px;
+  text-align: center;
+}
+.footer a {
+  color: #fff;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.glass-container {
+  text-align: center;
+  background: url('../img/tlo.jpg');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.glass-container .glass {
+  background-color: rgba(152, 43, 46, 0.5);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+.glass-container .glass button {
+  background-color: #4eafc0;
+  width: 30%;
+  min-width: 100px;
+  margin-top: 30px;
+  min-width: 150px;
+  border: 0px;
+  padding: 5px;
+  font-size: 20px;
+  opacity: 1;
+}
+.glass-container .glass button:hover {
+  background-color: #982b2e;
+}
+.glass-container .glass .container {
+  width: 70%;
+}
+.full-bar {
+  background-color: #4eafc0;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px;
+  margin-right: -20px;
+  margin-left: -20px;
+  color: #fff;
+  font-weight: 100;
+}
+.full-bar button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 5px;
+  margin-top: 10px;
+}
+.full-bar button:hover {
+  background-color: #982b2e;
+  transition-duration: 1s;
+}
+.full-bar a {
+  color: #fff;
+}
+.full-bar2 {
+  background-color: #333333;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-weight: 100;
+}
+.full-bar2 button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 5px;
+  margin-top: 10px;
+}
+.full-bar2 button:hover {
+  background-color: #4eafc0;
+  transition-duration: 1s;
+}
+.full-bar2 a {
+  color: #fff;
+}
+.feature {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.feature span {
+  font-size: 30px;
+  background-color: #4eafc0;
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff;
+}
+.feature span:hover {
+  background-color: #982b2e;
+  transition-duration: 1s;
+}
+.hider {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+.space {
+  height: 30px;
+  border-top: 1px solid #dedede;
+}
+.vertical-center {
+  /* position: relative;
+	div {position: relative; top: 50%; transform: translateY(-50%);} */
+}
+.blog-article {
+  border: 1px solid #e4e4e4;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.blog-article h4 {
+  text-align: left;
+}
+.blog-article :last-child {
+  text-align: center;
+}
+.blog-article:hover {
+  border: 1px solid gray;
+  transition-duration: 1s;
+}
+.foot-item {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.foot-item h2 {
+  text-align: left;
+}

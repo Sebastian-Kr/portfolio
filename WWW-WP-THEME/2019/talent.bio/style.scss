@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=latin-ext');
+
+
+
+// VARIABLE PROJECT
+$color1: #0092BC;
+$color1-06: #0092BC;
+$color2: #E7E7E7;
+$color3: #E68424;
+$color3-75: #E68424;
+$color4: #E68424;
+
+//IMPORTS
+@import "scss/prgrm_reset.scss";
+@import "scss/bootstrap4.scss";
+@import "scss/wp.scss";
+@import "scss/prgrm_atom.scss";
+@import "scss/prgrm_visual_editor.scss";
+@import "scss/prgrm_menus.scss";
+
+
+
+// IMPORT SPECIAL DEMO PAGES
+
+// /////////////////////////////////////////////////
+// STANDARD PROJECT STYLE
+// /////////////////////////////////////////////////

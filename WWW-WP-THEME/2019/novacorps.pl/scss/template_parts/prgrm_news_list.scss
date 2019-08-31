@@ -1,0 +1,47 @@
+
+.news-list {
+.news-item {
+
+  margin-bottom: 35px;
+  .news-thumb {
+    min-height: 200px;
+
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #333;
+  }
+}
+}
+
+@media (max-width: 767px) {
+
+  .news-list {
+
+  .news-item {
+
+    margin-bottom: 50px;
+
+    .news-thumb {
+  max-width: 350px;
+    }
+  }
+  }
+
+}
+
+@media (max-width: 567px) {
+
+  .news-list {
+
+  .news-item {
+text-align: center;
+    margin-bottom: 50px;
+
+    .news-thumb {
+      margin-bottom: 10px;
+    }
+  }
+  }
+
+}

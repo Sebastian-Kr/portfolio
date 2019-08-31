@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Realizacje" transform="translate(-20.000000, -5702.000000)" fill="#DF2444">
+            <g id="Group-2-Copy-10" transform="translate(25.000000, 5708.000000) scale(-1, 1) translate(-25.000000, -5708.000000) translate(0.000000, 5683.000000)">
+                <g id="arrow-copy-4" transform="translate(26.000000, 25.500000) scale(-1, 1) translate(-26.000000, -25.500000) translate(22.000000, 19.000000)">
+                    <path d="M3.40592507,9.59433844 L-1.75374791,4.43456006 C-2.08208403,4.10632934 -2.08208403,3.57414024 -1.75374791,3.24601493 C-1.4256226,2.91799502 -0.893538902,2.91799502 -0.565413593,3.24601493 L4.00009223,7.81173156 L8.56538724,3.24622574 C8.89361796,2.91810043 9.42570166,2.91810043 9.75382696,3.24622574 C10.0820577,3.57424564 10.0820577,4.10643475 9.75382696,4.43466546 L4.59404858,9.59444385 C4.42993322,9.7585592 4.21511813,9.84045877 4.00009223,9.84045877 C3.78496092,9.84045877 3.56993502,9.75834839 3.40592507,9.59433844" id="Fill-1" transform="translate(4.000000, 6.420229) rotate(90.000000) translate(-4.000000, -6.420229) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

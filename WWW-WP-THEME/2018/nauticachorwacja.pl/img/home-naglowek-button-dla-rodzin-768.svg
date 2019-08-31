@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="2078.166 -203.4951" i:rulerOrigin="-2078.166 276.4951" i:pageBounds="2078.166 -203.4951 2798.166 -276.4951"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="720px" height="73px" viewBox="0 0 720 73" enable-background="new 0 0 720 73" xml:space="preserve">
+<metadata>
+	<variableSets  xmlns="&ns_vars;">
+		<variableSet  varSetName="binding1" locked="none">
+			<variables></variables>
+			<v:sampleDataSets  xmlns="&ns_custom;" xmlns:v="&ns_vars;"></v:sampleDataSets>
+		</variableSet>
+	</variableSets>
+</metadata>
+<g id="Warstwa_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#0091BF" d="M-1107.085,108.853
+		c0,0-32.388-9.015-93.606-9.015c-61.496,0-114.942,26.344-178.197,26.344c-64.436,0-126.194-14.562-126.194-14.562v61.019h397.998
+		V108.853z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#9FB937" d="M-1107.42,9.853
+		c0,0-32.384-9.015-93.604-9.015c-61.494,0-114.942,26.344-178.197,26.344c-64.436,0-126.194-14.562-126.194-14.562v61.019h397.996
+		V9.853z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#CAD102" d="M-1107.42-88.48
+		c0,0-32.384-9.015-93.605-9.015c-61.494,0-114.941,26.344-178.197,26.344c-64.436,0-126.193-14.562-126.193-14.562v61.019h397.996
+		V-88.48z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#CAD102" d="M-496.45-88.486
+		c0,0-24.41-9.013-70.558-9.013c-46.352,0-86.638,26.338-134.319,26.338c-48.571,0-95.122-14.559-95.122-14.559v61.006h299.999
+		V-88.486z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#9FB937" d="M-496.45,5.514
+		c0,0-24.41-9.013-70.558-9.013c-46.352,0-86.638,26.338-134.319,26.338c-48.571,0-95.122-14.559-95.122-14.559v61.006h299.999
+		V5.514z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#0091BF" d="M-496.45,105.514
+		c0,0-24.41-9.013-70.558-9.013c-46.352,0-86.638,26.338-134.319,26.338c-48.571,0-95.122-14.559-95.122-14.559v61.006h299.999
+		V105.514z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#CAD102" d="M719.935-88.479
+		c0,0-58.577-9.015-169.308-9.015c-111.229,0-207.9,26.344-322.312,26.344C111.769-71.15,0.062-85.712,0.062-85.712v61.019h719.872
+		V-88.479z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#9FB937" d="M719.935,9.016
+		c0,0-58.577-9.015-169.308-9.015c-111.229,0-207.9,26.344-322.312,26.344c-116.546,0-228.252-14.562-228.252-14.562v61.019h719.872
+		V9.016z"/>
+	<path i:knockout="Off" opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" fill="#0091BF" d="M719.935,108.011
+		c0,0-58.577-9.015-169.308-9.015c-111.229,0-207.9,26.344-322.312,26.344c-116.546,0-228.252-14.562-228.252-14.562v61.019h719.872
+		V108.011z"/>
+	<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+		<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+			<flowDef  xmlns="&ns_flows;">
+				<region  textMatrix="1 0 0 1 0 0">
+					<path d="M-1311.565-144.382"/>
+				</region>
+				<flow  xmlns="&ns_flows;"  font-family="'MyriadPro-Semibold'" font-size="20">
+					<p><span>1920</span></p>
+				</flow>
+			</flowDef>
+			<x:targetRef  xlink:href="#SVGID_1_" />
+		</foreignObject>
+		<text id="SVGID_1_" transform="matrix(1 0 0 1 -1311.5654 -144.3818)" font-family="'MyriadPro-Semibold'" font-size="20">1920</text>
+	</switch>
+	<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+		<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+			<flowDef  xmlns="&ns_flows;">
+				<region  textMatrix="1 0 0 1 0 0">
+					<path d="M318.854-144.382"/>
+				</region>
+				<flow  xmlns="&ns_flows;"  font-family="'MyriadPro-Semibold'" font-size="20">
+					<p><span>768</span></p>
+				</flow>
+			</flowDef>
+			<x:targetRef  xlink:href="#SVGID_2_" />
+		</foreignObject>
+		<text id="SVGID_2_" transform="matrix(1 0 0 1 318.8535 -144.3818)" font-family="'MyriadPro-Semibold'" font-size="20">768</text>
+	</switch>
+	<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+		<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+			<flowDef  xmlns="&ns_flows;">
+				<region  textMatrix="1 0 0 1 0 0">
+					<path d="M-643.617-144.382"/>
+				</region>
+				<flow  xmlns="&ns_flows;"  font-family="'MyriadPro-Semibold'" font-size="20">
+					<p><span>320</span></p>
+				</flow>
+			</flowDef>
+			<x:targetRef  xlink:href="#SVGID_3_" />
+		</foreignObject>
+		<text id="SVGID_3_" transform="matrix(1 0 0 1 -643.6172 -144.3818)" font-family="'MyriadPro-Semibold'" font-size="20">320</text>
+	</switch>
+</g>
+</svg>

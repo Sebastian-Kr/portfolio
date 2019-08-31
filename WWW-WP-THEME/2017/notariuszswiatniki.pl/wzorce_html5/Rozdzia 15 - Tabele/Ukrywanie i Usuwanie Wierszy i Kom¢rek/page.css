@@ -1,0 +1,22 @@
+/* Mniej ważne style */ 
+
+td,th       { width:75px; padding:2px; text-align:center; background-color:gold; }
+table,td,th { border:1px solid black;  empty-cells:show; }
+
+#t1      { border-collapse:collapse; margin-right:120px; }
+#t1, #t2 { float:left; }
+
+/* Ważne style */
+
+#t1 .c2 { display:none;      }  /* Usunięcie kolumny */
+#t1 .c3 { visibility:hidden; }  /* Ukrycie kolumny */
+#t1 .r2 { visibility:hidden; }  /* Ukrycie wiersza */
+#t1 .b2 { display:none;      }  /* Usunięcie grupy wierszy */
+
+
+#t2 .c2 { display:none;      }  /* Usunięcie kolumny */
+#t2 .c3 { visibility:hidden; }  /* Ukrycie kolumny */
+#t2 .r2 { visibility:hidden; }  /* Ukrycie wiersza */
+#t2 .b2 { display:none;      }  /* Usunięcie grupy wierszy */
+
+

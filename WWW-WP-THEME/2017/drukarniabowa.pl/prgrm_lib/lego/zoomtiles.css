@@ -1,0 +1,144 @@
+.zoombox {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.zoombox div {
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.hoverbox, .gtiles {
+  min-height: 200px;
+}
+
+.hoverbox {
+  position: absolute;
+}
+
+.zoombox-x3 > div {
+  min-height: 200px;
+}
+
+#zoom-tiles .item-filtr {
+  background-color: orange;
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition-duration: 1s;
+}
+
+#zoom-tiles .item {
+  position: relative;
+  color: #fff;
+  height: 300px;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+#zoom-tiles .item h2 {
+  color: #fff;
+  transition-duration: 1s;
+}
+
+#zoom-tiles .item .content {
+  opacity: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#zoom-tiles .item:hover .content {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#zoom-tiles .item:hover h2 {
+  opacity: 0;
+}
+
+#zoom-tiles .item:hover .item-filtr {
+  opacity: 0.95;
+  transition-duration: 1s;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .zoombox {
+    min-height: 300px;
+  }
+  #zoom-tiles .content {
+    font-size: 12px;
+  }
+  #zoom-tiles h2 {
+    font-size: 26px;
+  }
+  #zoom-tiles .item {
+    height: 230px;
+  }
+}
+
+@media (min-width: 468px) and (max-width: 992px) {
+  .hoverbox, .gtiles {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 568px) {
+  .zoombox {
+    min-height: 200px;
+  }
+  #zoom-tiles .item {
+    height: 200px;
+  }
+}
+
+.zoombox {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #B3B3B3;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.zoom .gtiles {
+  background-position: center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.hoverbox {
+  opacity: 0;
+  transition-duration: 0.5s;
+  text-align: center;
+  z-index: 11;
+  background-image: url("img/galeria-hover.svg");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  height: calc(100% - 30px);
+  min-height: 170px !important;
+  margin-top: 15px;
+}
+
+.hoverbox p {
+  color: #fff;
+}
+
+.zoom:hover .hoverbox {
+  opacity: 1;
+  transition-duration: 0.5s;
+}

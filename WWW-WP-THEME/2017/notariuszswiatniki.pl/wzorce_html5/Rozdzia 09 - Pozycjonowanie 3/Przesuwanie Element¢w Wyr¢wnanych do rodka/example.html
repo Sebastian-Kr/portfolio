@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Przesuwanie Elementów Wyrównanych do Środka</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+
+<h1>Przesuwanie Elementów Wyrównanych do Środka</h1>
+<div class="gp">Pozycjonowany dziadek
+ <div class="parent">Niepozycjonowany rodzic
+  <div  id="zs" ><br />Statycznego bloku o konkretnym rozmiarze nie można przesuwać względem środka.</div>
+  <div  id="ss" class="ex"><span>Rozciągnięty statyczny blok &rarr; 40px</span></div>
+  <span id="za" class="ex"><span>Element bezwzględny o konkretnym rozmiarze &rarr; 40px</span></span>
+  <span id="wa" >Wyśrodkowany element nie może być kurczliwy.</span>
+  <span id="sa" class="ex"><span>Rozciągnięty element bezwzględny &rarr; 40px</span></span>
+</div></div>
+
+ 
+</body>
+</html>

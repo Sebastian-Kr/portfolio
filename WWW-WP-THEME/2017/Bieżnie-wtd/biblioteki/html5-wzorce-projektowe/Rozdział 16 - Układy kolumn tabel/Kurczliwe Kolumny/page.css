@@ -1,0 +1,11 @@
+/* Mniej ważne style */
+table  { background:gold; }
+td     { border:2px solid black; padding-left:3px;  }
+
+
+/* Ważne style */
+table  { border-collapse:collapse;   }
+td     { overflow:hidden;            }
+
+.auto-layout  { table-layout:auto;  }
+.shrinkwrap   { width:auto;         }

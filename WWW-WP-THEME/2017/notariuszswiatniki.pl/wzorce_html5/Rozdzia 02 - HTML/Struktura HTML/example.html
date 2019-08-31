@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head><title>Struktura HTML</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="site.css" media="all" type="text/css"/>
+  <link rel="stylesheet" href="page.css" media="all" type="text/css"/>
+  <link rel="stylesheet" href="print.css" media="print" type="text/css"/>
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" href="ie6.css" media="all" type="text/css"/>
+  <![endif]-->
+</head>
+<body>
+<noscript>Ten napis pokaże się, jeśli nie będzie można wykonać skryptu.</noscript>
+<div>
+  <h1>Struktura HTML</h1>
+
+  <p>Akapit</p>
+
+  <ol>
+    <li>Element listy uporządkowanej</li>
+    <li>Element listy uporządkowanej</li>
+  </ol>
+  <ul>
+    <li>Element listy nieuporządkowanej</li>
+    <li>Element listy nieuporządkowanej</li>
+  </ul>
+  <dl>
+    <dt>Termin</dt>
+    <dt>Termin</dt>
+    <dd>Definicja terminu</dd>
+    <dd>Definicja terminu</dd>
+  </dl>
+
+  <table>
+    <caption>Podpis tabeli</caption>
+    <colgroup>
+      <col/>
+      <col/>
+    </colgroup>
+    <thead>
+    <tr>
+      <td>wiersz1-kolumna1</td>
+      <td>wiersz1-kolumna2</td>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+      <td>wiersz3-kolumna1</td>
+      <td>wiersz3-kolumna2</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    </tbody>
+  </table>
+
+  <form id="form1" method="post" action="http://www.tipjar.com/cgi-bin/test">
+    <input type="hidden" title="input hidden" name="hidden" value="Secret"/>
+
+    <input id="radio1" name="radios" type="radio" value="radio1" checked="checked"/>
+    <label for="radio1">Radio1</label>
+
+    <input id="radio2" name="radios" type="radio" value="radio2-pushed"/>
+    <label for="radio2">Radio2</label>
+
+    <input id="xbox1" name="xbox1" type="checkbox" value="xbox1" checked="checked"/>
+    <label for="xbox1">Pole wyboru1</label>
+
+    <label for="inputtext">Pole tekstowe</label>
+    <input id="inputtext" name="inputtext" type="text" value="Pisz tutaj" size="14"/>
+
+    <label for="select1">Wybierz</label>
+    <select id="select1" name="select" size="2">
+      <option selected="selected" value="item1">Element1</option>
+      <option value="item2">Element2</option>
+    </select>
+
+    <label for="textarea">Obszar tekstowy</label>
+    <textarea id="textarea" name="textarea" rows="2" cols="10">Obszar tekstowy</textarea>
+
+    <input type="submit" id="submit1" name="submit1" value="wyślij"/>
+    <input type="reset" id="reset1" name="reset1" value="reset"/>
+    <button type="submit" id="button1" name="button1" value="Przycisk1">przycisk</button>
+  </form>
+
+  <div>Element &lt;div&gt; z <a id="link1" href="left.html">łączem</a>
+    <img src="left-right.gif" width="20" height="20" usemap="#map1" alt="Tekst alternatywny"/>
+    <map id="map1" name="map1">
+      <area href="left.html" alt="left" shape="rect" coords="0,0,10,20"/>
+      <area href="right.html" alt="right" shape="rect" coords="10,0,20,20"/>
+    </map>
+
+    <span>span</span>
+    <em>em</em>
+    <strong>strong</strong>
+    <cite>cite</cite>
+    <code>code</code>
+    <kbd>kbd</kbd>
+    <samp>samp</samp>
+    <var>var</var>
+    <abbr>abbr</abbr>
+    <dfn>dfn</dfn>
+    <sub>sub</sub>
+    <sup>sup</sup>
+    <bdo dir="rtl">tekst pisany wstecz</bdo>
+
+    <object type="application/x-shockwave-flash">
+      <param name="movie" value="http://myserver.com/movie.swf">
+      <param name="allowfullscreen" value=true>
+    </object>
+  </div>
+  <article>
+    <header>
+      <h1>Post na blogu</h1>
+
+      <p>
+        <time pubdate datetime="2011-10-07T10:00-08:00"></time>
+      </p>
+    </header>
+    <p>Element &lt;article&gt; reprezentuje na stronie samodzielną strukturę, którą można udostępniać i 
+      wielokrotnie wykorzystywać, np. w syndykacji treści.</p>
+    <footer>
+      <a href="?comments=1">Pokaż komentarze...</a>
+    </footer>
+  </article>
+  <section>
+    <h1>Pierwszy nagłówek</h1>
+
+    <p>
+      Element sekcji &lt;section&gt; reprezentuje ogólną sekcję dokumentu (tematyczne grupowanie treści).
+    </p>
+  </section>
+  <section>
+    <h1>I jeszcze jedna sekcja</h1>
+
+    <p>Stronę można podzielić na sekcje zawierające wstęp, najświeższe wiadomości, informacje kontaktowe itp.</p>
+  </section>
+  <nav>
+    <h1>Nawigacja</h1>
+    <ul>
+      <li><a href="articles.html">Indeks artykułów</a></li>
+      <li><a href="contact.html">Informacje kontaktowe</a></li>
+    </ul>
+    <p>Element nawigacji &lt;nav&gt; nie musi zawierać listy — może równie dobrze zawierać inne rodzaje treści.</p>
+  </nav>
+  <address>address</address>
+</div>
+</body>
+</html>

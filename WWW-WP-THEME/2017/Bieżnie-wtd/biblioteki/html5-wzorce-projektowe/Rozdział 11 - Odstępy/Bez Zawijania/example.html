@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title>Bez Zawijania</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+	</head>
+ 
+	<body>
+ 
+ <h1>Bez Zawijania</h1>
+ <div>
+   <p>Aby uniemożliwić zawijanie wierszy, można użyć własności <code>nowrap</code>, np.: 
+    <span class="nowrap">TO NIE MOŻE ZOSTAĆ PODZIELONE NA DWA WIERSZE!</span></p>
+  
+   <p>Za pomocą własności <code>nowrap</code> można sprawić, aby niektóre przeglądarki nie dzieliły wyrażeń
+      zawierających łączniki, takich jak te:
+      <span class="nowrap">super-hiper-ekstra-fajny!</span></p>
+  
+   <p>Można też zapobiec podzieleniu na dwa wiersze krótkiego fragmentu kodu zawierającego
+      spację, jak np.: <code class="nowrap">&lt;br /&gt;</code>.</p>
+   <p>Zwróć uwagę, jak zostanie on podzielony na dwa wiersze, jeżeli <em>nie</em> zostanie zastosowana 
+      własność kaskadowych arkuszy stylów o nazwie <code>nowrap</code>: <code>&lt;br /&gt;</code>.</p>
+        
+   <p class="nowrap">Pamiętaj, że tekst z wyłączonym zawijaniem może wyjść poza kontener.
+      Nie ma to wpływu na szerokość innych elementów, ale może spowodować, że przeglądarka 
+      wyświetli poziomy pasek przewijania, którego użytkownik będzie musiał użyć, aby przeczytać cały tekst.</p>
+ </div>
+
+
+ </body>
+</html>

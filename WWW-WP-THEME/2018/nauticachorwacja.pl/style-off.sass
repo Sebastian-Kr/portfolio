@@ -1,0 +1,1901 @@
+
+
+/*Theme Name:prgrm-theme*/
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Open+Sans:300i,400,600,700|Ubuntu:300,400,500,700&subset=latin-ext')
+// IMPORT PROGREMO MIXINS
+@import prgrm_lib/prgrm_mixins.sass
+// IMPORT BOOTSTRAP STYLESHEET
+@import bootstrap3.3.7/assets/stylesheets/bootstrap.scss
+
+// IMPORT PRGRM_LIBLARY STYLESHEET
+@import prgrm_lib/prgrm_class.sass
+
+
+// project variables
+//różowy jasny
+$c1: #00479a
+$c2: #0091bf
+$c3: #00489a
+$c4: #c9d10e
+
+// end project variables
+
+// media query schedule
+// @media (max-width: 575px)
+
+// @media (min-width: 576px) and (max-width: 767px)
+
+
+// @media (min-width: 768px) and (max-width: 991px)
+
+
+// @media (min-width: 992px) and (max-width: 1199px)
+
+
+// @media (min-width:1201px) and (max-width: 1600px)
+
+
+// /* ==============================
+// UNIWERSAL GLOBAL STYLE
+// ================================= */
+/*TYPOGRAFIA*/
+.title
+
+  text-transform: uppercase
+
+.subtitle
+  font-size: 34px
+  color: #57595b
+  // font-weight: 400
+
+.block
+  background-color: #fff
+
+
+html
+  min-width: 300px
+  overflow-x: hidden
+  font-size: 62.5%
+
+
+body
+  line-height: 1.2
+  font-weight: 400
+  font-family: 'Open Sans', sans-serif
+  background-color: #F8EACD
+  color: $c3
+  font-size: 1.6rem
+  line-height: 20px
+  min-width: 300px
+  overflow-x: hidden
+
+  // position: relative
+
+.container-fluid
+  padding-left: 30px
+  padding-right: 30px
+
+.maxw
+  max-width: 1250px
+
+// section
+//   padding-top: 20px
+//   padding-bottom: 20px
+
+h1,h2,h3,h4,h5,h6
+  font-family: 'Caveat', cursive
+  text-align: left
+
+
+
+
+h1,h2,h3,h4,h5
+ margin-top: 0
+ margin-bottom: 35px
+ font-weight: 400
+
+h1.square
+  font-family: inherit
+
+h1
+  font-size: 24px
+  font-size: 2.4rem
+h2
+  font-size: 30px
+  font-weight: 600
+  margin-bottom: 20px
+h3
+  font-weight: 600
+h6
+  font-size: 23px
+  font-size: 2.3rem
+  font-weight: 600
+
+/*END TYPOGRAFIA*/
+.mediumshow
+  display: none
+@media (min-width: 500px) and (max-width:992px)
+  .mediumshow
+    display: block
+
+
+
+img
+  max-width: 100%
+  text-align: center
+  margin: auto
+  display: inherit
+
+p
+  text-align: left
+  margin-bottom: 5px
+
+
+a
+  transition-duration: 0.2s
+  &:hover
+    transition-duration: 0.2s
+    text-decoration: none
+a.black
+  color: #000
+  transition-duration: 0.2s
+
+mark
+  font-weight: 600
+  background-color: inherit
+  color: inherit
+  padding: 0
+
+.font-normal
+  font-family: 'Open Sans', sans-serif
+
+// /* ==============================
+// END UNIWERSAL GLOBAL STYLE
+// ================================= */
+
+
+// /* ==============================
+// MAIN MENU STYLE
+// ================================= */
+#wrapper
+  min-width: 250px
+  height: 63px
+  position: fixed
+  top: 0px
+  width: 100%
+  z-index: 222
+  // // background-color: #fff
+  // -moz-box-shadow: 1px 1px 5px #cacaca
+  // -webkit-box-shadow: 1px 1px 5px #cacaca
+  // box-shadow: 1px 1px 5px #cacaca
+
+#wrapper #menu-menu-glowne2
+
+  top: 10px
+  right: 20px
+  max-width: 1250px
+  margin: 0 auto
+
+  nav
+    max-width: 1170px
+    margin: 0 auto
+
+#wrapper ul
+  margin: 0px
+  padding: 0px
+
+
+#wrapper ul li
+
+  padding: 0
+  margin: 0
+  padding-left: 10px
+  padding-right: 10px
+  list-style-type: none
+  position: relative
+  font-weight: 400
+
+#sidebar-wrapper
+  height: 60px
+
+#sidebar-wrapper ul li a
+  line-height: 40px
+  padding-top: 0
+  padding-bottom: 0
+  font-size: 16px
+  font-size: 1.6rem
+  font-weight: 500
+  color: #fff
+  font-family: 'Ubuntu', sans-serif
+  cursor: pointer
+#sidebar-wrapper ul li a:hover,
+#sidebar-wrapper ul li a:active,
+#sidebar-wrapper ul li a:focus,
+#sidebar-wrapper ul .current_page_item>a,
+#sidebar-wrapper ul .current-menu-parent> a
+  color: $c4
+  text-decoration: none
+#sidebar-wrapper ul>li>ul .current_page_item>a
+  color: #fff
+
+
+#wrapper .logo
+  height: 45px
+  width: 240px
+  background-image: url('img/logo.svg')
+  background-size: contain
+  position: relative
+  top: 0px
+  left: 15px
+  // background-color: #fff
+  padding: 30px
+  background-position: center
+  background-repeat: no-repeat
+  margin-left: 0
+
+
+#wrapper ul li a img
+  display: none
+
+
+@media (min-width: 992px)
+  #wrapper
+    height: auto
+    transition-duration: 0.5s
+  #wrapper .logo2
+    display: relative
+    float: left
+  footer .logo2
+    margin-top: 30px
+  .content-header
+    display: none
+  #wrapper .logo
+    width: 370px
+    transition-duration: 0.5s
+  #wrapper #sidebar-wrapper
+    margin-top: 10px
+    transition-duration: 0.5s
+    margin-bottom: 10px
+    transition-duration: 0.5s
+  .color-menu
+    height: 60px!important
+  .color-menu .logo
+   width: 240px!important
+   transition-duration: 0.5s
+  .color-menu #sidebar-wrapper
+    margin-top: 0px!important
+    transition-duration: 0.5s
+    margin-bottom: 0px!important
+    transition-duration: 0.5s
+
+  #wrapper ul li
+    float: left
+
+  #wrapper ul
+    float: right
+    margin: 0
+    padding-right: 10px
+    position: relative
+
+  .bg-scroll
+    // background-color: #fff
+    // box-shadow: 0px 2px 4px 1px rgba(29, 28, 32, 0.15)
+  .color-menu
+    background-color: #00489a
+    // transition-duration: 0.5s
+
+@media (max-width: 992px)
+  #wrapper .logo2
+    display: none
+
+  #wrapper ul
+    padding-bottom: 20px
+
+  .content-header
+    display: inherit
+    text-align: left
+    position: fixed
+    top: 0px
+    left: 0px
+    background-color: #00489a
+    width: 100%
+    z-index: 900
+  #menu-toggle
+
+  #sidebar-wrapper
+    margin-left: 0
+    left: 0
+    width: 100%
+    position: fixed
+    height: auto
+    overflow-y: auto
+    z-index: 700
+    transition: all 0.4s ease 0s
+    top: -500px
+
+  #wrapper .active
+    top: 60px
+
+  #wrapper .glyphicon,
+
+
+    background-color: none
+    padding: 10px
+    font-size: 36px
+
+  #hsome
+    line-height: 50px
+    position: fixed
+    right: 0px
+    top: -16px
+    font-size: 16px
+    font-weight: 600
+    margin: 20px
+    a
+      color: #fff
+      text-decoration: none
+
+  #hsome .glyphicon
+    top: 0px
+    right: 10px
+    text-decoration: none
+    margin-top: 20px
+
+
+
+
+#menu-menu-glowne2
+  text-align: center
+
+
+@media (max-width: 350px)
+  #wrapper .logo
+    width: 150px
+    background-size: 150px
+
+// SUBMENU
+#prgrm_main_nav>ul>li
+  height: 65px
+  padding-top: 10px
+
+#prgrm_main_nav ul>li>ul
+
+  position: absolute
+  li
+    height: 30px
+    background-color: #94ba1f
+    text-align: left
+    padding-left: 20px
+  a
+    color: #fff
+  a:hover
+    color: $c3
+
+#prgrm_main_nav ul>li>ul>li:last-child
+  height: 40px!important
+
+#prgrm_main_nav>ul>.menu-item-has-children>ul
+  width: 155px
+  position: absolute
+  right: -45px
+  margin: 0
+  padding: 0
+  display: block
+  padding-bottom: 20px
+  margin-top: 10px
+  li
+    float: none
+    opacity: 0
+    visibility: hidden
+    transition-duration: 0.3s
+    height: 0
+    a
+      font-size: 15px
+      font-size: 1.5rem
+@media (min-width:992px) and (max-width:1500px)
+  #prgrm_main_nav>ul>.menu-item-has-children>ul
+    right: 0
+    li a
+      font-size: 14px
+  #prgrm_main_nav>ul>li>ul>.menu-item-has-children>ul
+    right: -300px!important
+
+@media (min-width:992px)
+  #prgrm_main_nav>ul>.menu-item-has-children:hover>ul>li
+    display: block
+    transition-duration: 0.3s
+    opacity: 1
+    visibility: visible
+    height: 30px
+
+  #prgrm_main_nav>ul>li>ul>.menu-item-has-children:hover>ul>li
+
+    display: block
+    transition-duration: 0.3s
+    opacity: 1
+    visibility: visible
+    height: 35px
+
+#prgrm_main_nav>ul>li>ul>.menu-item-has-children
+  background-image: url('img/arrow.png')
+  background-size: 10px
+  background-position: 250px 15px
+  background-repeat: no-repeat
+
+#prgrm_main_nav>ul>li>ul>.menu-item-has-children>ul
+  width: auto
+  right: -320px
+  top: 0
+  white-space: nowrap
+  min-width: 320px
+
+
+// MOBILE MENU
+@media (max-width: 992px)
+  #prgrm_main_nav>ul
+    background-color: rgba(0, 72, 154, 0.8)
+    overflow-x: hidden
+    overflow-y: scroll
+    max-height: 100vh
+    padding-bottom: 0px
+
+
+  #prgrm_main_nav>ul li,
+  #prgrm_main_nav > ul > .menu-item-has-children > ul li
+    text-align: center
+    height: auto
+    font-weight: bold
+    padding: 0
+
+
+  #prgrm_main_nav>ul>li>ul>.menu-item-has-children
+    background-position: 90% 15px
+
+  #prgrm_main_nav > ul > .menu-item-has-children > ul,
+  #prgrm_main_nav > ul > li > ul > .menu-item-has-children > ul
+    position: static
+    width: 100%
+
+
+  #prgrm_main_nav>ul .menu-item-has-children>ul>li
+    height: 0px
+    transition-duration: 0.3s
+  #prgrm_main_nav > ul > .menu-item-has-children ul.sub-menu
+    padding: 0
+    margin: 0
+    height: 0
+  #prgrm_main_nav>ul .active-submenu>ul.sub-menu
+    height: auto
+    transition-duration: 0.3s
+    li
+      opacity: 1
+      visibility: visible
+      height: auto
+      transition-duration: 0.3s
+
+
+// /* ==============================
+// END MAIN MENU STYLE
+// ================================= */
+
+// ===================================
+//MAIN SLIDER
+// ===================================
+
+#slider-nautica
+  margin: 0
+  // border: 1px solid
+  margin-top: 20px
+
+  .slider_img
+    height: 370px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom
+    // border: 1px solid
+  .slider_controls
+    height: 50px
+    // border: 1px solid
+
+  .row>div
+    position: relative
+  .front-tiles2
+    // border: 1px solid red
+    position: absolute
+    right: 15px
+    top: 0
+    width: 93%
+    background-image: url('img/home-naglowek-bg-atrakcje.svg')
+  .slider_text
+    margin-top: 100px
+  .slider_controls
+    position: absolute
+    right: 0
+    top: -50px
+  .carousel-control
+    opacity: 1
+  .change_slide
+    width: 50px
+    height: 50px
+    // border: 1px solid red
+    display: block
+    opacity: 1
+    background-size: contain
+
+  .slide-prev
+   background-image: url('img/strzalka-L-powrot.svg')
+   margin-left: 15px
+  .slide-next
+   background-image: url('img/strzalka-R-wiecej.svg')
+  .slide-prev:hover
+   background-image: url('img/strzalka-L-powrot-hover.svg')
+  .slide-next:hover
+   background-image: url('img/strzalka-R-wiecej-hover.svg')
+
+#slider-nautica
+  .carousel-control.right,
+  .carousel-control.left
+    background-image: none
+@media (min-width:300px) and (max-width:992px)
+  #slider-nautica
+    .slider_text
+      margin-top: 140px
+
+@media (max-width: 992px)
+  #slider-nautica
+   .slider_img
+     height: 320px
+   .front-tiles2
+     position: absolute
+     left: 15px
+     top: 350px
+     width: 345px
+     max-width: 100%
+   .slider_controls
+     top: 0
+     margin-top: 20px
+     margin-bottom: 50px
+     .right
+      width: 50px
+      margin-right: 15px
+
+  #slider-nautica
+   .front-tiles2
+     max-width: 100%
+     width: auto
+
+@media (min-width:568px) and (max-width: 768px)
+  #slider-nautica
+   .front-tiles2
+     background-image: url('img/home-naglowek-bg-atrakcje-768.svg')
+
+@media (max-width:600px)
+  #slider-nautica #atr1 .col-xs-6
+    width: 100%
+    .front-tiles2
+      background-image: url('img/home-naglowek-bg-atrakcje.svg')
+
+@media (max-width: 400px)
+  #slider-nautica
+    #atr1 .col-xs-6 .front-tiles2
+      background-image: url('img/home-naglowek-bg-atrakcje-320.svg')
+
+// ===================================
+// END MAIN SLIDER
+// ===================================
+
+
+
+
+// /*=================================
+//   CONTACT FORM SECTION
+// ==================================*/
+.wpcf7:focus::-webkit-input-placeholder
+  /* Chrome/Opera/Safari */
+  color: transparent
+
+.wpcf7:focus::-moz-placeholder
+  /* Firefox 19+ */
+  color: transparent
+
+.wpcf7:focus::-ms-input-placeholder
+  /* IE 10+ */
+  color: transparent
+
+.wpcf7:focus::-moz-placeholder
+  /* Firefox 18- */
+  color: transparent
+
+/*// #contact-form #code #code2 input
+//     z-index: 999
+//     position: relative
+//   */
+.wpcf7 .wpcf7-form-control,
+.wpcf7 label,
+.wpcf7 span
+  width: 100%
+  background-color: transparent
+  font-size: 14px
+  font-weight: 600
+  line-height: 20px
+
+
+.wpcf7
+  input
+    height: 35px
+    margin-bottom: 10px
+  input, textarea
+    color: #333
+    border: 1px solid #009a93
+
+img.wpcf7-form-control
+  width: auto
+
+.wpcf7 input,
+.wpcf7 textarea
+  // font-weight: 100
+
+.wpcf7 textarea
+  height: 170px
+
+
+label span input,
+#code span input,
+textarea
+  padding: 5px
+  border-radius: 0px
+  border: none
+  color: #fff
+
+input.wpcf7-submit
+  border: 0px
+  padding: 5px
+  border: none
+  transition-duration: 0.5s
+  margin-top: 5px
+  text-align: right
+  font-size: 24px
+
+.wpcf7-submit:hover
+  color: #80546D
+  transition-duration: 0.5s
+
+.screen-reader-response
+  display: none
+
+div.wpcf7-mail-sent-ok,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-validation-errors
+  border: none
+
+span.wpcf7-not-valid-tip
+  color: red
+  float: right
+  font-size: 18px
+
+div.wpcf7-response-output
+  margin: 0
+  padding: 0
+
+#form-text-podst
+  margin-left: 25px
+
+#data1, #data2
+ float: left
+ font-weight: 600
+
+@media (min-width: 992px) and (max-width:1150px)
+  .form-col2
+    width: 60%
+  .form-col1
+    width: 40%
+
+.ui-datepicker-inline
+  .ui-widget-header
+    border: none
+    background: none
+    font-size: 15px
+    font-family: 'Caveat', cursive
+    span
+      color: #00489a!important
+      font-size: 25px
+      line-height: 27px
+      vertical-align: bottom
+
+.ui-widget-content
+  border: 1px solid #009a92
+  box-sizing: border-box
+  border-radius: 0px
+  margin-right: 20px
+  padding: 0
+  margin-bottom: 20px
+  background: none
+  background-color:#fff9e6
+  span
+    color: #32aa9e
+  table
+    margin: 0
+.ui-state-default, .ui-widget-content .ui-state-default
+  background: none
+  background-color: #fff9e6
+  color: #009a92
+  font-size: 15px
+  font-family: 'Open Sans', sans-serif
+  font-weight: 600
+  text-align: center
+  border: 1px solid #009a92
+.ui-state-highlight, .ui-widget-content .ui-state-highlight
+  background-color: #009992
+  color: #fff
+.ui-state-active, .ui-widget-content .ui-state-active
+  background: none
+  background-color: #94BA1A
+  color: #fff
+  border: none
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span
+  width: 20px
+  height: 20px
+  background-size: contain
+  background-position: center
+.ui-datepicker .ui-datepicker-prev span
+  background-image: url('img/icon-kalendarz-poprzedni.svg')
+.ui-datepicker .ui-datepicker-next span
+  background-image: url('img/icon-kalendarz-nastepny.svg')
+
+.ul-datepicker a:hover
+
+.select-cont
+  background-image: url('img/icon-formularz-rozwin.svg')
+  border: 1px solid #009a93
+  background-color: #fff9e6!important
+  overflow: hidden
+  background-repeat: no-repeat
+  background-position: 98%
+  margin-bottom: 10px
+  margin-top: -10px
+  select
+    margin: 0
+    background-color: transparent
+    color: #009a93
+    font-family: 'Open Sans', sans-serif
+    border-style: inset
+    text-indent: 0
+    height: 35px
+    border: 0px
+    background-image: none
+    // width: 105%!important
+  select>option
+    background-image: none
+    background-color: #fff9e6!important
+    background-image: url('img/icon-formularz-rozwin.svg')
+    min-height: 2em
+    // box-shadow: none!important
+  select>option:focus
+    outline: 0px
+
+/* Reset Select */
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  appearance: none
+  outline: 0
+  box-shadow: none
+  border: 0 !important
+  background: #fff9e6
+  background-image: none
+
+/* Custom Select */
+.select
+  position: relative
+  display: block
+  width: 20em
+  height: 3em
+  line-height: 3
+  background: #fff9e6
+  overflow: hidden
+  border-radius: opx
+
+select
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0 0 0 .5em
+  color: #fff
+  cursor: pointer
+
+select::-ms-expand
+  display: none
+
+/* Arrow */
+.select::after
+  content: '\25BC'
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  padding: 0 1em
+  pointer-events: none
+
+/* Transition */
+.select:hover::after
+  color: #fff9e6
+  border: 0px
+
+.select::after
+  -webkit-transition: .25s all ease
+  transition: .25s all ease
+
+select:hover
+ background: #009a92 !important
+ color: #fff !important
+
+select>option
+  background-color: blue!important
+  color: #009a92
+
+// select > option
+//  color: #7ACFFF !important
+
+// select:focus > option:hover
+//  color: #BFFDFF !important
+//  text-shadow: 1px 0px 0px !important
+//  background: #000 !important
+//  -moz-appearance: none !important
+//
+// select > button
+//  -moz-appearance: none !important
+//  border: none !important
+//
+
+.captcha
+  background-color: #fff
+  margin-bottom: 10px
+  margin-top: 20px
+  text-align: left
+  height: 35px
+  padding: 5px
+  .wpcf7-captcha-captcha-170
+    width: auto
+    display: inline
+
+.wpcf7 .wyslij
+  text-align: right
+  input
+    background-image: url('img/strzalka-R-wiecej.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: right
+    line-height: 50px
+    color: #009a93
+    font-family: Caveat
+    font-size: 26px
+    font-weight: 600
+    width: 130px
+    height: 50px
+    bottom: -40px
+    padding-right: 60px
+    opacity: 1
+    margin-bottom: 50px
+    margin-right: -20px
+    span
+     font-size: 26px
+
+.wyslij>input:hover
+  background-image: url('img/strzalka-R-wiecej-hover.svg')
+  color: #009a93
+
+// /*=================================
+//   END CONTACT FORM SECTION
+// ==================================*/
+
+
+// /* ====================================
+// header template part
+// ======================================= */
+
+#header
+  // margin-top: 60px
+  height: 500px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  margin-bottom: 62px
+  position: relative
+#header-bar
+  background-image: url('img/falka-top.svg')
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100px
+  position: absolute
+  width: 100%
+  bottom: 0
+  text-align: right
+  padding-top: 35px
+
+  h1
+    color: #fff
+    display: inline
+    font-size: 48px
+    font-size: 4.8rem
+
+.gradient
+    height: 320px
+    margin-top: -60px
+    // background: -moz-
+    //
+    // background: -webkit-
+    // background: -o-
+    // background: -ms-
+    background: linear-gradient(0deg, rgba(0,31,66,0) 0%, rgba(0,31,66,1) 100%)
+    opacity: 0.5
+
+
+@media (min-width: 1600px)
+  #header
+    height: 550px
+@media (max-width: 992px)
+  #header-bar
+    background-image: url('img/falka-top-768.svg')
+    h1
+      font-size: 36px
+      font-size: 3.6rem
+@media (max-width: 768px)
+  .head-scale
+    min-height: 300px !important
+  #header-bar h1
+    font-size: 32px
+
+@media (max-width: 568px)
+  #header-bar h1
+    font-size: 28px
+
+@media (max-width: 420px)
+  #header-bar h1
+    font-size: 26px
+
+@media (max-width:320px)
+  #header-bar
+    background-image: url('img/falka-top-320.svg')
+    h1
+      font-size: 24px
+  #header
+   height: 400px
+// /* ====================================
+// end header template part
+// ======================================= */
+
+.noparallax
+  height: auto
+  background-position: left
+  background-repeat: no-repeat
+  background-size: auto 100%
+  position: relative
+  padding-top: 40px
+
+@media (min-width:1200px)
+.noparallax
+  background-size: cover
+
+
+  //     /*========================================================================
+  // PARALAX SECTIONS
+  //  =========================================================================*/
+
+@media (min-width:992px)
+  .parallax
+    height: auto
+    min-height: 500px
+    background-attachment: fixed
+    background-position: left
+    background-repeat: no-repeat
+    background-size: 100% auto
+    position: relative
+    padding-top: 40px
+    background-size: cover
+
+.space
+  height: 100px
+  background-color: #181E1E
+  text-align: center
+  padding: 10px
+  margin: 0 auto
+  color: #fff
+  font-size: 32px
+
+  //     /*========================================================================
+  // END -- PARALAX SECTIONS
+  //  =========================================================================*/
+
+
+
+
+
+//======================================================================================================================================
+//======================================================================================================================================
+//======================================================================================================================================
+// /* ====================================
+// single post
+// ======================================= */
+.news-all
+
+  .container
+    background-color: #F4F4F4
+  .full-bar
+      background-color: #000
+      height: 40px
+  .special
+    background-color: #fff
+    margin-left: -50px
+    padding: 20px 50px
+    margin-right: -50px
+    color: #959595
+    font-size: 40px
+    font-weight: 400
+    text-align: center
+    font-family: 'Playfair Display', sans-serif
+    margin-bottom: 50px
+
+#news-header
+  background-position: bottom
+  background-size: cover
+  min-height: 250px
+  margin-top: 60px
+  display: flex
+  align-items: center
+  h1
+    margin: 0 auto
+    font-size: 48px
+    span
+      color: #959595
+      font-size: 24px
+      font-family: 'Lato', sans-serif
+      font-weight: 300
+
+
+
+#news-img
+  // margin-left: -15px
+  // width: 100%
+.p0
+  padding: 0
+
+#news-body
+  .container
+    padding: 50px
+  h1
+  margin-bottom: 60px
+
+#news-body .carousel
+  height: inherit
+  margin-bottom: 50px
+.news-section
+  margin-bottom: 0px
+  margin: 0
+  padding-top: 0
+  margin-top: -30px
+  .row
+    margin-top: 20px
+    // display: flex
+    // align-items: stretch
+    div
+      background-size: cover
+  .butn-cont
+    margin-bottom: 50px
+    margin-top: 20px
+  .newspart
+    background-color: #F4F4F4
+    .excerpt
+      margin-top: 40px
+    h3
+     font-size: 30px
+     display: inline
+     span
+      margin-top: 0
+      font-size: 20px
+      color: #959595
+
+// /* ====================================
+// end single post
+// ======================================= */
+
+
+
+
+//---------------------------
+//Cennik
+//----------------------
+.mt62
+  margin-top: 62px
+.std-section
+  font-size: 16px
+  img
+  .offer-part
+    position: relative
+    // padding-bottom: 60px
+    margin-bottom: 30px
+    .offer-head
+      height: 50px
+      position: absolute
+      right: 0
+      bottom: -40px
+    .offer-dest
+      height: 0
+      transition-duration: 0.5s
+      overflow: hidden
+    .offer-head::before
+      content: 'rozwiń'
+      background-image: url('img/strzalka-rozwin.svg')
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: right
+      line-height: 50px
+      color: #009a93
+      font-family: Caveat
+      font-size: 26px
+      font-weight: 600
+      width: 130px
+      height: 50px
+      display: block
+      margin-top: 60px
+    .offer-head-open
+      margin-bottom: 40px
+      margin-top: 40px
+    .offer-head:hover::before
+      background-image: url('img/strzalka-rozwin-hover.svg')
+    .offer-head-open::before
+      background-image: url('img/strzalka-zwin.svg')
+      content: 'zwiń'
+    .offer-head-open:hover::before
+      background-image: url('img/strzalka-zwin-hover.svg')
+
+    .offer-head-open + .offer-dest
+      height: auto
+  .glyphicon
+    padding: 10px
+    border: 1px solid lightgray
+    margin-right: 10px
+h3 span
+  font-size: 20px
+  mark
+    display: block
+    text-align: right
+    margin: 0px
+    line-height: 16px
+  mark:first-of-type
+    margin-top: 20px
+  mark:last-of-type
+    margin-bottom: 20px
+@media (max-width:992px)
+  .std-section .offer-head
+    text-align: left
+    margin-left: 20px
+    font-size: 18px
+    margin-bottom: 30px
+@media (max-width:568px)
+  .std-section .offer-head
+    font-size: 14px
+
+
+//---------------------------
+//Cennik end
+//----------------------
+
+
+#google_map
+  margin-top: 65px
+  width: 100%
+  iframe
+    width: 100%
+    height: 450px
+
+
+
+
+#contact
+  margin-top: 70px
+  font-weight: 400
+  h3
+    text-align: left
+    margin: 0px 10px
+    height: 150px
+    font-size: 32px
+  img
+    width: 40px
+    height: 40px
+    float: left
+    margin-right: 10px
+@media (max-width: 992px)
+  #contact
+
+    h3
+      font-size: 26px
+    p
+      font-size: 18px
+      max-width: 600px
+      margin: 10px auto
+@media (max-width: 768px)
+  #contact
+   margin-bottom: 10px
+   margin-top: 10px
+   img
+    float: none
+    margin: 0 auto
+   h3
+    margin: 40px auto
+    height: auto
+    text-align: center
+// Footer section
+
+footer
+  background-image: url('img/falka-stopka.svg')
+  height: 160px
+  background-position: left bottom
+  background-size: cover
+  background-repeat: no-repeat
+  margin-top: 30px
+
+  div
+    // border: 1px solid red
+  .container
+    margin-bottom: 20px
+  .text
+    float: left
+    margin-top: 60px
+    color: $c1
+    font-weight: 600
+    font-size: 14px
+    max-width: 40%
+    // border-right: 1px solid
+  .icons
+    width: 325px
+    float: right
+    margin-top: 30px
+    // border: 1px solid
+  .icon
+    float: left
+    margin-top: 60px
+    min-width: 110px
+    img, h6
+     display: inline
+     padding-left: 10px
+     font-weight: 600
+    h6 span
+      color: $c2
+  .icon:first-child
+   min-width: 90px
+  #totop
+    cursor: pointer
+@media (min-width: 1200px)
+  footer .text
+    max-width: 60%
+    margin-top: 80px
+@media (max-width:992px)
+  footer
+    height: 215px
+    padding: 10px
+    padding-top: 30px
+    background-image: url('img/falka-stopka-768.svg')
+@media (max-width:768px)
+  footer
+    height: auto
+    div
+      // border: 1px solid
+    .text
+      float: none
+      max-width: 70%
+    .icons
+      float: none
+      text-align: center
+      margin: 0 auto
+      max-width: 100%
+      width: 100%
+      .icon
+       margin-bottom: 20px
+       margin-top: 20px
+       width: auto
+       margin-left: 0
+       text-align: left
+       img, h6
+        padding-left: 0px
+
+@media (max-width:340px)
+   footer
+     background-image: url('img/falka-stopka-320.svg')
+     .text
+       max-width: 95%
+     .icons
+      margin: 0 auto
+      display: flex
+      align-items: center
+      margin-top: 20px
+      margin-bottom: 20px
+      .icon
+       width: 30%
+       float: right
+
+       margin: 0 auto
+       min-width: 90px
+       margin-top: 10px
+       text-align: left
+       padding-left: 0px
+
+       h6
+         font-size: 18px
+
+
+
+// END Footer section
+
+.std-section
+  h3
+    margin-bottom: 15px
+    margin-top: 0
+    padding-top: 0
+    font-weight: 600
+    font-size: 30px
+    font-size: 3rem
+  hr
+    height: 2px
+    background-color: $c4
+    margin-top: 62px
+    margin-bottom: 62px
+    margin-left: 15px
+    margin-right: 15px
+  .nr-tit
+    position: relative
+    h3
+     margin-left: 50px
+     margin-bottom: 0
+
+    .info2
+      margin-left: 50px
+    .number-post
+      border: 2px solid
+      border-radius: 100px
+      display: block
+      width: 40px
+      height: 40px
+      text-align: center
+      margin-right: 10px
+      position: absolute
+      font-size: 25px
+      font-weight: 600
+      padding-top: 7px
+.std-section:first-child .hr2
+   opacity: 0
+   display: none
+
+.wiecej::before
+  content: 'więcej'
+  background-image: url('img/strzalka-R-wiecej.svg')
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: right
+  line-height: 50px
+  color: #009a93
+  font-family: Caveat
+  font-size: 26px
+  font-weight: 600
+  width: 130px
+  height: 50px
+  display: block
+  position: absolute
+  right: 0
+  bottom: -70px
+.wiecej:hover::before
+  background-image: url('img/strzalka-R-wiecej-hover.svg')
+.hr2
+  margin-left: 0px!important
+  margin-right: 0px!important
+
+.std-section .hr-margin
+  margin-left: 15px !important
+  margin-right: 15px !important
+.odl
+  margin-bottom: 20px
+  display: inline-block
+  white-space: pre
+
+
+.powrot
+  background-image: url('img/strzalka-L-powrot.svg')
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: left
+  line-height: 50px
+  color: #009a93
+  font-family: Caveat
+  font-size: 26px
+  font-weight: 600
+  width: 130px
+  height: 50px
+  display: block
+  padding-left: 60px
+.powrot:hover
+  background-image: url('img/strzalka-L-powrot-hover.svg')
+.skontaktuj
+  line-height: 50px
+  color: #009a93
+  font-family: Caveat
+  font-size: 26px
+  font-weight: 600
+  float: right
+  width: 350px
+  margin-bottom: 40px
+  max-width: 100%
+  p
+    float: right
+    margin-right: 10px
+    margin-top: 4px
+.phone,
+.mail
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  width: 50px
+  height: 50px
+  display: block
+  padding-left: 60px
+  float: right
+.phone
+  background-image: url('img/icon-kontakt-tel.svg')
+.phone:hover
+  background-image: url('img/icon-kontakt-tel-hover.svg')
+.mail
+  background-image: url('img/icon-kontakt-mail.svg')
+.mail:hover
+  background-image: url('img/icon-kontakt-mail-hover.svg')
+
+@media (max-width: 400px)
+  .skontaktuj p
+    font-size: 20px
+  .phone,
+  .mail
+    width: 40px
+    height: 40px
+    padding-left: 45px
+
+.front-tiles
+  min-height: 300px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+  overflow: hidden
+  margin-bottom: 35px
+  transition-duration: 0.3s
+  .front-tile
+    position: absolute
+    opacity: 0.9
+    bottom: -3px
+    height: 75px
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    transition-duration: 0.3s
+  h2
+    color: #fff
+    position: absolute
+    bottom: 0
+    right: 0
+    margin: 10px
+    font-family: Caveat
+    font-size: 30px
+    font-weight: 600
+    background-image: url('img/strzalka-home-buttony.svg')
+    background-repeat: no-repeat
+    background-position: right
+    padding-right: 40px
+    transition-duration: 0.3s
+  .front-tile1
+    background-image: url('img/home-naglowek-button-dla-poczatkujacych.svg')
+  .front-tile2
+    background-image: url('img/home-naglowek-button-dla-rodzin.svg')
+  .front-tile3
+    background-image: url('img/home-naglowek-button-dla-nurkow.svg')
+.col-md-4:nth-child(1) .front-tiles:hover
+  filter: brightness(70%)
+  transition-duration: 0.3s
+.col-md-4:nth-child(2) .front-tiles:hover h2
+  font-size: 33px
+  transition-duration: 0.3s
+.col-md-4:nth-child(3) .front-tiles:hover .front-tile3
+  transition-duration: 0.5s
+  transform: scale(1.8); -webkit-transform: scale(1.5)
+
+.front-tiles2
+  background-image: url('img/home-naglowek-bg-o-nas.svg')
+  color: #fff
+  background-repeat: no-repeat
+  background-position: left top
+  background-size: 100%
+  height: 110px
+  padding: 10px
+#sec1>div:nth-child(2),
+#sec1>div:nth-child(3)
+  margin-top: 100px
+#sec1
+  margin-bottom: 40px
+
+
+@media (min-width: 568px) and (max-width:768px)
+  .front-tiles
+    .front-tile1
+      background-image: url('img/home-naglowek-button-dla-poczatkujacych-768.svg')
+    .front-tile2
+      background-image: url('img/home-naglowek-button-dla-rodzin-768.svg')
+    .front-tile3
+      background-image: url('img/home-naglowek-button-dla-nurkow-768.svg')
+  .front-tiles2
+    background-image: url('img/home-naglowek-bg-o-nas-768.svg')
+  #sec1>div:nth-child(2),
+  #sec1>div:nth-child(3)
+   margin-top: 0px
+
+
+@media (max-width:567px)
+  .front-tiles
+    .front-tile1
+      background-image: url('img/home-naglowek-button-dla-poczatkujacych-320.svg')
+    .front-tile2
+      background-image: url('img/home-naglowek-button-dla-rodzin-320.svg')
+    .front-tile3
+      background-image: url('img/home-naglowek-button-dla-nurkow-320.svg')
+
+@media (max-width: 768px)
+  .front-tiles2
+      // background-image: url('img/home-naglowek-bg-o-nas.svg')
+  #sec1>div:nth-child(2),
+  #sec1>div:nth-child(3)
+    margin-top: 0px
+@media (max-width: 600px)
+  .front-tiles2
+      background-image: url('img/home-naglowek-bg-o-nas.svg')
+  #sec1
+    .col-xs-6
+      width: 100%
+@media (max-width: 400px)
+  .front-tiles2
+      background-image: url('img/home-naglowek-bg-o-nas-320.svg')
+
+
+
+#col290
+  width: 290px
+  min-width: 290px
+  float: left
+  .pars
+    width: 290px
+    float: right
+    height: 80px
+    background-color: #0091bf
+    color: #fff
+    text-align: center
+    margin-bottom: 10px
+  .pars:last-child
+   margin-bottom: 0
+  .pars>div>div
+    height: 40px
+    width: 40px
+    float: right
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    margin: 5px
+  .pars>div
+    margin-left: 19px
+    margin-right: 19px
+    margin-top: 5px
+  .pars .par1
+    background-image: url('img/paratemtry-wyposazenie-inactive.svg')
+  .pars .par2
+    background-image: url('img/paratemtry-plaza-inactive.svg')
+  .pars .par3
+    background-image: url('img/paratemtry-baza-nurkowa-inactive.svg')
+  .pars .par4
+    background-image: url('img/paratemtry-centrum-inactive.svg')
+  .pars .par5
+    background-image: url('img/paratemtry-cena-jakosc-inactive.svg')
+
+
+#rest
+  float: right
+  width: calc(100% - 300px)
+#post-param
+  text-align: center
+  margin: 0 auto
+@media (min-width:768px)
+  #post-param
+    padding-left: 20px
+// @media (min-width: 992px)
+//   .col3
+//     padding-left: 40px
+
+
+@media (max-width: 768px)
+  #rest
+   float: none
+   width: 100%
+   margin: 0 auto
+  #col290
+   float: none
+   margin: 0  auto
+   margin-bottom: 40px
+   .pars
+     float: none
+  #kwater
+    margin-bottom: 40px
+    #col290
+     max-width: 400px
+    //  margin-bottom: 30px
+#kwater
+  #col290
+   float: none
+   margin: 0  auto
+   width: 100%
+   .pars
+     float: none
+     width: 100%
+     display: flex
+     align-items: center
+     height: 45px
+     padding-left: 5px
+     position: relative
+     .elements
+       position: absolute
+       right: 15px
+       min-width: 230px
+       margin-left: 0px
+       margin-right: 0
+       bottom: 0
+     span
+       display: block
+       float: left
+       text-align: left
+       font-size: 12px
+       margin-right: 10px
+       max-width: calc(100% - 240px)
+   .pars>div>div
+     width: 35px
+     height: 35px
+.par-img
+  height: 265px
+.img-kwater
+  height: 265px
+  background-size: cover
+  background-position: center
+  width: 100%
+  margin: 0 auto
+
+@media (min-width: 992px) and (max-width: 1200px)
+  #kwater #col290
+    .pars .elements
+      min-width: 190px
+      bottom: 5px
+      right: 0
+    .pars span
+      min-width: 120px
+    .pars>div>div
+     width: 25px
+     height: 25px
+@media (min-width: 768px) and (max-width:992px)
+
+  #kwater
+   margin-bottom: 40px
+   #col290
+    .pars>div>div
+      width: 30px
+      height: 30px
+    .pars .elements
+      min-width: 200px
+      bottom: 3px
+    .pars span
+      min-width: 145px
+  #kwater, #kwater #col290, #kwater .pars,  #kwater.elements
+   width: 100%!important
+  #kwater .pars
+    margin-left: 0px!important
+
+
+
+@media (max-width:768px)
+  #kwater
+    float: none
+    margin-right: 0
+    #col290 .pars .elements
+      bottom: 0px
+  .img-kwater
+    max-width: 400px
+    margin-bottom: 20px
+@media (max-width:400px)
+  #kwater
+   #col290
+    width: 100%
+    .pars
+      width: 100%
+    .pars>div>div
+      width: 25px
+      height: 25px
+    .pars .elements
+      min-width: 200px
+      right: 0
+      bottom: 3px
+    .pars span
+      min-width: 145px
+@media (max-width:330px)
+  #kwater
+   #col290
+    .pars .elements
+      bottom: 7px
+    .pars>div>div
+      width: 22px
+      height: 22px
+
+.file
+  margin-bottom: 40px
+  .icon-file
+    height: 57px
+    width: 53px
+    float: left
+    margin-right: 15px
+  vertical-align: bottom
+  line-height: 57px
+  h6
+   font-family: 'Open Sans', sans-serif
+   font-size: 13px
+   font-weight: 600
+   padding-top: 44px
+  .icon-file:hover
+   background-image: url('img/icon-pdf-hover.svg')!important
+.price
+  font-size: 12px
+  font-weight: 600
+  padding: 0
+  margin-bottom: 30px
+  h2
+    margin-bottom: 20px
+    margin-top: 20px
+  img
+    margin-bottom: -15px
+    margin-top: 35px
+.price2
+  padding-left: 15px
+  padding-right: 15px
+
+.prefooter3
+  h6
+    float: left
+    margin-right: 20px
+    margin-top: 0px
+.lvl
+  margin-top: 20px
+  margin-bottom: 20px
+  display: inline-block
+.lvl2
+  margin-top: 10px
+
+
+.container-fluid
+    padding-left: 15px
+    padding-right: 15px
+
+.main-content
+  margin-bottom: 62px
+  img
+   height: auto
+
+h2.bigger
+  font-size: 38px
+
+.addedhtml
+  h1,h2,h3,h4,h5,h6
+   font-family: 'Open Sans', sans-serif
+  h2, h3
+    font-size: 22px!important
+    font-weight: 600px
+
+// PAGINATION
+#pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 50px
+  .pagination
+   clear: both
+   padding: 20px 0
+   position: relative
+   font-size: 28px
+   font-family: Caveat
+   font-weight: 600
+
+  .pagination span, .pagination a
+   display:block
+   float:left
+   margin: 2px 2px 2px 0
+   padding: 6px 9px 5px 9px
+   text-decoration: none
+   width: auto
+   color : #009a93
+
+
+  .pagination a:hover
+   color: #95bb20
+
+  .pagination .current
+   padding: 6px 9px 5px 9px
+   color: #95bb20
+
+  #prev, #num, #next
+   float: left
+  //  border: 1px solid red
+  #prev, #next
+   height: 50px
+   width: 50px
+   background-position: center
+   background-repeat: no-repeat
+   font-size: 48px
+   text-align: center
+   vertical-align: middle
+   line-height: 50px
+   a
+    color : #009a93
+  #prev:hover, #next:hover
+    a
+      color : #95bb20
+      transition-duration: 0.3s
+  #prev
+    // background-image: url('img/strzalka-home-buttony.svg')
+  #next
+    // background-image: url('img/strzalka-home-buttony.svg')
+
+
+// END PAGINATION
+
+
+// ZOOM-IMG SECTION
+@media (max-width: 768px)
+  .zoom_img
+    overflow: auto
+    margin: -15px
+  .zoom_cont
+    overflow: hidden
+    width: 100%
+    position: relative
+    .controls_buttons
+      position: absolute
+      z-index: 4
+      right: 5px
+      top: 15px
+      .plus, .minus
+       width: 40px
+       height: 40px
+       margin-top: 5px
+       background-size: contain
+      .plus
+        background-image: url('img/icon-plus.svg')
+      .minus
+        background-image: url('img/icon-minus.svg')
+    img
+      transition-duration: 0.3s
+    img.zoom1
+      -webkit-transform: scale(1.8)
+      -moz-transform: scale(1.8)
+      -o-transform: scale(1.8)
+      transform: scale(1.8)
+      transition-duration: 0.3s
+    img.zoom2
+      -webkit-transform: scale(1.6)
+      -moz-transform: scale(1.6)
+      -o-transform: scale(1.6)
+      transform: scale(1.6)
+      transition-duration: 0.3s
+    img.zoom3
+      -webkit-transform: scale(2)
+      -moz-transform: scale(2)
+      -o-transform: scale(2)
+      transform: scale(2)
+      transition-duration: 0.3s
+
+// END ZOOM-IMG SECTION

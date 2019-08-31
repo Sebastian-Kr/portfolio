@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title>Przykładowy Układ</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" href="ie6.css" media="all" />
+  <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+ 	
+ <script type="text/javascript" src="page.js" ></script>
+</head>
+
+ 
+<body>
+
+<div id="page">
+
+  <div id="preheader">
+    <p class="part1"><a href="#main">Przejdź do treści</a></p>
+    <p class="part2">Treść przed nagłówkiem </p>
+  </div>
+
+  <div id="header"><div class="oi">
+
+    <div id="title"><h1>Przykładowy Układ</h1><div class="float-divider"></div>
+      <div class="menu">
+        <h3 class="menu-head" >Menu 1</h3> 
+        <ul class="dropdown hidden">
+         <li class="menu-item"><a href="#">element menu</a></li>
+         <li class="menu-item"><a href="#">element menu</a></li>
+         <li class="menu-item"><a href="#">element menu</a></li>
+         <li class="menu-item"><a href="#">element menu</a></li>
+        </ul>      
+      </div>
+      <div class="menu">
+        <h3 class="menu-head" >Menu 2</h3> 
+        <ul class="dropdown hidden">
+         <li class="menu-item"><a href="#">element menu</a></li>
+         <li class="menu-item"><a href="#">element menu</a></li>
+         <li class="menu-item"><a href="#">element menu</a></li>
+         <li class="menu-item"><a href="#">element menu</a></li>
+        </ul>      
+      </div>
+    </div> 
+       
+    <div id="search"><h3>Szukaj:</h3> 
+     <form method="post" action="http://www.tipjar.com/cgi-bin/test">
+      <input type="text"   id="searchtext" name="searchtext" value="" size="32" />
+      <input type="submit" id="find" name="find" class="button" value="Szukaj"  />
+     </form>
+     <p class="message">Informacja o wyszukiwarce</p>
+    </div>
+  <div class="float-divider"></div></div></div>
+
+  <div id="postheader">
+    <p class="breadcrumbs"><a href="#">Główna</a> » <a href="#">Układy</a> 
+       » Przykładowy Układ</p>
+    <p class="sequential"><a href="#">« Wstecz</a> | <a href="#">Dalej »</a></p>
+  </div>
+
+
+  <div id="body">
+
+    <div id="nav"><div class="oi"><h2 class="screenreader-only">Nawigacja</h2>
+
+      <div id="site-map" class="rollup section"><h3 class="rollup-trigger">Mapa serwisu</h3> 
+        <ul class="block">
+         <li><a href="http://www.cssdesignpatterns.com">cssDesignPatterns</a></li>
+         <li><a href="http://www.apress.com">apress.com</a></li>
+        </ul>
+        <p class="more"><a href="#">» Więcej łączy</a></p>
+      </div>
+      
+      <div id="links" class="rollup section"><h3 class="rollup-trigger">Łącza</h3> 
+        <ul class="block">
+         <li>&middot;&nbsp;<a href="#">Łącze 1</a></li>
+         <li>&middot;&nbsp;<a href="#">Łącze 2</a></li>
+         <li>&middot;&nbsp;<a href="#">Łącze 3</a></li>
+         <li>&middot;&nbsp;<a href="#">Łącze 4</a></li>
+        </ul>
+        <p class="more"><a href="#">» Więcej produktów</a></p>
+      </div>
+
+    </div></div>
+    
+    <div id="main"><div class="oi"><h2 class="screenreader-only">Główna</h2>
+
+     <ul class="tabs">
+      <li class="selected"><h3 class="tab-label">Produkt 1</h3>
+       <div id="section1" class="tab-content"><div class="oi2">
+        <h4>Opis produktu 1</h4>
+        <p>To jest zawartość pierwszej zakładki. Dodaliśmy do tej zakładki trochę więcej treści, aby pokazać, że po przekroczeniu szerokości lub wysokości kontenera zakładki następuje wyświetlenie paska przewijania. W książce pokazano tylko część tego tekstu, aby nie marnować miejsca na mało istotne rzeczy. Warto wiedzieć, że przeglądarka Internet Explorer 6 ma błąd, przez który trzeba zmienić szerokość tej treści. Ponadto pamiętaj, że marginesy, obramowanie i dopełnienie definiowane są dla pola wewnętrznego, a nie dla zakładki, dzięki czemu pasek przewijania jest wyświetlany we właściwym miejscu.
+        </p></div></div></li>
+
+      <li><h3 class="tab-label">Produkt  2</h3>
+       <div id="section2" class="tab-content"><div class="oi2">
+        <h4>Opis drugiego produktu </h4><p>To jest zawartość drugiej zakładki.</p></div></div></li>
+
+      <li><h3 class="tab-label">Produkt  3</h3>
+       <div id="section2" class="tab-content"><div class="oi2">
+        <h4>Opis trzeciego produktu</h4><p>To jest zawartość trzeciej zakładki.</p></div></div></li>
+
+     </ul>
+    <div class="float-divider"></div></div></div>
+
+    <div id="extras"><div class="oi"><h2 class="screenreader-only">Dodatki</h2>
+
+      <div id="news" class="rollup section"><h3 class="rollup-trigger">Nowości</h3> 
+        <p>Treść: to jest dobre miejsce na informacje prasowe i nowości.</p>
+        <p class="more"><a href="#">» Więcej nowości</a></p>
+      </div>
+
+      <div id="about-us" class="rollup section"><h3 class="rollup-trigger">O nas</h3> 
+        <p>Treść: to jest dobre miejsce na informacje o firmie. </p>
+        <p class="more"><a href="#">» Więcej o nas</a></p>
+      </div>
+    </div></div>
+
+  </div>
+  
+  
+  <div id="footer">
+    <ul class="inline">
+     <li><a href="http://www.apress.com">apress.com</a></li>
+    </ul>
+    <p class="copyright">Copyright &copy; 2011 Michael Bowers All rights reserved.</p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

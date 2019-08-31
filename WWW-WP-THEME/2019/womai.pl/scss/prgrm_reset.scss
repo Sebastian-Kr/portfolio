@@ -1,0 +1,103 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+button {
+	cursor: pointer;
+	outline: none!important;
+	border-radius: 0px!important;
+  }
+  button:hover {
+	cursor: pointer;
+	outline: none!important;
+  }
+
+a {
+  border: 0px;
+  outline: 0px;
+  // color: inherit!important;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+a:hover {
+  // color: $color1!important;
+  transition-duration: 0.5s;
+	  text-decoration: none!important;
+}
+
+@media (max-width:991px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+.b {
+	border: 1px solid red;
+}
+.g {
+	border: 1px solid green;
+}
+.b {
+	border: 1px solid blue;
+}
+
+section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+#demo_page a {
+	background-color: #333;
+	padding: 5px;
+	border-radius: 2px;
+	border: 1px solid #fff;
+	margin: 5px;
+	display: block;
+	float: left;
+	color: #fff!important;
+	font-size: 10px;
+}

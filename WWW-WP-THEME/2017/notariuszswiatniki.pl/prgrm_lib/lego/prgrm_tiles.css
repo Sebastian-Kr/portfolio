@@ -1,0 +1,12 @@
+.prgrm_tile1 {
+  box-shadow: 3px 5px 16px 0 rgba(129, 129, 129, 0.37);
+  background: #fff;
+  color: #747474;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+}

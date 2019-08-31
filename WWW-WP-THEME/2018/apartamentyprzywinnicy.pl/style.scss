@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css?family=Sanchez&amp;subset=latin-ext');
+
+
+// VARIABLE PROJECT
+$color1: #CAE00D;
+$color2: #3E3E47;
+$color3: #CAE00D;
+$color3-75: #CAE00D;
+$color4: #CAE00D;
+
+//IMPORTS
+// @import "scss/prgrm_reset.scss";
+@import "scss/bootstrap4.scss";
+@import "scss/wp.scss";
+@import "scss/prgrm_atom.scss";
+@import "scss/prgrm_visual_editor.scss";
+@import "dragdealer.css";
+
+// IMORTS MODULES
+// @import "scss/special_modules/eko_lightbox.scss";
+// @import "scss/special_modules/prgrm_gallery_square.scss";
+@import "scss/special_modules/prgrm_contact.scss";
+@import "scss/special_modules/prgrm_footers.scss";
+@import "scss/special_modules/fancybox.min.css";
+// @import "scss/special_modules/prgrm_top_headers.scss";
+@import "scss/special_modules/prgrm_menus.scss";
+// @import "scss/special_modules/prgrm_main_sliders.scss";
+// @import "scss/special_modules/prgrm_jquery_calender.scss";
+// @import "scss/special_modules/prgrm_scrollbar.scss";
+// @import "scss/special_modules/prgrm_slickcarousel.scss";
+
+
+// IMPORTS SPECIAL SECTION GEN
+// @import "scss/special_section_gen/TilesLinkV0.scss";
+// @import "scss/special_section_gen/TilesLinkV1_TriangleHover.scss";
+// @import "scss/special_section_gen/TilesLinkV1_ZoomboxHover.scss";
+// @import "scss/special_section_gen/TilesLinkV1_GenTilesSlideUp1.scss";
+// @import "scss/special_section_gen/TilesLinkV1_PopUpGlass.scss";
+// @import "scss/special_section_gen/TilesLinkV2_QuickHoverBg.scss";
+// @import "scss/special_section_gen/TilesHoverV2_FullScreenTill.scss";
+// @import "scss/special_section_gen/TilesHoverV2_HoverUpNoLink1.scss";
+// @import "scss/special_section_gen/VisualEditor.scss";
+
+
+// IMPORT SPECIAL DEMO PAGES
+
+// /////////////////////////////////////////////////
+// STANDARD PROJECT STYLE
+// /////////////////////////////////////////////////
+.btn {
+  background-color: $color2;
+  padding: 10px;
+  min-width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 0px;
+  transition-duration: 0.5s;
+  position: relative;
+
+}
+
+.btn:hover {
+  background-color: $color3;
+cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+@media (min-width: 992px) {
+  #main-slider .carousel-item {
+    height: calc(100vh - 120px);
+    margin-top: 120px;
+  }
+}
+
+
+// /////////////////////////////////////////////////
+// STANDARD PROJECT STYLE END
+// /////////////////////////////////////////////////

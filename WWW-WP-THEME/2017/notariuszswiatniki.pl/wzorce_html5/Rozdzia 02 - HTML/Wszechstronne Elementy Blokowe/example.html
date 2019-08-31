@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head><title>Wszechstronne Elementy Blokowe</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+
+<noscript>Ten tekst zostanie wyświetlony, gdy nie zadziała skrypt.</noscript>
+
+<div>
+ <div> 
+  <h1>Wszechstronne Elementy Blokowe</h1>
+ </div>
+</div>
+
+<!-- Poniższy kod zawiera błędy i ma niepoprawną strukturę. -->
+<ol>
+  Ten tekst znajduje się wewnątrz elementu listy, ale nie w żadnym elemencie listy, mimo że powinien. 
+  <li> Ten tekst jest poprawnie umieszczony w elemencie listy. </li>
+  Ten tekst nie znajduje się w elemencie listy i kompletnie niszczy jej strukturę.
+</ol>
+
+<!-- Poniższy kod jest poprawny dzięki luce w DTD języka HTML, 
+     ale jego struktura jest niewłaściwa. -->
+<div>
+  Porównaj mieszaną treść tego działu z treścią znajdującej się wyżej listy.
+  <div> Ten tekst znajduje się w zagnieżdżonym dziale strukturalnym. </div>
+  Ta <em>treść mieszana</em> nie jest niepoprawna, ale niszczy strukturę blokową
+  i zmusza przeglądarkę do tworzenia <em>anonimowych bloków</em>, do wyświetlenia tej treści.
+</div>
+
+<!-- Poniższy formularz zawiera bloki, które z kolei zawierają kontrolki. -->
+<form id="form1" method="post" action="http://www.tipjar.com/cgi-bin/test" >
+ <ul>
+  <li> <input type="checkbox" id="xbox1" name="xbox1" value="xbox1" />
+       <label for="xbox1">Pole wyboru 1</label></li>
+  <li> <input type="submit" id="submit1" name="submit1" value="Wyślij" /> </li>
+ </ul>
+</form>
+ 
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Mniej ważne style */ 
+td,th { padding:2px; text-align:center; width:75px; height:35px; background-color:gold; }
+
+/* Ważne style */
+
+table       { border-collapse:collapse;       }  /* Krawędzie obramowania tabeli i jej komórek */
+table,td,th { border:5px solid red;         }
+
+#t1         { border-left: 1px solid black;   }  /* Lewa krawędź tabeli       */
+#t1 .c1    { border-left: 1px solid black;   }
+
+#t1         { border-right:2px solid black;   }  /* Prawa krawędź tabeli      */
+#t1 .c2    { border-right:2px solid black;   }
+
+#t1 .c1    { border-right:1px dotted black;  }  /* Wewnętrzna krawędź kolumny  */
+#t1 .c2    { border-left: 1px dotted black;  }
+
+#t1         { border-top: 1px solid black;    }  /* Górna krawędź tabeli        */
+#t1 .r1 td { border-top: 1px solid black;    }
+
+#t1         { border-bottom: 2px solid black; }  /* Dolna krawędź tabeli     */
+#t1 .r2 td { border-bottom: 2px solid black; }
+
+#t1 .r1 td { border-bottom:1px dotted black; }  /* Wewnętrzna krawędź wiersza    */
+#t1 .r2 td { border-top:   1px dotted black; }
+

@@ -1,0 +1,805 @@
+/*
+ * Theme Name: BIC Bootstrap WP Theme
+ * Theme URI: http://www.besserdich.com
+ * Theme Description: Blank Bootstrap Wordpress Theme by Besserdich IT Consulting
+ * Author: Nina Taberski-Besserdich (Besserdich IT Consulting)
+ * Author URI: http://www.besserdich.com/
+ * Version: 0.3
+ * Tags: twitter bootstrap, white, blank
+ * License: license.txt
+ * License URI:
+*/
+
+
+
+/* Apply bootstrap styles */
+@import url('bootstrap/css/bootstrap.min.css');
+
+html, body {
+  max-width: 100vw;
+  min-width: 300px;
+
+}
+
+/* unvisited link */
+a:link {
+    color: #f89e02;
+}
+
+/* visited link */
+a:visited {
+    color: #f89e02;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #f89e02;
+}
+
+
+
+
+
+
+
+/* styles for shortcodes  */
+
+.divider {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    clear: both;
+    display: block;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+
+/* Styling of standard gallery shortcode */
+
+.gallery {
+    margin: auto;
+}
+
+.gallery-item {
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.gallery img {
+    border: 2px solid #cfcfcf;
+}
+
+.gallery-caption {
+    margin-left: 0;
+}
+
+
+
+
+
+
+/*Styles for Plugins*/
+
+/* Pagenavi */
+
+.wp-pagenavi{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* very basic styles for layout */
+
+
+/*Body*/
+
+html, body {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+/* Top Header */
+
+ #top-header{
+        display: none;
+    }
+
+
+#top-header{
+    background-color: #F8F8F8;
+    color: #333;
+    font-size: 0.8rem;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 0 15px;
+}
+
+#top-header ul,ol{
+    margin-bottom: 3px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#top-header  a{
+    color: #333;
+}
+
+
+/* Brand */
+
+.brand{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#site-title{
+    font-size: 2rem;
+}
+
+
+
+/*Header Menu */
+
+.header-menu{
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.header-menu  li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+
+
+/*Main Menu*/
+
+.navbar-toggled-title{
+    float: left;
+    display: inline;
+    margin: 15px;
+}
+
+
+/*Breadcrumbs*/
+
+.breadcrumb{
+    background-color: transparent;
+    border-radius: 0;
+    padding-left: 10px;
+}
+
+
+/* post image */
+
+.wp-post-image{
+    float: left;
+    margin-right: 15px;
+}
+
+
+
+/*Read More Links*/
+
+.read-more{
+    background-color: #428BCA;
+    border-color: #428BCA;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.read-more:hover {
+    background-color: #3276B1;
+    border-color: #3276B1;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* meta data */
+
+.meta{
+    font-size: 0.9rem;
+}
+
+.cats{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.tags{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+
+/* Sidebar */
+
+.sidebar-wrapper{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-left: 1px solid transparent;
+    border-color: #dcdcdc;
+}
+
+.sidebar-wrapper ul {
+    padding-left: 25px;
+}
+
+.sidebar-wrapper p {
+    padding-left: 10px;
+}
+
+.sidebar-posts .textwidget, .sidebar-page .textwidget{
+    padding-left: 15px;
+
+}
+
+
+/* Widgets */
+
+.widget{
+    margin-bottom: 40px;
+}
+
+.header-widget{
+    display: none;
+}
+
+
+/* code in comments*/
+
+code {
+    white-space: normal;
+}
+
+
+/* Footer */
+
+.footer-wrapper{
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 0 15px;
+    background-color: #F8F8F8;
+}
+
+.footer{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.footer h3, .footer h4, .footer h5, .footer h6 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.footer-menu {
+    list-style: none outside none;
+    display: inline-block;
+
+}
+
+.footer-menu-wrapper ul, ol{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.footer-menu  li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+/* Copyright*/
+
+.copyright-wrapper{
+    background-color: #F8F8F8;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 0 15px;
+    font-size: 0.8rem;
+}
+
+.credit{
+    font-size: 0.8rem;
+    text-transform: none;
+    list-style: none outside none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.credit li{
+    display: inline;
+}
+
+.copyright-text {
+    margin-right: 40px
+}
+
+.copyright{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+ #top-header{
+        display: block;
+    }
+
+    .header-widget{
+        display: block;
+    }
+
+    .header-menu-wrapper{
+        float: right;
+    }
+
+    .footer-menu-wrapper{
+        float: right;
+    }
+
+    .footer-menu-wrapper ul, ol{
+        margin-left: 10px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    #top-header ul,ol{
+        margin-left: 10px;
+    }
+
+    .header-menu li:first-child {
+        padding-left: 20px;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+  input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+  input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+  textarea:focus::-webkit-input-placeholder { color:transparent; }
+  textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+  textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+  textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+  .page-home .start .content-full {
+    background-position: 20% 100%;
+  }
+
+@media (max-width: 1400px) {
+
+    .page-home .start .content-full {
+      background-position: 0% 100%;
+    }
+
+}
+  .page-home .start .content-full .box {
+    margin-top: 20vh;
+  }
+
+
+
+  .page-home .start .content-full .box h1 {
+    margin-top: 20px;
+  }
+
+
+.single-page-podstawowa {
+  background-image: url('./img/piwo-bg.jpg');
+  background-position: top center;
+padding-top: 50px;
+}
+
+.page-home .start .content-full .arrow:hover {
+    opacity: 0.5;
+}
+
+.single-page-podstawowa .content-full .prev,
+ .single-page-podstawowa .content-full .next  {
+   background-size: 13px 22px;
+   background-position: center;
+   width: 50px;
+   height: 50px;
+ }
+ .page-home .start .content-full .arrow {
+   background-size: 22px 13px;
+   background-position: center;
+   width: 50px;
+   height: 50px;
+ }
+
+ .single-page-podstawowa .content-full .prev:hover,
+  .single-page-podstawowa .content-full .next:hover  {
+opacity: 0.5;
+  }
+
+  .page-home .kontakt .content-full h2 {
+    margin-top: 100px;
+  }
+
+  .page-home .kontakt .content-full p,
+  .page-home .kontakt .content-full p a {
+    color: #989797;
+    margin-top: 10px;
+    transition-duration: 0.3s;
+  }
+
+  .page-home .kontakt .content-full p strong,
+  .page-home .kontakt .content-full p strong a  {
+    color: #fff;
+  }
+
+.page-home .kontakt .content-full p a:hover {
+    color: #f89e02;
+transition-duration: 0.3s;
+  }
+
+  .page-home .start .content-full .arrow {
+    bottom: 40px;
+  }
+
+  @media (max-width: 1050px){
+
+    .page-home .start .content-full .box {
+      width: 100%;
+    }
+    .page-home .start .content-full {
+height: auto;
+margin-bottom: 50px;
+    }
+.page-home .fly .start {
+    padding-top: 90px;
+}
+
+.page-home .start .content-full .arrow {
+    bottom: 0px!important;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+}
+
+.page-home .start {
+  min-height: 100vh;
+  height: auto;
+}
+
+
+.page-home .nasze-piwo .content-full h3,
+.page-home .nasze-piwo-2 .content-full h3 {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .page-home .browar .content-full .team {
+    margin-left: -15px;
+  }
+}
+
+.page-home .browar .content-full .team h3 {
+  font-size: 30px!important;
+}
+.page-home .start .content-full .box h2 {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1400px){
+  .page-home .start .content-full .box {
+    width: 42%;
+  }
+}
+
+
+@media (max-width: 1050px) {
+
+  .nurse2 {
+  display: none;
+  }
+
+  .page-home .start .content-full .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transform: none!important;
+    margin-top: 10vw;
+  }
+
+  .page-home .start .content-full .box p{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transform: none !important;
+ left: auto !important;
+ margin-left: 0;
+ margin-right: 0;
+  }
+  .page-home .start .content-full .box p img {
+margin-right: 30px;
+  }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1049px){
+  .page-home .start .content-full .box {
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .page-home .start .content-full .box p:first-child {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .page-home .start .content-full .box p:first-child img {
+margin-right: 15px;
+  }
+
+  .page-home .start .content-full .box p {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .page-home .start .content-full .box h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1240px) {
+.page-home .start .content-full .box img {
+    width: 142px;
+}
+}
+
+
+.page-home .nasze-piwo .content-full .slider .products .product-list .product a {
+  max-width: 100%!important;
+  width: 100%;
+}
+
+@media (max-width: 567px) {
+  .page-home .nasze-piwo .content-full .slider .products .product-list .product a {
+    width: 50%;
+  }
+}
+
+.slider  .row {
+  position: relative;
+}
+
+.slider_prev_cont {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -50px;
+  z-index: 99;
+}
+
+
+.slider_next_cont {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -50px;
+  z-index: 99;
+}
+
+.slider_prev_cont a {
+  width: 50px!important;
+  height: 50px!important;
+  display: block;
+  background-size: 13px 22px!important;
+  background-position: center!important;
+}
+
+
+.slider_next_cont a {
+  width: 50px!important;
+  height: 50px!important;
+  display: block;
+  background-size: 13px 22px!important;
+  background-position: center!important;
+}
+
+
+@media (max-width: 1250px) {
+
+  .slider_prev_cont {
+    left: -20px;
+  }
+
+
+  .slider_next_cont {
+    right: -20px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .slider_prev_cont {
+    left: 0px;
+  }
+
+
+  .slider_next_cont {
+    right: -10px;
+  }
+}
+
+@media (max-width: 500px) {
+.swiper-container {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+  padding-left: 0;
+  padding-right: 0;
+}
+}
+
+
+.page-home .browar .content-full h2 {
+  margin-top: 65px;
+}
+
+
+@media (max-width: 767px) {
+  .team .img-responsive {
+    margin: 0 auto;
+  }
+}
+
+
+.page-home .nasze-piwo .content-full .slider .products,
+.page-home .nasze-piwo-2 .content-full .slider .products {
+  height: auto;
+}
+/*
+.single-page-podstawowa .content-full {
+  min-height: 950px;
+} */
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .single-page-podstawowa .content-full .content-box {
+max-width: 500px;
+margin-left: 50%;
+transform: translateX(-50%);
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-page-podstawowa .content-full .prev, .single-page-podstawowa .content-full .next {
+    margin-left: -20px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  img {max-width: 100%}
+  html, body, .page-home .fly {min-width: 320px; overflow-x: hidden; height: auto;}
+}
+
+@media (max-width: 991px) {
+  .page-home .kontakt .content-full form {
+    width: 60%;
+  }
+  .single-page-podstawowa .content-full {
+    max-width: 550px;
+    min-height: 750px;
+  }
+}
+
+
+@media  (min-width: 992px) {
+  .page-home .start .content-full {
+      background-size: auto 700px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+.page-home .nasze-piwo .content-full .slider .products .product-list .product,
+.page-home .nasze-piwo-2 .content-full .slider .products .product-list .product {
+  padding-right: 25px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.page-home .nasze-piwo .content-full .slider .products .product-list .product,
+.page-home .nasze-piwo-2 .content-full .slider .products .product-list .product {
+  padding-right: 30px;
+}
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+.page-home .nasze-piwo .content-full .slider .products .product-list .product,
+.page-home .nasze-piwo-2 .content-full .slider .products .product-list .product {
+  padding-right: 40px;
+}
+}

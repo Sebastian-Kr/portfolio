@@ -1,0 +1,7 @@
+/* Przeglądarka Internet Explorer 6 nie rozciąga wysokości bezwzględnie pozycjonowanych elementów
+   mających zdefiniowane własności top i bottom, dlatego użyte zostało ustawienie height:100%.
+*/
+
+*.absolute-stretched {height:100%; }
+
+

@@ -1,0 +1,2711 @@
+@charset "UTF-8";
+/*!
+Copyright(C) 2018
+Sebastian Krajewski PROGREMO
+https//progremo.pl
+*/
+/* @import url("https://fonts.googleapis.com/css?family=Indie+Flower|Teko:400,600|Ubuntu:400,500&amp;subset=latin-ext"); */
+@import url("https://fonts.googleapis.com/css?family=Teko:400,600|Ubuntu:400,500&amp;subset=latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@font-face {
+  src: url("fonts/VeneerClean-Soft.otf") format("oft"), url("fonts/VeneerClean-Soft.woff2") format("woff2"), url("fonts/VeneerClean-Soft.woff") format("woff");
+  font-family: 'Veneer Clean Soft';
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("fonts/IndieFlower.woff2") format("woff2"), url("fonts/IndieFlower.woff") format("woff");
+  font-family: 'Indie Flower';
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+@media (max-width: 576px) {
+  .mt100 {
+    margin-top: 50px !important;
+  }
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Teko', sans-serif;
+  line-height: 26px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.item_event p,
+.item_event h3,
+.item_event h4,
+.item_event h5,
+.item_event h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.prgrm_visual_editor p,
+.prgrm_visual_editor h3,
+.prgrm_visual_editor h4,
+.prgrm_visual_editor h5,
+.prgrm_visual_editor h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.visual-buildere p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.visual-buildere h5 {
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.visual-buildere pre {
+  margin-bottom: 40px;
+  line-height: 16px;
+  margin-top: -5px;
+}
+
+a {
+  color: #F47720;
+  border: 0px;
+  outline: 0px;
+}
+
+a:hover {
+  color: #F47720 !important;
+}
+
+pre {
+  line-height: 10px;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+@media (max-width: 991px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+.i {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 46px !important;
+  }
+}
+
+h2, .h2 {
+  font-size: 72px;
+  color: #F8F0DD;
+  font-family: 'Veneer Clean Soft';
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+}
+
+h2::after {
+  display: block;
+  content: '';
+  height: 4px;
+  width: 45px;
+  background-color: #F47720;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: 4px;
+}
+
+#menu_jedzenie h2::before {
+  display: block;
+  content: '';
+  width: 140px;
+  height: 51px;
+  background-image: url("img/menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -35px;
+  left: 15px;
+}
+
+h2 span, .h2 span {
+  color: #f47720;
+}
+
+h3, .h3 {
+  color: #F8F0DD;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: 600;
+}
+
+#navigation-container .navbar {
+  background-color: #242424 !important;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+}
+
+#navigation-container .navbar a {
+  color: #fff;
+  font-weight: 300;
+  bottom: 0;
+  outline: 0;
+}
+
+#navigation-container .navbar li:after {
+  display: none;
+}
+
+#navigation-container .navbar button {
+  background-color: transparent;
+  border: 2px solid #F47720;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+#navigation-container .navbar #nav-icon2 {
+  position: absolute;
+  right: 150px;
+  top: 18px;
+}
+
+@media (max-width: 1300px) {
+  #men_left_wid {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  #men_right_wid {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 57px;
+  }
+  .navbar ul li a {
+    padding: 8px;
+  }
+  .navbar .navbar-brand img {
+    max-width: 120px;
+    max-height: 30px;
+  }
+  #navbarNav li.activeItem a,
+  #navbarNav li a.activeItem {
+    color: #F47720;
+  }
+  #navbarNav li.activeItem a:after,
+  #navbarNav li a.activeItem:after {
+    display: block;
+    content: '';
+    border-bottom: 3px solid #F47720;
+    height: 3px;
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -3px;
+  }
+  #navbarNav #menu-menu-glowne {
+    height: 63px;
+    justify-content: flex-end;
+  }
+  #navbarNav #menu-menu-glowne li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #men_right_wid {
+    font-size: 16px;
+  }
+  #men_right_wid span {
+    margin-right: 15px;
+  }
+  #men_left_wid div {
+    display: flex;
+  }
+  #men_left_wid div div {
+    margin-right: 15px;
+  }
+  #men_left_wid div div:before {
+    display: block;
+    content: '';
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  #men_left_wid div .tel:before {
+    background-image: url("img/phone-icon.svg");
+  }
+  #men_left_wid div .mail:before {
+    background-image: url("img/mail-icon.svg");
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar li, .collapsing li {
+    background-color: #242424;
+  }
+  .navbar li a, .collapsing li a {
+    font-size: 26px !important;
+  }
+  .navbar li:hover {
+    background-color: #fff;
+  }
+  .navbar li:hover a {
+    color: #242424 !important;
+  }
+}
+
+@media (max-width: 440px) {
+  button {
+    display: none;
+  }
+  #navigation-container .navbar button {
+    display: none;
+  }
+  #navigation-container .navbar #nav-icon2 {
+    right: 20px;
+  }
+}
+
+#main-slider .carousel-item {
+  height: 100vh;
+}
+
+.carousel-indicators li {
+  background-color: #FFF !important;
+  height: 2px;
+  width: 45px;
+}
+
+.carousel-indicators .active {
+  background-color: #F47720 !important;
+}
+
+#main-slider .carousel-main-progremo {
+  position: relative;
+}
+
+#main-slider .comon_content {
+  position: absolute;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  left: 50%;
+  z-index: 2;
+}
+
+#main-slider .comon_content ol {
+  position: static;
+}
+
+#main-slider .comon_content img.img1 {
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 330px;
+}
+
+#main-slider .comon_content img.img2 {
+  width: 100%;
+  max-width: 100%;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+}
+
+#main-slider .comon_content button {
+  height: 63px;
+  width: 214px;
+  background-color: #F47720;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  border: 0px;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  #main-slider .comon_content img.img1 {
+    margin-bottom: 50px;
+  }
+}
+
+.img_title {
+  height: 70px;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+
+#menu_piwo .img_title {
+  background-image: url(img/piwo-lane-drought-beer.svg);
+}
+
+#menu_jedzenie .img_title {
+  background-image: url(img/menu-jedzenie.svg);
+  height: 125px;
+  margin-left: -15px;
+}
+
+#transmisje .img_title {
+  background-image: url(img/transmisje.svg);
+}
+
+#kontakt-info .img_title {
+  background-image: url(img/kontakt.svg);
+}
+
+@media (min-width: 1800px) {
+  #transmisje {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img_title {
+    height: 60px;
+  }
+  #menu_piwo .img_title {
+    background-image: url(img/piwo-lane-drought-beer-mobile.svg);
+    height: 120px;
+  }
+  #menu_jedzenie .img_title {
+    background-image: url(img/menu-jedzenie-mobile.svg);
+    height: 148px;
+    margin-left: 0px;
+  }
+}
+
+#menu_piwo, #menu_jedzenie {
+  background-image: url(img/szary-pattern.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+#menu_jedzenie img {
+  margin-left: -30px;
+  margin-bottom: 80px;
+}
+
+#menu_jedzenie .item_menu {
+  position: relative;
+  margin-bottom: 55px;
+}
+
+#menu_jedzenie .item_menu p {
+  font-family: 'Indie Flower', cursive;
+  color: #F47720;
+  max-width: 335px;
+}
+
+#menu_jedzenie .item_menu p.kolor {
+  color: #6BC905;
+}
+
+#menu_jedzenie .item_menu p.cena {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+  color: #7BABCD;
+  font-family: 'Teko', sans-serif;
+}
+
+#menu_jedzenie .item_menu p.cena span {
+  display: block;
+  color: #F8F0DD;
+}
+
+@media (max-width: 991px) {
+  #menu_jedzenie .item_menu {
+    text-align: left !important;
+  }
+  #menu_jedzenie .item_menu p {
+    max-width: none;
+    margin-right: 80px;
+  }
+  #menu_jedzenie .item_menu p.cena {
+    margin: 0;
+    right: 10px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 350px) {
+  #menu_jedzenie .item_menu {
+    text-align: center !important;
+  }
+  #menu_jedzenie .item_menu p {
+    margin-right: 0px;
+  }
+  #menu_jedzenie .item_menu p.cena {
+    margin: 0;
+    text-align: center;
+    position: static;
+  }
+  #menu_jedzenie .item_menu p.cena span {
+    display: inline;
+  }
+}
+
+#menu_piwo .item_menu {
+  position: relative;
+  z-index: 2;
+}
+
+#menu_piwo .item_menu h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+#menu_piwo .item_menu span.h2 {
+  margin-bottom: 40px;
+  float: left;
+  margin-right: 25px;
+  display: block;
+  line-height: 72px;
+  float: left;
+  width: 55px;
+  text-align: right;
+
+}
+
+#menu_piwo .item_menu p {
+  font-family: 'Indie Flower', cursive;
+  color: #F47720;
+}
+
+#menu_piwo .item_menu p span {
+  color: #7BABCD;
+}
+
+#menu_piwo .item_menu p.kolor {
+  color: #6BC905;
+}
+
+@media (max-width: 991px) {
+  #menu_piwo .item_menu span {
+    white-space: nowrap;
+  }
+  #menu_piwo .item_menu span.h2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-sm-up {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #menu_piwo .item_menu {
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  #menu_piwo .item_menu span.h2 {
+    margin-bottom: 60px;
+  }
+}
+
+#gallery-square-fixed {
+  background-image: url(img/jasny-pattern.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#gallery-square-fixed .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  #gallery-square-fixed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  #gallery-square-fixed {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+#wood_section {
+  background-image: url(img/deski-pattern.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pattern_end_container {
+  position: relative;
+}
+
+.pattern_end_container .pattern_shape {
+  background-image: url(img/szary-pattern-end.png);
+  height: 340px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  top: -200px;
+}
+
+.pattern_end_container .pattern_shape_inverse {
+  transform: rotate(180deg);
+  top: -250px;
+}
+
+.pattern_end_container2 {
+  position: relative;
+}
+
+.pattern_end_container2 .pattern_shape2 {
+  background-image: url(img/jasny-pattern-end-2.png);
+  height: 400px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  top: -210px;
+}
+
+.pattern_end_container2 .pattern_shape_inverse2 {
+  transform: rotate(180deg);
+  top: -220px;
+}
+
+@media (max-width: 991px) {
+  .pattern_end_container .pattern_shape {
+    background-size: 150% auto;
+    background-position: center;
+  }
+  .pattern_end_container .pattern_shape_inverse {
+    top: -200px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pattern_end_container2 .pattern_shape2 {
+    top: -150px;
+  }
+  .pattern_end_container2 .pattern_shape2.pattern_shape_inverse2 {
+    top: -240px;
+  }
+}
+
+
+
+@media (max-width: 1199px) {
+  .pattern_end_container2 .pattern_shape2 {
+    top: -100px;
+  }
+  .pattern_end_container2 .pattern_shape2.pattern_shape_inverse2 {
+    top: -310px;
+  }
+}
+
+@media (max-width: 700px) {
+  .pattern_end_container2 .pattern_shape2 {
+    top: -50px;
+  }
+  .pattern_end_container2 .pattern_shape2.pattern_shape_inverse2 {
+    top: -350px;
+  }
+}
+
+@media (max-width: 560px) {
+  .pattern_end_container .pattern_shape {
+    top: -235px;
+  }
+  .pattern_end_container .pattern_shape_inverse {
+    top: -185px;
+  }
+}
+
+@media (max-width: 350px) {
+  .pattern_end_container2 .pattern_shape2 {
+    top: -30px;
+  }
+}
+
+footer {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer span {
+  color: #F47720;
+}
+
+footer ul {
+  display: block !important;
+}
+
+footer ul li {
+  float: none;
+  display: block;
+}
+
+footer a {
+  display: block;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  footer .row div {
+    margin-bottom: 15px;
+  }
+}
+
+#parallax {
+  height: 500px;
+}
+
+@media (max-width: 576px) {
+  #parallax {
+    height: 370px;
+    text-align: left;
+  }
+}
+
+/*! jQuery UI - v1.12.1 - 2017-11-28
+* http://jqueryui.com
+* Includes: core.css, datepicker.css, theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=base&cornerRadiusShadow=8px&offsetLeftShadow=0px&offsetTopShadow=0px&thicknessShadow=5px&opacityShadow=30&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=666666&opacityOverlay=30&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=aaaaaa&iconColorError=cc0000&fcError=5f3f3f&borderColorError=f1a899&bgTextureError=flat&bgColorError=fddfdf&iconColorHighlight=777620&fcHighlight=777620&borderColorHighlight=dad55e&bgTextureHighlight=flat&bgColorHighlight=fffa90&iconColorActive=ffffff&fcActive=ffffff&borderColorActive=003eff&bgTextureActive=flat&bgColorActive=007fff&iconColorHover=555555&fcHover=2b2b2b&borderColorHover=cccccc&bgTextureHover=flat&bgColorHover=ededed&iconColorDefault=777777&fcDefault=454545&borderColorDefault=c5c5c5&bgTextureDefault=flat&bgColorDefault=f6f6f6&iconColorContent=444444&fcContent=333333&borderColorContent=dddddd&bgTextureContent=flat&bgColorContent=ffffff&iconColorHeader=444444&fcHeader=333333&borderColorHeader=dddddd&bgTextureHeader=flat&bgColorHeader=e9e9e9&cornerRadius=3px&fwDefault=normal&fsDefault=1em&ffDefault=Arial%2CHelvetica%2Csans-serif
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
+.ui-helper-hidden {
+  display: none;
+}
+
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+
+.ui-helper-clearfix:after {
+  clear: both;
+}
+
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+}
+
+.ui-front {
+  z-index: 100;
+}
+
+.ui-state-disabled {
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.ui-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -.25em;
+  position: relative;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.ui-widget-icon-block {
+  left: 50%;
+  margin-left: -8px;
+  display: block;
+}
+
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 0px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  right: 0px !important;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  width: 45%;
+}
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+}
+
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0;
+}
+
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current, .ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+.ui-datepicker .ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  left: .5em;
+  top: .3em;
+}
+
+.ui-widget {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1em;
+}
+
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1em;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+}
+
+.ui-widget-content {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+}
+
+.ui-widget-content a {
+  color: #333;
+}
+
+.ui-widget-header {
+  border: 1px solid #ddd;
+  background: #e9e9e9;
+  color: #333;
+  font-weight: bold;
+}
+
+.ui-widget-header a {
+  color: #333;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #c5c5c5;
+  background: #f6f6f6;
+  font-weight: normal;
+  color: #454545;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+  color: #454545;
+  text-decoration: none;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+  border: 1px solid #ccc;
+  background: #ededed;
+  font-weight: normal;
+  color: #2b2b2b;
+}
+
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited, a.ui-button:hover, a.ui-button:focus {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+.ui-visual-focus {
+  box-shadow: 0 0 3px 1px #5e9ed6;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 1px solid #003eff;
+  background: #007fff;
+  font-weight: normal;
+  color: #fff;
+}
+
+.ui-icon-background, .ui-state-active .ui-icon-background {
+  border: #003eff;
+  background-color: #fff;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #dad55e;
+  background: #fffa90;
+  color: #777620;
+}
+
+.ui-state-checked {
+  border: 1px solid #dad55e;
+  background: #fffa90;
+}
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #777620;
+}
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #f1a899;
+  background: #fddfdf;
+  color: #5f3f3f;
+}
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #5f3f3f;
+}
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #5f3f3f;
+}
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none;
+}
+
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35);
+}
+
+.ui-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.ui-icon, .ui-widget-content .ui-icon {
+  background-image: url("images/ui-icons_444444_256x240.png");
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url("images/ui-icons_444444_256x240.png");
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
+  background-image: url("images/ui-icons_555555_256x240.png");
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+  background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-state-highlight .ui-icon, .ui-button .ui-state-highlight.ui-icon {
+  background-image: url("images/ui-icons_777620_256x240.png");
+}
+
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+  background-image: url("images/ui-icons_cc0000_256x240.png");
+}
+
+.ui-button .ui-icon {
+  background-image: url("images/ui-icons_777777_256x240.png");
+}
+
+.ui-icon-blank {
+  background-position: 16px 16px;
+}
+
+.ui-icon-caret-1-n {
+  background-position: 0 0;
+}
+
+.ui-icon-caret-1-ne {
+  background-position: -16px 0;
+}
+
+.ui-icon-caret-1-e {
+  background-position: -32px 0;
+}
+
+.ui-icon-caret-1-se {
+  background-position: -48px 0;
+}
+
+.ui-icon-caret-1-s {
+  background-position: -65px 0;
+}
+
+.ui-icon-caret-1-sw {
+  background-position: -80px 0;
+}
+
+.ui-icon-caret-1-w {
+  background-position: -96px 0;
+}
+
+.ui-icon-caret-1-nw {
+  background-position: -112px 0;
+}
+
+.ui-icon-caret-2-n-s {
+  background-position: -128px 0;
+}
+
+.ui-icon-caret-2-e-w {
+  background-position: -144px 0;
+}
+
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px;
+}
+
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px;
+}
+
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px;
+}
+
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px;
+}
+
+.ui-icon-triangle-1-s {
+  background-position: -65px -16px;
+}
+
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px;
+}
+
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px;
+}
+
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px;
+}
+
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px;
+}
+
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px;
+}
+
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px;
+}
+
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px;
+}
+
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px;
+}
+
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px;
+}
+
+.ui-icon-arrow-1-s {
+  background-position: -65px -32px;
+}
+
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px;
+}
+
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px;
+}
+
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px;
+}
+
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px;
+}
+
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px;
+}
+
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px;
+}
+
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px;
+}
+
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px;
+}
+
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px;
+}
+
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px;
+}
+
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px;
+}
+
+.ui-icon-arrowthick-1-n {
+  background-position: 1px -48px;
+}
+
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px;
+}
+
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px;
+}
+
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px;
+}
+
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px;
+}
+
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px;
+}
+
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px;
+}
+
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px;
+}
+
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px;
+}
+
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px;
+}
+
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px;
+}
+
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px;
+}
+
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px;
+}
+
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px;
+}
+
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px;
+}
+
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px;
+}
+
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px;
+}
+
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px;
+}
+
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px;
+}
+
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px;
+}
+
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px;
+}
+
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px;
+}
+
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px;
+}
+
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px;
+}
+
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px;
+}
+
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px;
+}
+
+.ui-icon-arrow-4 {
+  background-position: 0 -80px;
+}
+
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px;
+}
+
+.ui-icon-extlink {
+  background-position: -32px -80px;
+}
+
+.ui-icon-newwin {
+  background-position: -48px -80px;
+}
+
+.ui-icon-refresh {
+  background-position: -64px -80px;
+}
+
+.ui-icon-shuffle {
+  background-position: -80px -80px;
+}
+
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px;
+}
+
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px;
+}
+
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px;
+}
+
+.ui-icon-folder-open {
+  background-position: -16px -96px;
+}
+
+.ui-icon-document {
+  background-position: -32px -96px;
+}
+
+.ui-icon-document-b {
+  background-position: -48px -96px;
+}
+
+.ui-icon-note {
+  background-position: -64px -96px;
+}
+
+.ui-icon-mail-closed {
+  background-position: -80px -96px;
+}
+
+.ui-icon-mail-open {
+  background-position: -96px -96px;
+}
+
+.ui-icon-suitcase {
+  background-position: -112px -96px;
+}
+
+.ui-icon-comment {
+  background-position: -128px -96px;
+}
+
+.ui-icon-person {
+  background-position: -144px -96px;
+}
+
+.ui-icon-print {
+  background-position: -160px -96px;
+}
+
+.ui-icon-trash {
+  background-position: -176px -96px;
+}
+
+.ui-icon-locked {
+  background-position: -192px -96px;
+}
+
+.ui-icon-unlocked {
+  background-position: -208px -96px;
+}
+
+.ui-icon-bookmark {
+  background-position: -224px -96px;
+}
+
+.ui-icon-tag {
+  background-position: -240px -96px;
+}
+
+.ui-icon-home {
+  background-position: 0 -112px;
+}
+
+.ui-icon-flag {
+  background-position: -16px -112px;
+}
+
+.ui-icon-calendar {
+  background-position: -32px -112px;
+}
+
+.ui-icon-cart {
+  background-position: -48px -112px;
+}
+
+.ui-icon-pencil {
+  background-position: -64px -112px;
+}
+
+.ui-icon-clock {
+  background-position: -80px -112px;
+}
+
+.ui-icon-disk {
+  background-position: -96px -112px;
+}
+
+.ui-icon-calculator {
+  background-position: -112px -112px;
+}
+
+.ui-icon-zoomin {
+  background-position: -128px -112px;
+}
+
+.ui-icon-zoomout {
+  background-position: -144px -112px;
+}
+
+.ui-icon-search {
+  background-position: -160px -112px;
+}
+
+.ui-icon-wrench {
+  background-position: -176px -112px;
+}
+
+.ui-icon-gear {
+  background-position: -192px -112px;
+}
+
+.ui-icon-heart {
+  background-position: -208px -112px;
+}
+
+.ui-icon-star {
+  background-position: -224px -112px;
+}
+
+.ui-icon-link {
+  background-position: -240px -112px;
+}
+
+.ui-icon-cancel {
+  background-position: 0 -128px;
+}
+
+.ui-icon-plus {
+  background-position: -16px -128px;
+}
+
+.ui-icon-plusthick {
+  background-position: -32px -128px;
+}
+
+.ui-icon-minus {
+  background-position: -48px -128px;
+}
+
+.ui-icon-minusthick {
+  background-position: -64px -128px;
+}
+
+.ui-icon-close {
+  background-position: -80px -128px;
+}
+
+.ui-icon-closethick {
+  background-position: -96px -128px;
+}
+
+.ui-icon-key {
+  background-position: -112px -128px;
+}
+
+.ui-icon-lightbulb {
+  background-position: -128px -128px;
+}
+
+.ui-icon-scissors {
+  background-position: -144px -128px;
+}
+
+.ui-icon-clipboard {
+  background-position: -160px -128px;
+}
+
+.ui-icon-copy {
+  background-position: -176px -128px;
+}
+
+.ui-icon-contact {
+  background-position: -192px -128px;
+}
+
+.ui-icon-image {
+  background-position: -208px -128px;
+}
+
+.ui-icon-video {
+  background-position: -224px -128px;
+}
+
+.ui-icon-script {
+  background-position: -240px -128px;
+}
+
+.ui-icon-alert {
+  background-position: 0 -144px;
+}
+
+.ui-icon-info {
+  background-position: -16px -144px;
+}
+
+.ui-icon-notice {
+  background-position: -32px -144px;
+}
+
+.ui-icon-help {
+  background-position: -48px -144px;
+}
+
+.ui-icon-check {
+  background-position: -64px -144px;
+}
+
+.ui-icon-bullet {
+  background-position: -80px -144px;
+}
+
+.ui-icon-radio-on {
+  background-position: -96px -144px;
+}
+
+.ui-icon-radio-off {
+  background-position: -112px -144px;
+}
+
+.ui-icon-pin-w {
+  background-position: -128px -144px;
+}
+
+.ui-icon-pin-s {
+  background-position: -144px -144px;
+}
+
+.ui-icon-play {
+  background-position: 0 -160px;
+}
+
+.ui-icon-pause {
+  background-position: -16px -160px;
+}
+
+.ui-icon-seek-next {
+  background-position: -32px -160px;
+}
+
+.ui-icon-seek-prev {
+  background-position: -48px -160px;
+}
+
+.ui-icon-seek-end {
+  background-position: -64px -160px;
+}
+
+.ui-icon-seek-start {
+  background-position: -80px -160px;
+}
+
+.ui-icon-seek-first {
+  background-position: -80px -160px;
+}
+
+.ui-icon-stop {
+  background-position: -96px -160px;
+}
+
+.ui-icon-eject {
+  background-position: -112px -160px;
+}
+
+.ui-icon-volume-off {
+  background-position: -128px -160px;
+}
+
+.ui-icon-volume-on {
+  background-position: -144px -160px;
+}
+
+.ui-icon-power {
+  background-position: 0 -176px;
+}
+
+.ui-icon-signal-diag {
+  background-position: -16px -176px;
+}
+
+.ui-icon-signal {
+  background-position: -32px -176px;
+}
+
+.ui-icon-battery-0 {
+  background-position: -48px -176px;
+}
+
+.ui-icon-battery-1 {
+  background-position: -64px -176px;
+}
+
+.ui-icon-battery-2 {
+  background-position: -80px -176px;
+}
+
+.ui-icon-battery-3 {
+  background-position: -96px -176px;
+}
+
+.ui-icon-circle-plus {
+  background-position: 0 -192px;
+}
+
+.ui-icon-circle-minus {
+  background-position: -16px -192px;
+}
+
+.ui-icon-circle-close {
+  background-position: -32px -192px;
+}
+
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px;
+}
+
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px;
+}
+
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px;
+}
+
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px;
+}
+
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px;
+}
+
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px;
+}
+
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px;
+}
+
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px;
+}
+
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px;
+}
+
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px;
+}
+
+.ui-icon-circle-check {
+  background-position: -208px -192px;
+}
+
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px;
+}
+
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px;
+}
+
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px;
+}
+
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px;
+}
+
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px;
+}
+
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px;
+}
+
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px;
+}
+
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px;
+}
+
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px;
+}
+
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px;
+}
+
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px;
+}
+
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 3px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 3px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-bottom-left-radius: 3px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 3px;
+}
+
+.ui-widget-overlay {
+  background: #aaa;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+}
+
+.ui-widget-shadow {
+  -webkit-box-shadow: 0 0 5px #666;
+  box-shadow: 0 0 5px #666;
+}
+
+/*CAŁY WIDGET*/
+#kalendarz .ui-widget.ui-widget-content {
+  border: 0px;
+  padding: 0px;
+  background-color: transparent;
+  color: #fff;
+  width: 355px;
+}
+
+/*TYTUL BOX*/
+#kalendarz .ui-datepicker .ui-datepicker-header {
+  background-color: #F47720;
+  clear: #fff;
+  height: 60px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 0px;
+}
+
+/*TYTUŁ*/
+#kalendarz .ui-datepicker .ui-datepicker-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/*POJEDYNCZA KOMÓRKA*/
+#kalendarz td {
+  opacity: 1;
+  border: 0px;
+  padding: 5px;
+  outline: none !important;
+}
+
+/*POJEDYNCZA KOMÓRKA - DOMYŚLNA*/
+#kalendarz .ui-datepicker-today.ui-state-disabled span, #kalendarz .ui-datepicker-today.ui-state-disabled a {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+#kalendarz .ui-state-default, #kalendarz .ui-datepicker-today .ui-state-default, .ui-widget-content .ui-state-default {
+  color: #fff;
+  opacity: 1;
+  background-color: #F47720;
+  text-align: center;
+  padding-top: 7px;
+  height: 40px;
+  width: 40px;
+  outline: none !important;
+  border: 0px;
+}
+
+#kalendarz .ui-widget-content .ui-state-default:hover {
+  color: #4A4A4A !important;
+}
+
+#kalendarz .ui-state-disabled span {
+  background-color: #F8F8F8;
+  color: #4A4A4A;
+}
+
+#kalendarz .ui-datepicker-header .ui-corner-all {
+  display: block;
+  width: 90px;
+  top: 15px;
+  background-color: transparent !important;
+  border: 0px !important;
+    position: absolute;
+}
+
+#kalendarz .ui-datepicker-header .ui-corner-all span {
+  color: #fff;
+  font-size: 14px;
+  text-indent: inherit !important;
+  width: auto;
+  height: auto;
+  background-image: none;
+  position: relative;
+  font-weight: 700;
+}
+
+#kalendarz .ui-datepicker-header .ui-datepicker-next {
+  margin-right: 15px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  margin-top: -14px;
+  overflow: visible;
+}
+
+#kalendarz .ui-datepicker-header .ui-datepicker-next span::after {
+  background-image: url("img/calender-arrow.svg");
+  width: 15px;
+  height: 15px;
+  display: block;
+  content: '';
+  position: absolute;
+  right: 45px;
+  top: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#kalendarz .ui-datepicker-header .ui-datepicker-prev span::after {
+  background-image: url("img/calender-arrow.svg");
+  width: 15px;
+  height: 15px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  position: absolute;
+  left: -25px;
+  top: 4px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#kalendarz .ui-datepicker-other-month span {
+  color: #ACACAC !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 991px) {
+  #kalendarz .ui-widget.ui-widget-content {
+    margin: 0  auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #kalendarz .ui-datepicker-header .ui-corner-all {
+    right: 50px;
+  }
+  #kalendarz .ui-datepicker-header .ui-datepicker-next span::after {
+    /* right: -10px; */
+  }
+}
+
+@media (max-width: 400px) {
+  .cal_container {
+    padding: 0;
+  }
+  #kalendarz .ui-datepicker .ui-datepicker-header {
+    width: 100%;
+  }
+  #kalendarz .ui-datepicker-header .ui-datepicker-prev span::after,
+  #kalendarz .ui-datepicker-header .ui-datepicker-next span::after {
+    display: none;
+  }
+  #kalendarz .ui-datepicker-header .ui-corner-all {
+    width: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  #kalendarz {
+    margin-left: -40px;
+  }
+  #kalendarz {
+    transform: scale(0.8);
+  }
+}
+
+.event_container {
+  margin-top: -100px;
+  height: 455px;
+}
+
+.event_container h4 {
+  font-size: 20px;
+}
+
+.event_container p {
+  margin-bottom: 5px;
+}
+
+.event_container .item_event {
+  max-width: 550px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.event_container .item_event .item_event_header {
+  background-color: #F47720;
+  padding: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.event_container .item_event_active {
+  border: 3px solid #fff;
+  background-color: #000;
+  transition-duration: 0.5;
+}
+
+@media (max-width: 991px) {
+  .event_container {
+    margin-top: 40px;
+    height: 350px;
+  }
+  .event_container .item_event {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+/*
+== malihu jquery custom scrollbar plugin ==
+Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
+*/
+/*
+CONTENTS:
+	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited).
+	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar.
+	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
+	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars.
+	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars.
+	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
+		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
+*/
+/*
+------------------------------------------------------------------------------------------------------------------------
+1. BASIC STYLE
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCustomScrollbar {
+  -ms-touch-action: pinch-zoom;
+  touch-action: pinch-zoom;
+  /* direct pointer events to js */
+}
+
+.mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+
+.mCustomScrollBox {
+  /* contains plugin's markup */
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+}
+
+.mCSB_container {
+  /* contains the original content */
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+2. VERTICAL SCROLLBAR
+y-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_inside > .mCSB_container {
+  margin-right: 30px;
+}
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+}
+
+/* non-visible scrollbar */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-left: 0;
+}
+
+/* RTL direction/left-side scrollbar */
+.mCSB_scrollTools {
+  /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mCSB_outside + .mCSB_scrollTools {
+  right: -26px;
+}
+
+/* scrollbar position: outside */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  /* RTL direction/left-side scrollbar */
+  right: auto;
+  left: 0;
+}
+
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  left: -26px;
+}
+
+/* RTL direction/left-side scrollbar (scrollbar position: outside) */
+.mCSB_scrollTools .mCSB_draggerContainer {
+  /* contains the draggable element and dragger rail markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 20px 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+  /* the draggable element */
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  /* minimum dragger height */
+  z-index: 1;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  /* the dragger element */
+  position: relative;
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 12px;
+  /* auto-expanded scrollbar */
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 8px;
+  /* auto-expanded scrollbar */
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown {
+  bottom: 0;
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+4. VERTICAL AND HORIZONTAL SCROLLBARS
+yx-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_container_wrapper {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.mCSB_container_wrapper > .mCSB_container {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 20px;
+}
+
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 20px;
+}
+
+/* non-visible horizontal scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 0;
+}
+
+/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 0;
+}
+
+/* RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 20px;
+}
+
+/* non-visible scrollbar/RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 0;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container {
+  padding-right: 0;
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container {
+  padding-bottom: 0;
+}
+
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+  /* non-visible scrollbar */
+  margin-left: 0;
+}
+
+/* non-visible horizontal scrollbar */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0;
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+5. TRANSITIONS
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
+------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+	----------------------------------------
+	6.1 THEMES
+	----------------------------------------
+
+
+
+	/* theme "inset", "inset-dark", "inset-2", "inset-2-dark", "inset-3", "inset-3-dark" */
+.mCS-inset.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  width: 12px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  margin: 3px 5px;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  height: 6px;
+  margin: 5px 3px;
+  position: absolute;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 12px;
+  margin: 2px 0;
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+
+.mCS-inset.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+
+/* theme "inset-dark", "inset-2-dark", "inset-3-dark" */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+
+/* theme "inset-2", "inset-2-dark" */
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+  border: 1px solid #4A4A4A !important;
+  width: 15px;
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+  border-color: #000;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+  height: 45px !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #fff !important;
+  width: 11px !important;
+  margin: 3px 3px !important;
+}
+
+#kontakt-form .kontakt-button {
+  background-color: #F47720 !important;
+  display: block;
+}
+
+#kontakt-form .kontakt-button input {
+  padding: 0 !important;
+  margin-top: 30px !important;
+}
+
+#kontakt-form #form-subbmit {
+  padding: 0;
+  padding-top: 5px;
+  margin-top: 0;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #f47720;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+border: 0px;
+font-size: 17px;
+
+
+}
+
+@media (max-width: 991px) {
+  #map {
+    margin-top: 20px;
+    color: #000 !important;
+  }
+}
+
+#map {
+  color: #000 !important;
+}
+
+.bear_bottom_text_container {
+border: 2px solid  #f96d08;
+padding: 20px;
+margin: 15px;
+margin-bottom: 50px;
+}
+
+
+.bear_bottom_text {
+  font-size: 26px;
+color: #F8F0DD;
+font-family: 'Veneer Clean Soft';
+font-weight: 500;
+/* border: 1px solid  #f96d08;
+padding: 20px;
+margin-bottom: 50px; */
+z-index: 11;
+width: 100%;
+text-align: center;
+line-height: 48px;
+}
+
+
+@media (max-width:576px) {
+
+
+  .bear_bottom_text {
+    font-size: 32px;
+    line-height: 35px;
+padding-left: 5%;
+padding-right: 5%;
+  }
+
+
+}
+
+@media (max-width:350px) {
+
+
+  .bear_bottom_text {
+    font-size: 22px;
+    line-height: 25px;
+padding-left: 5%;
+padding-right: 5%;
+  }
+}
+
+#menu_piwo h4 {
+  color: #f47720;
+  margin-bottom: 0;
+  font-size: 22px;
+
+}
+
+
+#kontakt-info {
+  font-family: 'Ubuntu', sans-serif;
+font-size: 15px;
+font-weight: 500;
+}
+#kontakt-info h2::after {
+display:  none;
+
+}
+
+#kontakt-info .prgrm_visual_editor {
+  margin-bottom: 40px;
+}
+
+.ekko-lightbox.modal {
+  z-index: 9999;
+  position: fixed;
+  top: 60px;
+}
+
+@media (max-width: 700px) {
+
+  .ekko-lightbox.modal {
+    top: 20px;
+  max-height: 90vh;
+  }
+
+}
+
+
+#kontakt-form input[type=checkbox] {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#confirm-form .wpcf7-form-control-wrap {
+margin-left: -10px !important;
+}
+
+.single_author_header img {
+  width: 260px;
+  height: 260px;
+  max-width: 100%;
+  max-height: 100%;
+}

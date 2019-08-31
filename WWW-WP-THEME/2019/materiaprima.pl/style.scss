@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,500,700,900&subset=latin-ext');
+// VARIABLE PROJECT
+$color1: #ff0082;
+$color1-06: #ff0082;
+$color2: #f89419;
+$color3: #220e2b;
+$color3-75: #220e2b;
+$color4: #220e2b;
+
+//IMPORTS
+@import "scss/prgrm_reset.scss";
+@import "scss/bootstrap4.scss";
+@import "scss/wp.scss";
+@import "scss/prgrm_atom.scss";
+@import "scss/prgrm_visual_editor.scss";
+
+// IMORTS MODULES
+// @import "scss/special_modules/eko_lightbox.scss";
+// @import "scss/special_modules/prgrm_gallery_square.scss";
+@import "scss/special_modules/prgrm_contact.scss";
+@import "scss/special_modules/prgrm_footers.scss";
+// @import "scss/special_modules/prgrm_top_headers.scss";
+@import "scss/special_modules/prgrm_menus.scss";
+// @import "scss/special_modules/prgrm_main_sliders.scss";
+// @import "scss/special_modules/prgrm_jquery_calender.scss";
+// @import "scss/special_modules/prgrm_scrollbar.scss";
+@import "scss/special_modules/prgrm_slickcarousel.scss";
+
+
+// IMPORTS SPECIAL SECTION GEN
+// @import "scss/special_section_gen/TilesLinkV0.scss";
+// @import "scss/special_section_gen/TilesLinkV1_TriangleHover.scss";
+// @import "scss/special_section_gen/TilesLinkV1_ZoomboxHover.scss";
+// @import "scss/special_section_gen/TilesLinkV1_GenTilesSlideUp1.scss";
+// @import "scss/special_section_gen/TilesLinkV1_PopUpGlass.scss";
+// @import "scss/special_section_gen/TilesLinkV2_QuickHoverBg.scss";
+// @import "scss/special_section_gen/TilesHoverV2_FullScreenTill.scss";
+// @import "scss/special_section_gen/TilesHoverV2_HoverUpNoLink1.scss";
+// @import "scss/special_section_gen/VisualEditor.scss";
+//
+
+
+
+// Animations Bounce
+
+
+.animate {
+  opacity: 0;
+}
+
+
+.animation-target {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 400px, 0);
+    transform: translate3d(0, 400px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.fadeInLeft {
+  opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-fill-mode: forwards;
+-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+// Animations Bounce End

@@ -1,0 +1,30 @@
+/*
+Theme Name: Progremo Theme
+Author: Sebastian Krajewski Progremo
+Author URI: https://progremo.pl
+*/
+@charset "UTF-8";
+// VARIABLE PROJECT
+$color1: #e18e19;
+$color2: #202020;
+$color3: #e18e19;
+$color3-75: #e18e19;
+$color4: #e18e19;
+//IMPORTS
+@import "scss/bootstrap4.scss";
+@import "scss/wp.scss";
+@import "scss/prgrm_atom.scss";
+@import "scss/prgrm_visual_editor.scss";
+// IMORTS MODULES
+// @import "scss/special_modules/prgrm_contact.scss";
+@import "scss/special_modules/prgrm_footers.scss";
+@import "scss/special_modules/prgrm_menus.scss";
+@import "scss/special_modules/prgrm_slickcarousel.scss"; // IMPORT SPECIAL DEMO PAGES
+// /////////////////////////////////////////////////
+
+@import "project_style.scss";
+ 
+
+#map {
+  color: #333;
+}

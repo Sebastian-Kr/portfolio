@@ -1,0 +1,21 @@
+/* Mniej ważne style */
+table  { background-color:gold; }
+td     { border:2px solid black; padding-top:10px; padding-left:3px;  }
+
+table  { border-collapse:collapse;  margin-top:10px; }
+td     { overflow:hidden;                            }
+
+/* Ważne style */
+
+.auto-layout   { table-layout:auto; }   
+.shrinkwrapped { width:auto;        }   
+
+.p2 { width:50%; }   /* 2 kolumny */ 
+.p3 { width:33.5%; } /* 3 kolumny*/ 
+.p4 { width:25%; }   /* 4 kolumny*/ 
+.p5 { width:20%; }   /* 5 kolumn*/ 
+.p6 { width:16.5%; } /* 6 kolumn*/ 
+.p7 { width:14.1%; } /* 7 kolumn*/ 
+.p8 { width:12.3%; } /* 8 kolumn*/ 
+.p9 { width:11%; }   /* 9 kolumn*/ 
+.p10 { width:10%; }  /* 10 kolumn*/

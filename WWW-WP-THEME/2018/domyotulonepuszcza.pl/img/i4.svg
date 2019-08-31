@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="34px" viewBox="0 0 33 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.0001522%" y1="100.000152%" x2="50.0001522%" y2="0.00060884654%" id="linearGradient-1">
+            <stop stop-color="#ADB536" offset="0%"></stop>
+            <stop stop-color="#99B340" offset="19.97%"></stop>
+            <stop stop-color="#5FAE57" offset="73.82%"></stop>
+            <stop stop-color="#3CAC5F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy-9" transform="translate(-742.000000, -3162.000000)">
+            <g id="4" transform="translate(740.000000, 3160.000000)">
+                <g id="Group">
+                    <g transform="translate(1.973333, 2.000000)" fill-rule="nonzero">
+                        <path d="M32.4628133,27.2085 C32.4628133,30.5835 29.7628,33.32 26.4328,33.32 L6.08181333,33.32 C2.75181333,33.32 0.0522933333,30.5835 0.0522933333,27.2085 L0.0522933333,6.582 C0.0522933333,3.207 2.75181333,0.471 6.08181333,0.471 L26.4332933,0.471 C29.7632933,0.471 32.4633067,3.2075 32.4633067,6.582 L32.4633067,27.2085 L32.4628133,27.2085 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                        <path d="M21.8941333,9.1775 L21.20396,9.864 L23.1289467,11.854 L23.1289467,22.149 C23.1289467,22.3165 23.0919467,22.4365 23.01992,22.5085 C22.8068,22.725 21.6237867,22.7365 21.2932533,22.4025 C21.18916,22.293 21.1837333,22.178 21.18916,22.149 L21.18916,12.142 L19.4896267,12.142 L19.4896267,7.225 L10.0191067,7.225 L10.0191067,24.933 L7.955,24.933 L7.955,27.397 L21.5492933,27.397 L21.5492933,24.933 L19.4851867,24.933 L19.4851867,13.1305 L20.2143333,13.1305 L20.2143333,22.11 C20.11468,24.0185 24.0993333,24.3355 24.0993333,22.153 L24.0993333,11.451 L21.8941333,9.1775 Z M11.4769067,14.113 L11.4769067,9.192 L18.27356,9.192 L18.27356,14.113 L11.4769067,14.113 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

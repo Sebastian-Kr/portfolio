@@ -1,0 +1,100 @@
+
+.tiles-square4 .tile {
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.tiles-square4 .tile .normal_box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tiles-square4 .tile .glass {
+  background-color: $color1;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+
+}
+
+.tiles-square4 .tile .hover_box {
+  opacity: 0;
+  transition-duration: 0.3s;
+  display: none;
+}
+
+.tiles-square4 .tile:hover .hover_box {
+  opacity: 1;
+  transition-duration: 0.3s;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 15px solid $color2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tiles-square4 .tile h5 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  z-index: 1;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.tiles-square4 .tile p {
+  color: #fff;
+  z-index: 1;
+  min-height: 50px;
+}
+
+.tiles-square4 .tile .hover_box h5,
+.tiles-square4 .tile .hover_box p {
+  color: #0B2435;
+  text-align: center;
+}
+
+
+@media (max-width:1370px) {
+  .tiles-square4 .tile {
+    height: 295px;
+  }
+}
+
+@media (max-width:1199px) {
+
+  .tiles-square4 .tile {
+    height: 225px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tiles-square4 .tile {
+    margin-bottom: 30px;
+  }
+}
+

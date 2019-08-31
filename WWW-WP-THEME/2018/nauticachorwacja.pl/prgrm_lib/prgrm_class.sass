@@ -1,0 +1,773 @@
+@import "lego/zoomtiles.sass"
+@import "lego/counter.sass"
+@import "lego/prgrm_tiles.sass"
+
+
+
+// Klasy do skalowania zdjęć w sekcjach typu parallax i fullbaner
+
+@media (max-width: 575px)
+ .scale-xxs
+   min-height: 180px
+ .scale-xs
+   min-height: 300px
+ .scale-s
+   min-height: 410px
+ .scale-m
+   min-height: 460px
+ .scale-l
+   min-height: 510px
+ .scale-xl
+   min-height: 560px
+ .scale-xxl
+   min-height: 600px
+ .scale-mobiauto
+   min-height: auto
+   height: auto
+@media (min-width: 576px) and (max-width: 767px)
+ .scale-xxs
+   min-height: 210px
+ .scale-xs
+   min-height: 320px
+ .scale-s
+   min-height: 430px
+ .scale-m
+   min-height: 480px
+ .scale-l
+   min-height: 530px
+ .scale-xl
+   min-height: 580px
+ .scale-xxl
+   min-height: 650px
+ .scale-mobiauto
+   min-height: auto
+   height: auto
+@media (min-width: 768px) and (max-width: 991px)
+ .scale-xxs
+   min-height: 230px
+ .scale-xs
+   min-height: 350px
+ .scale-s
+   min-height: 450px
+ .scale-m
+   min-height: 500px
+ .scale-l
+   min-height: 550px
+ .scale-xl
+   min-height: 600px
+ .scale-xxl
+   min-height: 700px
+@media (min-width: 992px) and (max-width: 1199px)
+ .scale-xxs
+   min-height: 270px
+ .scale-xs
+   min-height: 370px
+ .scale-s
+   min-height: 470px
+ .scale-m
+   min-height: 520px
+ .scale-l
+   min-height: 570px
+ .scale-xl
+   min-height: 620px
+ .scale-xxl
+   min-height: 700px
+@media (min-width:1201px) and (max-width: 1600px)
+ .scale-xxs
+   min-height: 300px
+ .scale-xs
+   min-height: 400px
+ .scale-s
+   min-height: 500px
+ .scale-m
+   min-height: 550px
+ .scale-l
+   min-height: 600px
+ .scale-xl
+   min-height: 650px
+ .scale-xxl
+   min-height: 850px
+@media (min-width: 1600px)
+ .scale-xxs
+   min-height: 350px
+ .scale-xs
+   min-height: 450px
+ .scale-s
+   min-height: 550px
+ .scale-m
+   min-height: 600px
+ .scale-l
+   min-height: 650px
+ .scale-xl
+   min-height: 700px
+ .scale-xxl
+   min-height: 950px
+
+
+// MARGIN AND PADDING SHORTCODE
+
+
+@media (max-width: 480px)
+  .semisepar
+    height: 30px
+
+  .separ
+    height: 60px
+
+@media (max-width: 580px)
+  .mobihide
+    display: none
+
+
+.semisepar
+  height: 50px
+
+.unsemisepar
+  margin-bottom: -50px !important
+
+.separ
+  height: 100px
+
+.pt0
+  padding-top: 0
+.pb0
+  padding-bottom: 0
+.p00
+  padding-bottom: 0
+  padding-top: 0
+.p0m0
+  padding-bottom: 0
+  padding-top: 0
+  margin-top: 0
+  margin-bottom: 0
+.m00
+  margin-top: 0
+  margin-bottom: 0
+
+.mt0
+  margin-top: 0
+.mb0
+  margin-bottom: 0
+
+.mt
+  margin-top: 25px
+.mb
+  margin-bottom: 25px
+
+.mt2
+  margin-top: 50px
+.mb2
+  margin-bottom: 50px
+
+.mt3
+  margin-top: 75px
+.mb3
+  margin-bottom: 75px
+
+.ml15
+  margin-left: 15px
+
+.mt4
+  margin-top: 100px
+.mb4
+  margin-bottom: 100px
+
+.ml2
+  margin-left: 50px
+
+.pt
+  padding-top: 25px
+.pb
+  padding-bottom: 25px
+
+.pt2
+  padding-top: 50px
+.pb2
+  padding-bottom: 50px
+
+.pt3
+  padding-top: 75px
+.pb3
+  padding-bottom: 75px
+
+
+.pt4
+  padding-top: 100px
+.pb4
+  padding-bottom: 100px
+
+
+.padtb
+  padding-top: 50px
+  padding-bottom: 50px
+
+@media (max-width: 767px)
+ .mt
+   margin-top: 15px
+ .mb
+   margin-bottom: 15px
+
+ .mt2
+   margin-top: 25px
+ .mb2
+   margin-bottom: 25px
+
+ .mt3
+   margin-top: 40px
+ .mb3
+   margin-bottom: 40px
+
+
+ .mt4
+   margin-top: 50px
+ .mb4
+   margin-bottom: 50px
+
+
+ .pt
+   padding-top: 15px
+ .pb
+   padding-bottom: 15px
+
+ .pt2
+   padding-top: 25px
+ .pb2
+   padding-bottom: 25px
+
+ .pt3
+   padding-top: 40px
+ .pb3
+   padding-bottom: 40px
+
+
+ .pt4
+   padding-top: 50px
+ .pb4
+   padding-bottom: 50px
+
+
+ .padtb
+   padding-top: 25px
+   padding-bottom: 25px
+
+
+// END MARGIN AND PADDING SHORTCODE
+
+
+
+.vc
+  position: absolute
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+
+.vhc
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+
+@media (max-width: 768px)
+  .vhc
+    position: inherit
+    transform: none
+    left: auto
+
+
+// TEXT ALIGN
+
+.left
+  text-align: left
+.right
+  text-align: right
+
+// END TETXT ALIGN
+
+
+// BACKGROUND PROPERTY
+
+section
+  padding-top: 20px
+  padding-bottom: 20px
+
+.bg-contain
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+
+.bg-cover
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+.bg-left
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: left
+
+.bg-top
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: top
+
+.bg-bottom
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: bottom
+.bg-bottom2
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: auto
+  background-position: bottom
+
+.bg-right
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: right
+
+.bg-center
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: auto 100%
+  background-position: center
+
+.bg-gray
+  background-color: #F1F1F1
+
+.bg-center2
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: auto auto
+  background-position: center
+
+.bg-cover-bottom
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: bottom
+
+.bg-cover-top
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: top
+
+@media (max-width: 768px)
+ .bg-mibihide
+   background-image: none!important
+
+
+// END BACKGROUND PROPERTY
+
+
+
+
+
+//===================================================
+//ANIMATIONS
+//===================================================
+// .anime
+//   -webkit-transition: all 1.5s ease
+//   -moz-transition: all 1.5s ease
+//   transition: all 1.5s ease
+
+.del1
+ animation-delay: 0.5s
+.del2
+ animation-delay: 1s
+ img, .border-turned
+  animation-delay: 1.5s
+.del3
+ animation-delay: 1.5s
+ img, .border-turned
+  animation-delay: 1.5s
+.del4
+ animation-delay: 2s
+.del5
+ animation-delay: 2.5s
+.del6
+ animation-delay: 3s
+.del7
+ animation-delay: 3.5s
+.del8
+ animation-delay: 4s
+
+//  // pod animację ramki
+// .del2 img
+//  animation-delay: 1s
+//
+// .del2 .border-turned
+//  animation-delay: 1s
+//
+// .del3 img
+//  animation-delay: 1.5s
+//
+// .del3 .border-turned
+//  animation-delay: 1.5s
+
+.vpc_hide
+  opacity: 0
+
+.vpc_w0
+  width: 0%
+
+// Pojawianie
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+.vpc1_visable
+  animation-name: fadeIn
+  animation-iteration-count: 1
+  animation-duration: 1.5s
+  animation-fill-mode: both
+
+
+// Wpływanie/przybliżanie
+@keyframes zoomIn
+  0%
+    opacity: 0
+    transform: scale3d(.3, .3, .3)
+  100%
+    opacity: 1
+.vpc2_visable
+  animation-name: zoomIn
+  animation-iteration-count: 1
+  animation-duration: 0.4s
+  animation-fill-mode: both
+
+
+//Wjazd z lewej
+@keyframes fadeInLeft
+  from
+    opacity: 0
+    transform: translate3d(-100%, 0, 0)
+  to
+    opacity: 1
+    transform: none
+.vpc3_visable
+  animation-name: fadeInLeft
+  animation-iteration-count: 1
+  animation-duration: 1s
+  animation-fill-mode: both
+
+// Wjazd z prawej
+@keyframes fadeInRight
+  from
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+  to
+    opacity: 1
+    transform: none
+.vpc4_visable
+  animation-name: fadeInRight
+  animation-iteration-count: 1
+  animation-duration: 1s
+  animation-fill-mode: both
+
+// Ramka
+@keyframes frame
+  0%
+    opacity: 0
+  25%
+    transform: translate3d(100%, 0, 0)
+    moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    transform: rotate(0deg)
+  50%
+    opacity: 1
+  100%
+    moz-transform: rotate(-5deg)
+    -webkit-transform: rotate(-5deg)
+    -ms-transform: rotate(-5deg)
+    transform: rotate(-5deg)
+@keyframes frame2
+  0%
+    opacity: 0
+  25%
+    transform: translate3d(100%, 0, 0)
+    moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    transform: rotate(0deg)
+  50%
+    opacity: 1
+  100%
+    moz-transform: rotate(15deg)
+    -webkit-transform: rotate(15deg)
+    -ms-transform: rotate(15deg)
+    transform: rotate(15deg)
+
+.vpc5_visable img
+  animation-name: frame
+  animation-iteration-count: 1
+  animation-duration: 0.5s
+  animation-fill-mode: both
+
+.vpc5_visable .border-turned
+  animation-name: frame2
+  animation-iteration-count: 1
+  animation-duration: 0.5s
+  animation-fill-mode: both
+
+
+  // Rozciąganie w prawo
+@keyframes stretchRight
+  from
+   -ms-transform: scale(0, 1)
+   -webkit-transform: scale(0,1)
+   transform: scale(0, 1)
+  to
+   -ms-transform: scale(1, 1)
+   -webkit-transform: scale(1,1)
+   transform: scale(1, 1)
+
+.vpc6_visable
+    transition-property: width
+    transition-duration: 2s
+    // slow end
+    transition-timing-function: ease-out
+    transition-delay: 0s
+    width: 250%
+
+
+
+
+
+//===================================================
+//END ANIMATIONS
+//===================================================
+
+
+
+
+
+
+
+// /* ====================================
+// jquery progremo lightbox 1
+// ======================================= */
+
+.lightbox
+  cursor: pointer
+
+.backdrop
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #000
+  opacity: 0
+  filter: alpha(opacity=0)
+  z-index: 55
+  display: none
+
+.box
+  position: fixed
+  top: 54%
+  right: 50%
+  -ms-transform: translate(50%, -50%)
+  -webkit-transform: translate(50%, -50%)
+  transform: translate(50%, -50%)
+  max-width: 80vw
+  max-height: 80vh
+  display: block
+  background-color: #fff
+  border: 0px
+  // border-radius: 4px
+
+  display: none
+  z-index: 66
+  overflow: hidden
+.close
+  position: absolute
+  right: 10px
+  top: 10px
+  width: 26px
+  color: #333
+  background-color: #ffffff80
+  transition-duration: 0.3s
+  border-radius: 12px
+  cursor: pointer
+  padding: 0px
+  font-size: 12px
+  line-height: 20px
+  text-align: center
+  font-weight: 300
+  // border: 1px solid #333
+  padding: 2px
+
+.lightbox_prev,
+.lightbox_next
+  position: absolute
+  width: 35px
+  height: 35px
+  font-weight: 100
+  font-size: 65px
+  // background-color: #fff
+  // color: #95bb20
+  color: #ffffff80
+  cursor: pointer
+  opacity: 0.5
+  padding-top: 7px
+  padding-left: 0
+  transition-duration: 0.3s
+  top: 50%
+  transform: translateY(-50%)
+.lightbox_prev:hover,
+.lightbox_next:hover
+ color: #fff
+ transition-duration: 0.3s
+  // opacity: 0.9
+  // transition-duration: 0.3s
+
+.lightbox_prev
+  left: 10px
+
+.lightbox_next
+  right: 10px
+.close:hover
+  background-color: #fff
+  transition-duration: 0.3s
+  // transition-duration:
+.box
+  overflow: hidden
+
+
+
+@media (max-width: 568px)
+  .box
+    max-width: 95vw
+    max-height: 95vh
+    width: 85%
+
+.drop
+  cursor: pointer
+  a
+    display: block
+
+  // pointer-events: none
+  // progremo lightbox2
+
+  // lightboxfilm special style
+
+#lightboxfilm
+  text-align: center
+  .glyphicon
+    border: 2px solid
+    color: lightgray
+    padding: 22px
+    border-radius: 50px
+    display: block
+    box-shadow: 1px 1px 1px lightgray
+    width: 70px
+    height: 70px
+    font-size: 25px
+    margin: 10px auto
+iframe
+  border: aliceblue
+  outline: none
+.box iframe
+  width: 90vw
+  max-width: 600px
+  min-height: 450px
+@media (max-width: 568px)
+ .box iframe
+  iframe
+   min-height: 250px
+@media (max-width: 768px)
+  iframe
+    max-width: 100%
+
+
+
+  // lightboxfilm special style end
+
+
+// /* ====================================
+// END jquery progremo lightbox 1
+// ======================================= */
+
+
+
+// =============================================
+//SPECIAL SECTION TEXT/FULLIMG
+//==============================================
+
+.ss-text-maximg
+  .row>div:last-child
+    background-size: cover
+    background-position: top left
+    background-repeat: no-repeat
+    min-height: 300px
+  .row>div:first-child
+  .row>div:first-child>div
+    max-width: 600px
+    text-align: right
+    margin-top: 50px
+    margin-bottom: 50px
+
+@media (min-width: 992px)
+  .ss-text-maximg
+    .row
+      display: flex
+      align-items: stretch
+    .row>div:first-child>div
+      max-width: 600px
+      float: right
+      margin-right: 20px
+
+//wersja z odwrotnym ułożeniem
+
+
+.ss-maximg-text
+  .row>div:first-child
+    background-size: cover
+    background-position: top left
+    background-repeat: no-repeat
+    min-height: 300px
+  .row>div:last-child
+  .row>div:last-child>div
+    max-width: 600px
+    text-align: left
+    margin-top: 50px
+    margin-bottom: 50px
+    margin-right: 20px
+
+@media (min-width: 768px)
+  .ss-maximg-text
+    .row
+      display: flex
+      align-items: stretch
+    .row>div:last-child>div
+      max-width: 600px
+      float: left
+      margin-right: 20px
+  // klasa specjalna zamiast zamiast sekcji specjalnej: jedna kolumna zdjęcie druga kolumna tekstowa koniec
+.img-to-center
+  .row>div
+    display: flex
+    align-items: center
+  .row>div:first-child img
+    float: right
+    order: 2
+    margin-left: 20px
+  .row>div:last-child img
+    float: left
+    margin-right: 20px
+// =============================================
+// END SPECIAL SECTION TEXT/FULLIMG
+//==============================================

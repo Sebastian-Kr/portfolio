@@ -1,0 +1,227 @@
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#kontakt-form label,
+#kontakt-form input,
+#kontakt-form textarea,
+#kontakt-form label span {
+  display: block;
+  width: 100%;
+}
+
+#kontakt-form input,
+#kontakt-form textarea {
+  background-color: #FAFAFA;
+  	border: 1px solid #DCDCDC;
+
+    	color: #323133;
+      padding: 4px;
+padding-left: 20px;
+}
+
+#kontakt-form #confirm-form input {
+  color: white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	opacity: 0.5;	color: #323133; 	font-size: 16px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  	opacity: 0.5;	color: #323133; 	font-size: 16px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  	opacity: 0.5;	color: #323133; 	font-size: 16px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  	opacity: 0.5;	color: #323133; 	font-size: 16px;
+}
+
+:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: transparent;
+}
+:focus::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+:focus::-ms-input-placeholder { /* IE 10+ */
+  color: transparent;
+}
+:focus::-moz-placeholder { /* Firefox 18- */
+  color: transparent;
+}
+
+#kontakt-form #form-subbmit {
+
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    padding-top: 20px;
+
+}
+
+#kontakt-form #check span {
+  /*color: #000;*/
+  font-size: 10px;
+  line-height: 11px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*display: inline;*/
+}
+
+
+
+#kontakt-form textarea {
+  margin-bottom: -40px;
+  height: 195px;
+}
+
+#kontakt-form #text-cookies {
+  width: calc(100% - 40px);
+  /*border: 1px solid;*/
+  margin-left: 20px;
+}
+#kontakt-form .acceptance-268 {
+  float: left;
+  display: block;
+  width: 10px;
+  margin: 0;
+}
+
+#kontakt-form .kontakt-button  {
+  height: 75px!important;
+  float: left;
+  width: calc(100% - 320px);
+  background-color: #0069B3;
+  border: none;
+}
+
+#kontakt-form #map {
+  /*border: 1px solid;*/
+  height: 300px;
+}
+
+#kontakt-form input[type=checkbox] {
+
+  width: 20px;
+  height: 20px;
+	/* margin-top: -20px;
+	margin-left: -10px; */
+  }
+
+
+	div.wpcf7-spam-blocked {
+		border: 0px;
+	}
+
+
+	div.wpcf7-mail-sent-ok {
+		border: 0px;
+		margin-top: 110px;
+	}
+
+.ajax-loader {
+	display: none!important;
+	position: fixed;
+	bottom: -1000px;
+}
+
+#check {
+	margin-top: 10px;
+}
+
+#kontakt-form #confirm-form div:first-child {
+width: 320px;
+/*border: 1px solid;*/
+float: left;
+margin-left: 0px;
+}
+
+#kontakt-form #confirm-form div:last-child {
+width: 100%;
+/*border: 1px solid;*/
+float: left;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #kontakt-form  {
+    float: none;
+    width: 303px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #kontakt-form .kontakt-button {
+    display: block;
+    float: none!important;
+    width: 303px!important;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 15px;
+     max-width: 100%;
+  }
+#kontakt-form #confirm-form div:first-child {
+ float: none;
+ margin-bottom: 15px;
+ margin: 0 auto;
+ width: 303px;
+ height: 125px;
+ max-width: 100%;
+}
+}
+
+#kontakt-form .kontakt-button {
+  background-color: $color1;
+  input {
+    padding: 0!important;
+    // margin-top: 30px!important;
+  }
+}
+@media (max-width:991px) {
+  #map {
+    margin-top: 20px;
+    color: #000!important;
+  }
+
+
+
+}
+#map {
+  color: #000!important;
+}
+
+
+
+#kontakt-info {
+  font-family: 'Ubuntu', sans-serif;
+font-size: 15px;
+font-weight: 500;
+}
+#kontakt-info h2::after {
+display:  none;
+
+}
+
+#kontakt-info .prgrm_visual_editor {
+  margin-bottom: 40px;
+}
+
+
+
+#kontakt-form input[type=checkbox] {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#confirm-form .wpcf7-form-control-wrap {
+margin-left: -10px !important;
+}

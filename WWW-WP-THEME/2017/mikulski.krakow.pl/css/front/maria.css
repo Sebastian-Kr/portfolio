@@ -1,0 +1,55 @@
+.glowny-kontener {
+  /*margin-top:50px;*/
+}
+
+h3 {
+ margin-top:40px;
+}
+
+p {
+  font-size:18px;
+}
+
+ul li {
+  list-style-type: disc;
+  font-size:16px;
+  margin-left:18px;
+}
+
+.podsumowanie {
+  margin-top:40px;
+}
+
+.realizacje {
+  margin:80px auto;
+  float:left;
+}
+
+
+.liczba-porzadkowa {
+  font-weight:16px;
+  font-weight: bold;
+}
+
+.pojedyncza-realizacja {
+  margin-bottom:40px;
+  float:left;
+}
+
+.pojedyncza-realizacja h4 {
+  font-weight:16px;
+}
+
+
+
+/*style dla telefonu, rozdzielczosc do 768*/
+
+@media screen and (max-width: 768px) {
+  .zdjecie {
+    margin:20px auto;
+    text-align: center;
+  }
+  img {
+    margin:0 auto;
+  }
+}

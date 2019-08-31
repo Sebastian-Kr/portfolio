@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Obramowanie</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+
+ <h1 style="border:  ">Obramowanie</h1>
+ <div id="before"><h2>Przed</h2><div class="parent">
+   
+   <span  class="static-inline-shrinkwrapped box" >Element statyczny, śródliniowy i<br />kurczliwy</span>
+
+   <div   class="spacer" ></div>
+
+   <img   class="replaced-inline-shrinkwrapped box" src="star.gif" alt="" />
+   <img   class="replaced-inline-sized box"         src="star.gif" alt="" />
+   <span  class="sized">
+    <img  class="replaced-inline-stretched box"     src="star.gif" alt="" /></span>
+   
+   <div   class="spacer" ></div>
+
+   <div   class="static-block-sized box"     >Stat. blok, kon. rozm.</div>
+   <div   class="static-block-stretched box" >Stat. blok, rozc. auto</div>
+
+   <div   class="spacer" ></div>
+   
+   <table class="table-shrinkwrapped box"    ><tr><td>Kurczliwa tabela</td></tr></table>
+   <table class="table-sized box"            ><tr><td>Tabela, kon. rozm.</td></tr></table>
+   <table class="table-stretched box"        ><tr><td>Tabela rozc. 100%</td></tr></table>
+
+   <div   class="spacer" ></div>
+   
+   <span  class="float-shrinkwrapped box"    >Pływający kurczliwy</span>
+   <span  class="float-sized box"            >Pływ., kon. rozm.</span>
+   <span  class="float-stretched box"        >Pływający rozc. 100%</span>
+
+   <span  class="absolute-shrinkwrapped box" >Bezwzgl. kurczliwy</span>
+   <span  class="absolute-sized box"         >Bezwzgl. kon. rozm.</span>
+   <span  class="absolute-stretched box"     >Bezwzgl. rozc. auto</span>
+ </div></div>
+ 
+ <!-- Identical code to the previous with the addition of the after class -->
+ 
+ <div id="after"><h2>Za</h2><div class="parent">
+   
+   <span  class="static-inline-shrinkwrapped box after" >Element statyczny, śródl. i <br />kurczliwy </span>
+
+   <div   class="spacer" ></div>
+
+   <img   class="replaced-inline-shrinkwrapped box after" src="star.gif" alt="" />
+   <img   class="replaced-inline-sized box after"         src="star.gif" alt="" />
+   <span  class="sized">
+    <img  class="replaced-inline-stretched box after"     src="star.gif" alt="" /></span>
+   
+   <div   class="spacer" ></div>
+
+   <div   class="static-block-sized box after"     >Stat. blok, kon. rozm.</div>
+   <div   class="static-block-stretched box after" >Stat. blok, rozc. auto</div>
+
+   <div   class="spacer" ></div>
+   
+   <table class="table-shrinkwrapped box after"    ><tr><td class="1after" >Kurczliwa tabela</td></tr></table>
+   <table class="table-sized box after"            ><tr><td class="1after" >Tab., kon. rozm.</td></tr></table>
+   <table class="table-stretched box after"        ><tr><td class="1after" >Tabela rozc. 100%</td></tr></table>
+
+   <div   class="spacer" ></div>
+   
+   <span  class="float-shrinkwrapped box after"    >Pływający kurczliwy</span>
+   <span  class="float-sized box after"            >Pływ., kon. rozm.</span>
+   <span  class="float-stretched box after"        >Pływający rozc. 100%</span>
+
+   <span  class="absolute-shrinkwrapped box after" >Bezwzgl. kurczliwy</span>
+   <span  class="absolute-sized box after"         >Bezwzgl. kon. rozm.</span>
+   <span  class="absolute-stretched box after"     >Bezwzgl. rozc. auto</span>
+ </div></div>
+
+</body>
+</html>

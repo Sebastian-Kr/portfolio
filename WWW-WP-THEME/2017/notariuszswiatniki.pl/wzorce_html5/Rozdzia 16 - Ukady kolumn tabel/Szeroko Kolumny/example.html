@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title>Szerokość Kolumny</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+
+</head>
+
+<body>
+
+<h1>Szerokość Kolumny</h1>
+<h2>Wartości procentowe przebijają jednostki, które z kolei przebijają wartość auto.</h2>
+
+<table class="auto-layout sized">
+ <tr> <td class="a i">auto</td><td class="a">auto</td>   <td class="a">auto</td> 
+      <td class="a">auto</td>  <td class="a">auto</td></tr>
+ <tr> <td class="a">auto</td>  <td class="b i">75px</td> <td class="b">75px</td> 
+      <td class="b">75px</td>  <td class="b">75px</td></tr>
+ <tr> <td class="a">auto</td>  <td class="a">auto</td>   <td class="c i">150px</td> 
+      <td class="c">150px</td> <td class="c">150px</td></tr>
+ <tr> <td class="a">auto</td>  <td class="a">auto</td>   <td class="a">auto</td> 
+      <td class="d i">10%</td> <td class="d">10%</td></tr>
+ <tr> <td class="a">auto</td>  <td class="a">auto</td>   <td class="a">auto</td> 
+      <td class="a">auto</td>  <td class="e i">50%</td></tr>
+</table>
+
+
+</body>
+</html>

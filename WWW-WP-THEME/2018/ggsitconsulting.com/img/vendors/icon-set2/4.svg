@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="32px" viewBox="0 0 57 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 57.002 0 57.002 31.9219 0 31.9219"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vendors" transform="translate(-171.000000, -2030.000000)">
+            <g id="Page-1" transform="translate(171.000000, 2030.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M34.834,15.961 C34.834,19.352 31.997,22.101 28.5,22.101 C25.002,22.101 22.167,19.352 22.167,15.961 C22.167,12.571 25.002,9.822 28.5,9.822 C30.391,9.822 27.341,14.688 28.5,15.961 C29.486,17.043 34.834,14.404 34.834,15.961 M28.5,28.238 C21.505,28.238 15.833,22.742 15.833,15.961 C15.833,9.18 21.505,3.684 28.5,3.684 C35.496,3.684 41.168,9.18 41.168,15.961 C41.168,22.742 35.496,28.238 28.5,28.238 M28.5,0 C9.803,0 0,13.777 0,15.961 C0,18.146 9.803,31.922 28.5,31.922 C47.197,31.922 57.002,18.146 57.002,15.961 C57.002,13.777 47.197,0 28.5,0" id="Fill-1" fill="#FEFEFE" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

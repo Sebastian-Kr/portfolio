@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Beerweek-gotowe" transform="translate(-269.000000, -3658.000000)">
+            <g id="atrakcje" transform="translate(0.000000, 3446.000000)">
+                <g id="1" transform="translate(211.000000, 212.000000)">
+                    <g id="Oval-Copy" transform="translate(58.000000, 0.000000)">
+                        <circle stroke="#E0A33B" stroke-width="5" cx="60" cy="60" r="57.5"></circle>
+                        <g id="Group-2" transform="translate(34.545455, 37.272727)" fill-rule="evenodd" stroke="#F7F7F7" stroke-width="1">
+                            <g>
+                                <path d="M12.2946429,36.8839286 L37.7946429,36.8839286" id="Line-3" stroke-width="5" stroke-linecap="round"></path>
+                                <polyline id="Rectangle-4" stroke-width="5" stroke-linecap="round" points="0 51 4.55357143 0 4.55357143 0 46.4464286 0 51 51"></polyline>
+                                <rect id="Rectangle-5" stroke-width="5" x="18.2142857" y="0" width="14.5714286" height="25.5"></rect>
+                                <path d="M19.1403567,25.1659028 C14.2424367,25.1046177 11.7934767,31.3522442 11.7934767,43.9087825 C16.9186179,45.7894985 21.7935498,46.0058396 24.9854449,46.0058396 C25.1296723,44.0179898 24.8261009,41.0820638 24.0747306,37.1980616" id="Path-6" stroke-width="5" stroke-linecap="round"></path>
+                                <path d="M32.8744018,25.1659028 C27.9764819,25.1046177 25.5275219,31.3522442 25.5275219,43.9087825 C30.652663,45.7894985 35.527595,46.0058396 38.7194901,46.0058396 C38.8637175,44.0179898 38.560146,41.0820638 37.8087758,37.1980616" id="Path-6" stroke-width="5" transform="translate(32.140926, 35.585648) scale(-1, 1) translate(-32.140926, -35.585648) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

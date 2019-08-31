@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="65px" height="46px" viewBox="0 0 65 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-random copy 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.20832,0.0284573304 C0.554732308,0.0284573304 0.0247138462,0.558413567 0.0247138462,1.21224289 L0.0247138462,34.3550875 C0.0247138462,35.0089168 0.554633846,35.5388731 1.20832,35.5388731 L34.3489969,35.5388731 C35.0026831,35.5388731 35.5327015,35.0089168 35.5327015,34.3550875 L35.5327015,1.21214442 C35.5327015,0.558413567 35.0027815,0.0284573304 34.3490954,0.0284573304 L1.20832,0.0284573304 Z M2.39202462,2.39583151 L33.1655877,2.39583151 L33.1655877,33.1714004 L2.39202462,33.1714004 L2.39202462,2.39583151 Z" id="path-1"></path>
+        <linearGradient x1="-6.48868086e-06%" y1="50.0000076%" x2="99.999974%" y2="50.0000076%" id="linearGradient-3">
+            <stop stop-color="#FFAE08" offset="0%"></stop>
+            <stop stop-color="#F68E1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.000455018092%" y1="50.0001319%" x2="99.9953533%" y2="50.0001319%" id="linearGradient-4">
+            <stop stop-color="#FFAE08" offset="0%"></stop>
+            <stop stop-color="#F68E1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.000455018092%" y1="50.0000086%" x2="99.9994152%" y2="50.0000086%" id="linearGradient-5">
+            <stop stop-color="#FFAE08" offset="0%"></stop>
+            <stop stop-color="#F68E1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-9.73296731e-05%" y1="50.0001319%" x2="99.9998702%" y2="50.0001319%" id="linearGradient-6">
+            <stop stop-color="#FFAE08" offset="0%"></stop>
+            <stop stop-color="#F68E1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0000086%" x2="99.9999676%" y2="50.0000086%" id="linearGradient-7">
+            <stop stop-color="#FFAE08" offset="0%"></stop>
+            <stop stop-color="#F68E1C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy-24" transform="translate(-153.000000, -5768.000000)">
+            <g id="05" transform="translate(150.000000, 5756.000000)">
+                <g id="5" transform="translate(3.888889, 12.444444)">
+                    <g id="Group-3" stroke-width="1" transform="translate(14.178462, 4.706291)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M1.20832,0.0284573304 C0.554732308,0.0284573304 0.0247138462,0.558413567 0.0247138462,1.21224289 L0.0247138462,34.3550875 C0.0247138462,35.0089168 0.554633846,35.5388731 1.20832,35.5388731 L34.3489969,35.5388731 C35.0026831,35.5388731 35.5327015,35.0089168 35.5327015,34.3550875 L35.5327015,1.21214442 C35.5327015,0.558413567 35.0027815,0.0284573304 34.3490954,0.0284573304 L1.20832,0.0284573304 Z M2.39202462,2.39583151 L33.1655877,2.39583151 L33.1655877,33.1714004 L2.39202462,33.1714004 L2.39202462,2.39583151 Z" id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                    </g>
+                    <polygon id="Fill-4" fill="url(#linearGradient-4)" points="54.4455877 42.6124398 56.8128985 42.6124398 56.8128985 2.36727571 54.4455877 2.36727571"></polygon>
+                    <polygon id="Fill-6" fill="url(#linearGradient-5)" points="61.5471262 44.979814 63.9144369 44.979814 63.9144369 0 61.5471262 0"></polygon>
+                    <polygon id="Fill-8" fill="url(#linearGradient-6)" points="7.10163692 42.6124398 9.46884923 42.6124398 9.46884923 2.36727571 7.10163692 2.36727571"></polygon>
+                    <polygon id="Fill-10" fill="url(#linearGradient-7)" points="0 44.979814 2.36721231 44.979814 2.36721231 0 0 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

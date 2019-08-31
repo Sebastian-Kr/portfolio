@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Białe Znaki w HTML</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+
+<h1>Białe Znaki w HTML</h1>
+<p>     początek    środek  &#x0020; &#x0009;  <span> </span>    <span></span>
+                                      &#x000A; &#x000D;  	  koniec      </p>
+
+<h2>Kontrolowanie białych znaków</h2>
+<p>początek<span class="border">  środek </span> koniec<em>—wewnątrz elementu</em></p>
+<p>początek <span class="border"> środek</span>  koniec<em>—poza elementem</em></p>
+
+<h2>Białe znaki w znacznikach</h2>
+ <p>początek<span 
+          class 
+           =
+            "spaced"
+             >środek</span
+              >koniec</p>
+
+<h2>Encje białych znaków</h2>
+<code>&amp;zwnj;   </code><span class="border">&zwnj;</span>    &nbsp;
+<code>&amp;thinsp; </code><span class="border">&thinsp;</span>  &nbsp;
+<code>&amp;nbsp;   </code><span class="border">&nbsp;</span>    &nbsp;
+<code>&amp;ensp;   </code><span class="border">&ensp;</span>    &nbsp;
+<code>&amp;emsp;   </code><span class="border">&emsp;</span>    &nbsp;
+
+
+</body>
+</html>

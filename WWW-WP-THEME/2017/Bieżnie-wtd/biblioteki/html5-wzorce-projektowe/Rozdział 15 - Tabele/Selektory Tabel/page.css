@@ -1,0 +1,19 @@
+/* Mniej ważne style */ 
+td,th { padding:2px; text-align:center; width:75px; }
+
+/* Ważne style */
+
+table,td,th { border:1px solid black;      }   /* Wybiera wszystkie tabele i komórki */
+td,th       { background-color:white;      }   /* Wybiera wszystkie komórki */
+
+#t1           { border-collapse:collapse;  }        /* Wybiera tabelę */
+#t1 thead td  { font-weight:bold;          }        /* Wybiera komórki nagłówka */
+#t1 tfoot td  { font-style:italic;         }        /* Wybiera komórki stopki */
+#t1 tbody td  { font-variant:small-caps;   }        /* Wybiera komórki treści właściwej */
+#t1 .b1  td  { font-size:1.2em;           }        /* Wybiera komórki treści właściwej   */
+#t1 .c3      { display:none; }                     /* Wybiera komórki w kolumnie */
+#t1 .c4      { background-color:firebrick; color:white; } 
+#t1 .r1      { background-color:gold; color:black;  } /* Wybiera wiersz — brak efektu */
+#t1 .r2 td   { background-color:gold; color:black;  } /* Wybiera komórki wiersza */
+#t1 .r2 .c6 { font-size:1.8em; font-weight:bold;   } /* Wybiera komórkę */
+

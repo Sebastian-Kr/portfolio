@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+<head><title>Przesuwanie Elementów Bezwzględnych i Stałych</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+
+ <h1>Przesuwanie Elementów Bezwzględnych i Stałych</h1>
+ 
+ <div class="gp"><h2>Pozycjonowany dziadek</h2>
+   <div class="parent"><h2>Niepozycjonowany rodzic</h2>
+     Domyślnie element pozycjonowany bezwzględnie jest umieszczany w tym samym miejscu,
+     w którym znajdowałby się, gdyby nie był pozycjonowany:
+     <span id="absolute" class="border">Bezwzględny</span>
+
+     <p>Element taki można przesunąć względem jego pierwotnego położenia 
+        za pomocą ustawień marginesów lewego i górnego: <span id="fixed" class="border">Stały</span></p>
+   </div>   
+ </div>
+
+ 
+</body>
+</html>

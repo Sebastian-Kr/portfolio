@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="30px" viewBox="0 0 35 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-22">
+            <g id="Group-27">
+                <path d="M13.3615787,0 L4.88541732,3.77697178 C3.46066531,4.83063872 2.27337196,6.93121043 1.32353728,10.0786869 C-0.101214738,14.7999016 -0.751443361,18.9051454 1.32353728,22.2099957 C3.39851792,25.514846 5.32694204,30 15.2278555,30 C21.8284644,30 26.8460156,29.1857749 30.2805089,27.5573246 L35,17.4786377 L32.150496,6.92782935 C31.2355634,5.56617692 28.565081,4.07112559 24.1390486,2.44267536 C19.7130162,0.814225118 16.1205262,0 13.3615787,0 Z" id="Path-6-Copy-7" fill="#FFFFFF" transform="translate(17.500000, 15.000000) scale(1, -1) translate(-17.500000, -15.000000) "></path>
+                <polygon id="Triangle-2" fill="#FF0082" transform="translate(19.000000, 15.000000) rotate(90.000000) translate(-19.000000, -15.000000) " points="19 10 27 20 11 20"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

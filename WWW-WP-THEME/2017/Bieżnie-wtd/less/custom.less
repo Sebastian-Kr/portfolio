@@ -1,0 +1,204 @@
+/* ==========================================================================
+   SK custom default styles
+
+ * Version - 3.5.1
+ * Copyright (c) 2016 Sebastian Krajewski
+
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+IMPORT CUSTOM MIXINS LESS
+============================================================================= */
+
+   @import "custom-mixins.less";
+
+
+/* ==========================================================================
+IMPORT ANIMATE LESS
+============================================================================= */
+
+
+   @import "animate.less";
+
+ /* ==========================================================================
+CUSTOM PROJECT STYLE
+============================================================================= */  
+
+body {
+	font-family: roboto;
+	font-weight: 100;
+}
+
+
+
+
+
+.wzory > div 
+  
+{
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+
+}
+
+.wzory 
+{
+
+	/*border: 1px solid black;*/
+	padding: 200px 20px;
+
+	margin-bottom: 300px;
+
+}
+
+
+h3, h2, h1, h4, h5, h6
+{
+	font-size: 30px;
+	font-weight: 100;
+	margin: 0 auto;
+	text-align: center;
+	margin: 10px;
+}
+
+h1,h2
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h4
+{
+	font-size: 22px;
+}
+
+.btn-primary
+{
+	background-color: @ac-color;
+	border: 0px;
+	border-radius: 0px;
+	width: 90%;
+
+	
+}
+
+.btn-primary:hover {background-color: @ac-color2;}
+
+.btn-info
+{
+	background-color: @ac-color2;
+	border: 0px;
+	border-radius: 0px;
+	
+	float: right;
+
+	
+}
+
+.btn-info:hover {background-color: @ac-color;}
+
+
+
+.thumbnail {
+	text-align: center;
+}
+
+
+.header 
+{
+	background-image: url('../img/baner.jpg'); 
+	height: 400px;
+	position: relative;
+	background-size: cover;
+	background-position: left top;
+
+}
+
+
+#tagline
+{
+
+	width: 40%;
+
+	text-align: left;
+	position: absolute;
+top: 30%;
+right: 14%;
+	h1 {color: #fff; text-align: left; margin-bottom: 30px; font-size: 34px;}
+	button {padding: 10px; font-size: 22px; }
+	a {color: gray;  }
+}
+
+nav
+{
+
+	a {text-align: center;}
+	li:hover { background-color: @ac-color2; transition-duration:0.5s;}
+	li {padding-top: 0px; padding-bottom: 0px; }
+
+
+}
+
+
+.navbar-default .navbar-nav > li > a:hover {color: #fff; transition-duration:1s;}
+
+	.navbar {margin-bottom: 0px; border: 0px;}
+
+	.navbar-header {width: 30%;}  
+	
+
+.navbar {
+	position: fixed;
+top: 0px;
+z-index: 999;
+width: 100%;
+
+}
+
+
+
+
+.btn:hover
+{
+	transition-duration: 0.5s;
+}
+
+/* uniwersalna klasa do animowania elementu po najechaniu */
+
+.h-anime:hover
+{
+	transition-duration: 1s;
+	.animated; 
+	.shake;
+}
+
+.h-anime
+{
+	transition-duration: 1s;
+}
+
+/* uniwersalna klasa do innego animowania elementu po najechaniu */
+
+.h-anime2:hover
+{
+	transition-duration: 1s;
+	.animated; 
+	.zoomIn;
+
+
+}
+
+.h-anime2
+{
+	transition-duration: 1s;
+	
+}
+
+
+
+

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "custom-lib.sass"
+    ],
+    "names": [],
+    "file": "custom-lib.css"
+}

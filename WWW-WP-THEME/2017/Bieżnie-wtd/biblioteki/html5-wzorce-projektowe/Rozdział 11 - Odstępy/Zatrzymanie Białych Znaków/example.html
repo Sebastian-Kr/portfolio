@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title>Zatrzymanie Białych Znaków</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+	</head>
+ 
+	<body>
+ 
+<h1>Zatrzymanie Białych Znaków</h1>
+
+<pre>Białe   znaki   można   zatrzymać   dzięki   elementowi      <code>&lt;pre&gt;</code>.</pre>
+
+<p>Aby móc dowolnie stosować złamania wiersza i spacje, można użyć ustawienia <code>white-space:pre</code>.
+   <span class="preserved" >
+     </span>To zdanie jest przeniesione do nowego wiersza i wcięte na pięć spacji. 
+   <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lepszym sposobem jest jednak użycie elementu
+   <code>&lt;br /&gt;</code> i encji <code>&amp;nbsp;</code></p>
+
+<p class="preserved">Można zachować białe znaki
+                 w blokach.</p>
+
+<p>Można zachować <span class="preserved" > 
+                 białe znaki </span>w elementach śródliniowych.</p>
+
+<p class="preserved">Deklarację <code>white-space:pre</code> można
+                               <span class="not-preserved" >włączać i wyłączać
+                                                            w dowolnej chwili.</span></p>
+ </body>
+</html>

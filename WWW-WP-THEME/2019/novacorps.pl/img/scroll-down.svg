@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="28px" viewBox="0 0 18 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Strzalka</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Nova-Corps---Desktop" transform="translate(-711.000000, -549.000000)">
+            <g id="Strzalka" transform="translate(711.000000, 549.000000)">
+                <g id="szczalka">
+                    <rect id="Rectangle-11" stroke="#E0E0E0" stroke-width="1.5" x="0.75" y="0.75" width="16.5" height="26.5" rx="8"></rect>
+                    <path d="M8,16.9892154 L8,8.75 C8,8.33578644 8.33578644,8 8.75,8 C9.16421356,8 9.5,8.33578644 9.5,8.75 L9.5,16.9892154 L11.2196699,15.2695455 C11.5125631,14.9766523 11.9874369,14.9766523 12.2803301,15.2695455 C12.5732233,15.5624388 12.5732233,16.0373125 12.2803301,16.3302057 L9.28033009,19.3302057 C9.13388348,19.4766523 8.94194174,19.5498756 8.75,19.5498756 C8.55805826,19.5498756 8.36611652,19.4766523 8.21966991,19.3302057 L5.21966991,16.3302057 C4.9267767,16.0373125 4.9267767,15.5624388 5.21966991,15.2695455 C5.51256313,14.9766523 5.98743687,14.9766523 6.28033009,15.2695455 L8,16.9892154 Z" id="Combined-Shape" fill="#000000"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

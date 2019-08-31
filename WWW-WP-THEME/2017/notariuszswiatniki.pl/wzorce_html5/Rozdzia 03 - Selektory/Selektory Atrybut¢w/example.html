@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Selektory Atrybutów</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+
+ <h1>Selektory Atrybutów</h1>
+
+ <p>To jest akapit bez atrybutu <code>title</code>.</p>
+
+ <p title="Second">
+  Selektor <code>p[title]</code> wybiera wszystkie akapity zawierające atrybut title.</p>
+
+ <p title="Third paragraph">
+  Selektor <code>p[title~="paragraph"]</code> wybiera wszystkie akapity mające
+  atrybut title zawierający m.in. słowo <code>paragraph</code>.</p>
+
+ <p title="#4   paragraph">
+  Selektor <code>p[title="#4   paragraph"]</code> wybiera wszystkie akapity mające
+  atrybut title zawierający dokładnie tekst <code>#4   paragraph</code>. Przy dopasowywaniu
+  brane są pod uwagę wielkość liter i spacje.</p>
+
+	<a href="http://www.example.com" target="_blank" hreflang="pl-PL">cześć</a>
+
+
+</body>
+</html>

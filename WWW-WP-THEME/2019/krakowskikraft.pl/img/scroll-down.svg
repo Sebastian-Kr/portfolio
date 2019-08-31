@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="28px" viewBox="0 0 19 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Scroll-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Krakowski-Kraft-Mockup" transform="translate(-711.000000, -797.000000)" stroke="#AE8750">
+            <g id="Parallax">
+                <g id="Scroll-down" transform="translate(712.000000, 798.000000)">
+                    <g>
+                        <rect id="Rectangle" stroke-width="2" x="0" y="0" width="17" height="26" rx="8.5"></rect>
+                        <path d="M8.5,7.37837838 L8.5,11.8768527" id="Line" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

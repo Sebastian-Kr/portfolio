@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="0 -94" i:rulerOrigin="0 121" i:pageBounds="0 -94 34 -121"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="34px" height="27px" viewBox="0 0 34 27" enable-background="new 0 0 34 27" xml:space="preserve">
+<metadata>
+	<variableSets  xmlns="&ns_vars;">
+		<variableSet  varSetName="binding1" locked="none">
+			<variables></variables>
+			<v:sampleDataSets  xmlns="&ns_custom;" xmlns:v="&ns_vars;"></v:sampleDataSets>
+		</variableSet>
+	</variableSets>
+</metadata>
+<g id="Warstwa_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
+	<g>
+		
+			<circle i:knockout="Off" fill="none" stroke="#1F1E21" stroke-width="1.8" stroke-miterlimit="10" cx="-75.493" cy="-29.333" r="12.929"/>
+		<path i:knockout="Off" fill="none" stroke="#1F1E21" stroke-width="1.8" stroke-miterlimit="10" d="M-66.549-29.333
+			c0,8.835-8.943,12.929-8.943,12.929s-7.111-3.231-7.111-12.929c0-8.727,7.111-12.93,7.111-12.93S-66.549-38.276-66.549-29.333z"/>
+		<path i:knockout="Off" fill="none" stroke="#1F1E21" stroke-width="1.8" stroke-miterlimit="10" d="M-75.492-42.262
+			c0,0,2.155,5.789,2.155,12.93c0,9.051-2.155,12.929-2.155,12.929"/>
+		<path i:knockout="Off" fill="none" stroke="#1F1E21" stroke-width="1.8" stroke-miterlimit="10" d="M-75.654-15.756"/>
+	</g>
+	<g i:knockout="Off">
+		<polygon points="-64.75,0.867 -64.75,-1.026 -67.089,-2.282 -67.089,-0.294 		"/>
+		<g>
+			<path d="M-67.089,0.676v20.365c0,2.088-2.396,3.039-4.627,3.039c-1.775,0-3.568-0.572-4.336-1.676
+				c-0.225,0.164-0.498,0.264-0.799,0.264h-1.428c-0.092,0-0.18-0.01-0.266-0.027c0.852,2.484,3.857,3.777,6.828,3.777
+				c4.103,0,6.966-2.209,6.966-5.377V1.835L-67.089,0.676z"/>
+		</g>
+		<path d="M-68.466,7.105C-69.12,5.521-70.68,4.406-72.5,4.406h-11.278c-2.048,0-3.762,1.412-4.232,3.312
+			c-0.077,0.488-0.191,1.366-0.133,2.69c0.109,2.507,1.897,3.452,3.205,4.041c1.506,0.676,3.697,0.863,6.849,0.863
+			c3.003,0,4.905-0.447,6.577-0.863c1.339-0.336,3.379-1.629,3.379-4.041c0,0,0.035-0.499,0-1.359
+			C-68.171,8.189-68.358,7.37-68.466,7.105z M-69.419,10.104c0,2.122-2.209,3.167-3.412,3.318c-2.664,0.337-2.947-3.158-5.263-3.158
+			c-2.316,0-2.902,3.56-5.237,3.104c-1.138-0.219-3.425-1.018-3.425-3.139V9.142c0-2.12,1.616-3.529,3.737-3.529h9.918
+			c2.122,0,3.682,1.409,3.682,3.529V10.104z"/>
+		<path d="M-72.479,17.113l-2.632,0.324c-0.521,0.779-1.56,1.227-2.467,1.227c-0.911,0-1.788-0.383-2.405-1.162l-2.697-0.357
+			c0,1.158,0.978,2.465,2.146,3.098c0.569,0.309,1.157,0.537,1.833,0.66c-0.1,0.105-0.16,0.246-0.16,0.402
+			c0,0.32,0.261,0.582,0.584,0.582h1.428c0.324,0,0.586-0.262,0.586-0.582c0-0.168-0.072-0.318-0.186-0.426
+			C-74.343,20.43-72.702,18.783-72.479,17.113z"/>
+	</g>
+	<g>
+		<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M-65.049,50.177
+			c0,6.181-9.02,18.131-9.02,18.131s-9.021-11.575-9.021-18.131c0-4.98,4.039-9.02,9.021-9.02
+			C-69.088,41.157-65.049,45.196-65.049,50.177z"/>
+		
+			<circle i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="-74.08" cy="49.911" r="4.244"/>
+	</g>
+	<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9" stroke-miterlimit="10" d="M-94.267,115.603
+		c0,0.594,0.481,1.075,1.076,1.075h24.858c0.595,0,1.075-0.481,1.075-1.075v-14.109c0-0.594-0.48-1.075-1.075-1.075H-93.19
+		c-0.595,0-1.076,0.481-1.076,1.075V115.603z"/>
+	
+		<line i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-miterlimit="10" x1="-90.593" y1="104.584" x2="-86.741" y2="104.584"/>
+	
+		<line i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-miterlimit="10" x1="-83.964" y1="104.584" x2="-82.71" y2="104.584"/>
+	<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-miterlimit="10" d="
+		M-75.543,107.644c0-0.552,0.448-0.999,0.999-0.999h2.75c0.551,0,0.998,0.447,0.998,0.999v2.748c0,0.553-0.447,1-0.998,1h-2.75
+		c-0.551,0-0.999-0.447-0.999-1V107.644z"/>
+	<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9" stroke-miterlimit="10" d="M-66.986,107.097l11.099-3.191
+		c0.57-0.164,0.9-0.76,0.736-1.33l-3.898-13.561c-0.164-0.57-0.76-0.899-1.33-0.735l-23.893,6.869
+		c-0.57,0.164-0.9,0.759-0.736,1.329l1.256,4.373"/>
+	
+		<line i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9" stroke-linecap="round" stroke-miterlimit="10" x1="-83.669" y1="99.777" x2="-58.409" y2="92.579"/>
+	<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9291" stroke-miterlimit="10" d="M-99.341-66.121H-60v-7.75
+		c0,0,2.759-5.365-2.235-5.365c-4.992,0-4.321,5.365-4.321,5.365v1.491h-25.931v-1.491c0,0,0.597-5.365-4.471-5.365
+		c-5.066,0-2.402,5.365-2.402,5.365L-99.341-66.121z"/>
+	<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9291" stroke-miterlimit="10" d="M-62.98-78.955
+		c0,0,0.671-7.992-5.364-7.992c-6.036,0-16.43,0-22.298,0s-5.364,7.992-5.364,7.992"/>
+	<polyline i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9291" stroke-miterlimit="10" points="-96.007,-66.214 
+		-96.007,-62.693 -95.017,-62.693 -95.017,-66.047 	"/>
+	<polyline i:knockout="Off" fill="none" stroke="#000000" stroke-width="1.9291" stroke-miterlimit="10" points="-63.972,-66.214 
+		-63.972,-62.693 -62.98,-62.693 -62.98,-66.047 	"/>
+	<g>
+		
+			<circle i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" cx="17" cy="-33.765" r="10.602"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" d="M24.334-33.765
+			c0,7.245-7.334,10.602-7.334,10.602s-5.831-2.65-5.831-10.602c0-7.156,5.831-10.602,5.831-10.602S24.334-41.099,24.334-33.765z"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" d="M17-44.367
+			c0,0,1.768,4.747,1.768,10.602c0,7.422-1.768,10.602-1.768,10.602"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" d="M16.868-22.633"/>
+	</g>
+	<g i:knockout="Off">
+		<polygon fill="#FFFFFF" points="28.12,2.859 28.12,1.062 25.898,-0.132 25.898,1.756 		"/>
+		<g>
+			<path fill="#FFFFFF" d="M25.898,2.678v19.347c0,1.984-2.277,2.887-4.396,2.887c-1.686,0-3.39-0.543-4.119-1.592
+				c-0.213,0.156-0.473,0.25-0.758,0.25h-1.357c-0.087,0-0.17-0.008-0.252-0.025c0.809,2.361,3.664,3.588,6.486,3.588
+				c3.898,0,6.618-2.098,6.618-5.107V3.779L25.898,2.678z"/>
+		</g>
+		<path fill="#FFFFFF" d="M24.589,8.785c-0.621-1.505-2.104-2.564-3.832-2.564H10.042c-1.945,0-3.574,1.342-4.021,3.147
+			c-0.073,0.464-0.183,1.298-0.126,2.556C6,14.306,7.699,15.203,8.941,15.763c1.43,0.643,3.512,0.82,6.506,0.82
+			c2.853,0,4.66-0.426,6.248-0.82c1.271-0.32,3.21-1.549,3.21-3.839c0,0,0.034-0.474,0-1.291C24.87,9.815,24.691,9.037,24.589,8.785
+			z M23.684,11.635c0,2.016-2.099,3.009-3.241,3.151c-2.531,0.32-2.801-2.999-5-2.999c-2.201,0-2.758,3.381-4.976,2.948
+			c-1.081-0.207-3.253-0.966-3.253-2.981v-1.033c0-2.014,1.535-3.353,3.55-3.353h9.423c2.016,0,3.497,1.339,3.497,3.353V11.635z"/>
+		<path fill="#FFFFFF" d="M20.777,18.294l-2.5,0.307c-0.495,0.74-1.482,1.166-2.344,1.166c-0.865,0-1.699-0.363-2.285-1.104
+			l-2.562-0.34c0,1.1,0.929,2.342,2.038,2.943c0.541,0.293,1.1,0.51,1.741,0.627c-0.094,0.1-0.152,0.232-0.152,0.381
+			c0,0.305,0.248,0.553,0.555,0.553h1.357c0.308,0,0.557-0.248,0.557-0.553c0-0.158-0.069-0.301-0.177-0.404
+			C19.006,21.444,20.565,19.88,20.777,18.294z"/>
+	</g>
+	<g>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-miterlimit="10" d="M25.118,56.4
+			c0,5.562-8.117,16.317-8.117,16.317S8.882,62.3,8.882,56.4c0-4.482,3.635-8.118,8.119-8.118
+			C21.483,48.282,25.118,51.918,25.118,56.4z"/>
+		
+			<circle i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-miterlimit="10" cx="16.99" cy="56.16" r="3.819"/>
+	</g>
+	<g>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-miterlimit="10" d="M1.337,118.016
+			c0,0.475,0.386,0.86,0.861,0.86h19.887c0.477,0,0.86-0.386,0.86-0.86v-11.288c0-0.475-0.384-0.859-0.86-0.859H2.198
+			c-0.476,0-0.861,0.385-0.861,0.859V118.016z"/>
+		
+			<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" x1="4.276" y1="109.2" x2="7.358" y2="109.2"/>
+		
+			<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" x1="9.579" y1="109.2" x2="10.583" y2="109.2"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" d="
+			M16.316,111.648c0-0.441,0.358-0.8,0.8-0.8h2.199c0.441,0,0.799,0.358,0.799,0.8v2.198c0,0.442-0.357,0.8-0.799,0.8h-2.199
+			c-0.441,0-0.8-0.357-0.8-0.8V111.648z"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-miterlimit="10" d="M23.161,111.211l8.879-2.554
+			c0.457-0.131,0.721-0.607,0.59-1.063l-3.119-10.849c-0.131-0.456-0.607-0.72-1.064-0.588l-19.113,5.495
+			c-0.457,0.131-0.721,0.606-0.59,1.063l1.006,3.498"/>
+		
+			<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" x1="9.815" y1="105.355" x2="30.023" y2="99.597"/>
+	</g>
+	<g>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" d="M1.445-73.627h31.078v-6.122
+			c0,0,2.18-4.238-1.766-4.238c-3.943,0-3.414,4.238-3.414,4.238v1.178H6.859v-1.178c0,0,0.471-4.238-3.532-4.238
+			S1.43-79.75,1.43-79.75L1.445-73.627z"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" d="M30.17-83.767
+			c0,0,0.529-6.313-4.238-6.313c-4.769,0-12.979,0-17.615,0c-4.637,0-4.238,6.313-4.238,6.313"/>
+		<polyline i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" points="4.078,-73.701 
+			4.078,-70.92 4.861,-70.92 4.861,-73.569 		"/>
+		<polyline i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" points="29.387,-73.701 
+			29.387,-70.92 30.17,-70.92 30.17,-73.569 		"/>
+	</g>
+	<g opacity="0.25">
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" d="M55.445-73.627h31.078
+			v-6.122c0,0,2.18-4.238-1.766-4.238c-3.943,0-3.414,4.238-3.414,4.238v1.178H60.859v-1.178c0,0,0.471-4.238-3.532-4.238
+			S55.43-79.75,55.43-79.75L55.445-73.627z"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" d="M84.17-83.767
+			c0,0,0.529-6.313-4.238-6.313c-4.769,0-12.979,0-17.615,0c-4.637,0-4.238,6.313-4.238,6.313"/>
+		<polyline i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" points="58.078,-73.701 
+			58.078,-70.92 58.861,-70.92 58.861,-73.569 		"/>
+		<polyline i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.524" stroke-miterlimit="10" points="83.387,-73.701 
+			83.387,-70.92 84.17,-70.92 84.17,-73.569 		"/>
+	</g>
+	<g opacity="0.25">
+		
+			<circle i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" cx="71" cy="-33.765" r="10.602"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" d="M78.334-33.765
+			c0,7.245-7.334,10.602-7.334,10.602s-5.83-2.65-5.83-10.602c0-7.156,5.83-10.602,5.83-10.602S78.334-41.099,78.334-33.765z"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" d="M71-44.367
+			c0,0,1.768,4.747,1.768,10.602c0,7.422-1.768,10.602-1.768,10.602"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.476" stroke-miterlimit="10" d="M70.867-22.633"/>
+	</g>
+	<g opacity="0.25">
+		<polygon fill="#FFFFFF" points="82.119,2.859 82.119,1.062 79.898,-0.132 79.898,1.756 		"/>
+		<g>
+			<path fill="#FFFFFF" d="M79.898,2.678v19.347c0,1.984-2.277,2.887-4.396,2.887c-1.686,0-3.391-0.543-4.119-1.592
+				c-0.213,0.156-0.473,0.25-0.758,0.25h-1.357c-0.088,0-0.17-0.008-0.252-0.025c0.809,2.361,3.664,3.588,6.486,3.588
+				c3.898,0,6.617-2.098,6.617-5.107V3.779L79.898,2.678z"/>
+		</g>
+		<path fill="#FFFFFF" d="M78.59,8.785c-0.621-1.505-2.104-2.564-3.832-2.564H64.043c-1.945,0-3.574,1.342-4.021,3.147
+			c-0.072,0.464-0.182,1.298-0.125,2.556c0.104,2.382,1.803,3.279,3.045,3.839c1.43,0.643,3.512,0.82,6.506,0.82
+			c2.852,0,4.66-0.426,6.248-0.82c1.271-0.32,3.209-1.549,3.209-3.839c0,0,0.035-0.474,0-1.291S78.691,9.037,78.59,8.785z
+			 M77.684,11.635c0,2.016-2.098,3.009-3.24,3.151c-2.531,0.32-2.801-2.999-5-2.999c-2.201,0-2.758,3.381-4.977,2.948
+			c-1.08-0.207-3.252-0.966-3.252-2.981v-1.033c0-2.014,1.535-3.353,3.549-3.353h9.424c2.016,0,3.496,1.339,3.496,3.353V11.635z"/>
+		<path fill="#FFFFFF" d="M74.777,18.294l-2.5,0.307c-0.496,0.74-1.482,1.166-2.344,1.166c-0.865,0-1.699-0.363-2.285-1.104
+			l-2.562-0.34c0,1.1,0.928,2.342,2.037,2.943c0.541,0.293,1.1,0.51,1.742,0.627c-0.094,0.1-0.152,0.232-0.152,0.381
+			c0,0.305,0.248,0.553,0.555,0.553h1.357c0.307,0,0.557-0.248,0.557-0.553c0-0.158-0.07-0.301-0.178-0.404
+			C73.006,21.444,74.564,19.88,74.777,18.294z"/>
+	</g>
+	<g opacity="0.25">
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-miterlimit="10" d="M79.118,56.4
+			c0,5.562-8.117,16.317-8.117,16.317S62.882,62.3,62.882,56.4c0-4.482,3.635-8.118,8.119-8.118
+			C75.483,48.282,79.118,51.918,79.118,56.4z"/>
+		
+			<circle i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-miterlimit="10" cx="70.99" cy="56.16" r="3.819"/>
+	</g>
+	<g opacity="0.25">
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-miterlimit="10" d="M55.337,118.016
+			c0,0.475,0.386,0.86,0.861,0.86h19.887c0.477,0,0.86-0.386,0.86-0.86v-11.288c0-0.475-0.384-0.859-0.86-0.859H56.198
+			c-0.476,0-0.861,0.385-0.861,0.859V118.016z"/>
+		
+			<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" x1="58.276" y1="109.2" x2="61.358" y2="109.2"/>
+		
+			<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" x1="63.579" y1="109.2" x2="64.583" y2="109.2"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" d="
+			M70.316,111.648c0-0.441,0.358-0.8,0.8-0.8h2.199c0.441,0,0.799,0.358,0.799,0.8v2.198c0,0.442-0.357,0.8-0.799,0.8h-2.199
+			c-0.441,0-0.8-0.357-0.8-0.8V111.648z"/>
+		<path i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-miterlimit="10" d="M77.161,111.211l8.879-2.554
+			c0.457-0.131,0.721-0.607,0.59-1.063l-3.119-10.849c-0.131-0.456-0.607-0.72-1.064-0.588l-19.113,5.495
+			c-0.457,0.131-0.721,0.606-0.59,1.063l1.006,3.498"/>
+		
+			<line i:knockout="Off" fill="none" stroke="#FFFFFF" stroke-width="1.52" stroke-linecap="round" stroke-miterlimit="10" x1="63.815" y1="105.355" x2="84.023" y2="99.597"/>
+	</g>
+</g>
+</svg>

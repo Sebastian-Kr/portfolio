@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Dziedziczenie Wizualne</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+ 
+ <h1>Dziedziczenie Wizualne</h1>
+ <div>
+  <p>
+   <label>
+    <span>
+     - Ten element &lt;span&gt; jest zagnieżdżony w etykiecie, akapicie i elemencie &lt;div&gt;. <br />
+     - Element &lt;div&gt; ma zdefiniowane kolor tła, dopełnienie i obramowanie. <br />
+     - Ponieważ elementy &lt;span&gt;, etykiety i akapitu mają domyślne przezroczyste tło
+       i nie mają obramowania, to „wizualnie dziedziczą” ustawienia
+       tła, dopełnienia i obramowania elementu &lt;div&gt;. <br />
+     - Gdy elementowi zostanie zdefiniowane tło, element ten przestaje wizualnie dziedziczyć
+       tło elementu nadrzędnego — jak ten element <code>&lt;code&gt;</code>.
+    </span>
+   </label>
+  </p>
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Względny Element Pływający</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+
+ <h1>Względny Element Pływający</h1>
+ 
+ <div class="parent">
+  <div class="relative1 float" >Względny element pływający 1</div> 
+  <div class="relative2 float" >Względny element pływający 2</div>
+   
+  <p>Ten tekst znajduje się obok względnego elementu pływającego. Element taki zachowuje się podobnie do 
+   statycznego elementu pływającego, tylko jest pozycjonowany względnie. Dzięki temu można go przesuwać
+   za pomocą własności <code>left</code> i <code>right</code> bez naruszania pozycji
+   innych elementów. Ponadto można używać własności <code>z-index</code> do 
+   kontrolowania kolejności elementów na osi pionowej.
+
+   <span class="absolute">bezwzględny</span> </p> </div>
+ 
+ 
+</body>
+</html>

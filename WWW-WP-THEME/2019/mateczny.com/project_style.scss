@@ -1,0 +1,1786 @@
+
+/*======================================
+// PROGREMO General settings
+======================================*/
+
+// VARIABLE PROJECT
+$c1: #f7901c;
+$c2: #202020;
+$c3: #ffad07;
+
+@import "scss/fonts.scss";
+@mixin special_header_mobile {
+  .special_header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    span {
+      margin: 15px auto 30px auto;
+    }
+  }
+}
+
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css?family=Lato:300,500,400,700,900&subset=latin-ext');
+
+
+html, body, .root {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #4A4A4A;
+  font-family: "Lato", sans-serif!important;
+  font-size: 16px;
+  line-height: 26px;
+  overflow-x: hidden;
+  min-width: 300px;
+  background-color: #000;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  @media (min-width: 1700px) {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+h1, .h1 {
+  font-size: 2.875rem;
+  line-height: 3.25rem;
+  margin-top: 0;
+  margin-bottom: 3.25rem;
+}
+h2, .h2 {
+  font-size: 2rem;
+  line-height: 3.25rem;
+  margin-top: 0;
+  margin-bottom: 1.625rem;
+}
+h3, .h3 {
+  font-size: 2rem;
+  line-height: 3.25rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+h4, .h4 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+h5, .h5 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+p, ul, ol, pre, table, blockquote {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/*======================================
+// PROGREMO General settings end
+======================================*/
+
+
+/*======================================
+// PROGREMO Universal project class
+======================================*/
+
+.lazy_loader {
+  opacity: 0;
+}
+img.lazy_loader {
+  // min-height: 300px;
+  // max-width: 100px;
+}
+.lazy_loaded {
+  // background-position: inherit!important;
+  // background-size: inherit!important;
+  transition-duration: 2s;
+  opacity: 1;
+}
+
+.hide {
+transition-duration: 0.3s;
+transform: scale(0);
+}
+.show {
+  transform: scale(1);
+  transition-duration: 0.3s;
+  border: 1px solid red;
+}
+
+@media (max-width: 767px) {
+  .bg_layer_mobile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg_layer_desktop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+.inverse_mobile {
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+.grecaptcha-badge {
+  opacity: 0;
+}
+
+.just_right {
+display: flex;
+justify-content: flex-end;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.visable {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.btn {
+    border-radius: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: linear-gradient(90deg, #FFAE07 0%, #F78F1C 100%);
+    transition-duration:   0.5s;
+    cursor: pointer;
+    @media (max-width: 991px) {
+      margin: 0 auto;
+    }
+}
+.btn:hover{
+  transition-duration:   0.5s;
+  color: #fff!important;
+  background: linear-gradient(90deg, #FF982C 0%, #FA7816 100%);
+
+}
+
+
+
+section {
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+ @media (min-width: 1700px) {
+   max-width: 1400px;
+ }
+ @media (min-width: 1900px) {
+   max-width: 1500px;
+ }
+}
+
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline;
+  color: $c2;
+}
+a:hover {
+  text-decoration: none;
+}
+
+
+h2.special_header {
+  font-weight: 300;
+  display: flex;
+  margin-bottom: 50px;
+  color: #000;
+  align-items: flex-end;
+  span {
+    font-size: 82px;
+    line-height: 82px;
+    display: inline;
+    float: left;
+    font-weight: 700;
+    margin-right: 20px;
+  }
+  span:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 95px;
+    // background-color: $c1;
+    	background: linear-gradient(90deg, #FFAE07 0%, #F78F1C 100%);
+    margin-top: 15px;
+  }
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+.dark_bg h2.special_header {
+  color: #fff;
+}
+
+
+.dark_bg {
+  color: #fff;
+  background-color: #000;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.center_content {
+  text-align: center;
+  @media (min-width: 991px) {
+    padding-bottom: 10%;
+  }
+}
+.center_content h2:after {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/*======================================
+// PROGREMO Universal project class end
+======================================*/
+
+
+/*======================================
+// PROGREMO Main menu
+======================================*/
+
+@media (max-width: 991px) {
+  .lang-box {
+    position: absolute;
+    right: 60px;
+    top: 27px;
+    li {
+      width: 30px;
+    }
+  }
+}
+.lang-box .wpm-language-switcher {
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: -8px;
+margin-right: 15px;
+@media (max-width: 991px) {
+  // margin-right:65px;
+  margin-bottom: 0;
+}
+
+li, a {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+li span, li img { display: none}
+li:first-child {margin-right: 10px;}
+
+li.active:before,
+li a {
+  width: 28px;
+  height: 28px;
+  display: block;
+  content: '';
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+li.active:first-child::before {
+  background-image: url('img/pl-active.svg');
+}
+li:first-child a {
+  background-image: url('img/pl-dis.svg');
+}
+
+li.active:last-child::before {
+  background-image: url('img/eng-active.svg');
+}
+li:last-child a {
+  background-image: url('img/eng-dis.svg');
+}
+}
+
+
+
+.brand_box {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: -400px;
+  transition-duration: 0.5s;
+  opacity: 0;
+  background-color: #000;
+  height: 210px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  @media (max-width: 991px) {
+    display: none;
+  }
+  img {
+    width: 50%;
+  }
+}
+
+.float_container {
+  position: relative;
+  @media (max-width: 991px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .row>div {
+    position: absolute;
+    // border: 1px solid orange;
+    @media (max-width: 991px) {
+      position: static;
+    }
+  }
+}
+
+
+
+@media (min-width: 992px) {
+
+
+  #navigation-container {
+    background-color: transparent;
+    .navbar-brand img {
+      width: 180px;
+      height: auto;
+      max-width: none;
+      max-height: none;
+      opacity: 0;
+      transition-duration: 2s;
+    }
+    .navbar {
+      background-color: #000;
+      padding-right: 0;
+      height: 80px;
+      #navbarNav {
+        padding-right: 0;
+        margin-right: 30px;
+        #menu-menu-glowne {
+          height: 90px;
+          flex-wrap: nowrap;
+          li {
+            @media (max-width: 1199px) {
+              margin-left: 0px;
+            }
+            a {
+              font-weight: 700;
+              font-size: 14px;
+              margin-top: 10px;
+              color: #fff;
+              @media (min-width: 1600px) {
+                font-size: 17px;
+              }
+            }
+            a.activeItem::after {
+              bottom: 2px;
+              border-bottom-color: $c1;
+              width: 40px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #navigation-container.start_menu {
+    .navbar {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .brand_box {
+      opacity: 1;
+      margin-top: 0;
+      transition-duration: 0.5s;
+    top: 0;
+  .navbar_brand img {
+    opacity: 0;
+    transition-duration: 2s;
+  }
+    }
+  }
+
+
+}
+
+@media (max-width: 991px) {
+    #navigation-container {
+      .navbar {
+      background-color: #000;
+      #nav-icon2 {z-index: 10}
+      #menu-menu-glowne {
+        margin-right: 0;
+        height: calc(100vh - 79px);
+        li {
+          background-color: #000;
+          height: 12%;
+          a {
+            font-size: 16px;
+            font-weight: 900;
+          }
+        }
+        li:hover {
+          background-color: $c2;
+          a {
+            color: $c1 !important;
+          }
+        }
+        li:last-child {
+          height: 16%;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*======================================
+// PROGREMO Main menu end
+======================================*/
+
+
+
+/*======================================
+// Custom project  styles
+======================================*/
+
+
+// HEADER STYLE BEGIN
+
+.home_container {
+  background-color: #000;
+  position: relative;
+  .header_downolad_box {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: calc(100vh - 220px);
+    @media (max-width: 768px) {
+      display: none;
+    }
+    img {
+      height: 255px;
+      max-width: none;
+      width: auto;
+      position: absolute;
+      bottom: 0;
+    }
+    .cta {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0;
+      top: 0;
+      bottom: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      transition-duration: 0.3s;
+      span {
+        display: block;
+        width: 80vh;
+        transform: rotate(-90deg);
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 15px;
+        text-align: center;
+        &:last-child{display: none}
+        @media (max-height: 900px) {
+          letter-spacing: 8px;
+        }
+        @media (max-height: 800px) {
+          letter-spacing: 6px;
+          // font-size: 20px;
+        }
+        @media (max-height: 700px) {
+          letter-spacing: 6px;
+          &:first-child{display: none}
+          &:last-child{display: block;}
+        }
+        @media (max-height: 700px) {
+          &:last-child{display: none;}
+        }
+        &:after {
+          transform: rotate(90deg);
+          display: block;
+          position: absolute;
+          left: -45px;
+          bottom: 0;
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-image: url('img/arrows-catalog.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          @media (max-height: 700px) {
+            bottom: 15px;
+            left: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#home {
+  min-height: 100vh;
+  padding-top: 70px;
+  position: relative;
+  margin-left: 150px;
+  background-image: url('img/header.jpg');
+  @media (max-width: 768px) {
+    background-position: top;
+    background-image: url('img/header_mobile.jpg');
+    padding-bottom: 20px;
+    margin-top: 70px;
+    padding-top: 0;
+    margin-left: 0;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+
+  .header_content {
+    text-align: right;
+    bottom: 10vh;
+    right: 10vh;
+    padding-bottom: 5px;
+    position: absolute;
+    text-align: right;
+    z-index: 2;
+    h2 {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 900;
+    }
+    @media (max-width: 768px) {
+      width: 90%;
+      text-align: center;
+      position: static;
+
+    }
+  }
+  #header_button {
+    position: absolute;
+    right: -50px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url('img/arrow-bottom.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      position: static;
+      width: auto;
+      margin-top: 15px;
+      text-align: center;
+    }
+    &:hover {
+      transition-duration: 0.5s;
+      transform: scale(1.3);
+    }
+  }
+}
+
+// HEADER STYLE END
+
+
+// Sekcja o lokalizacji
+#section1 {
+  background-color: #000;
+  position: relative;
+  margin-top: -1px;
+  @media (max-width: 991px) {
+    text-align: center;
+    padding-bottom: 30px;
+     @include special_header_mobile;
+  }
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+
+.localization_float_image {
+  width: 55vw;
+  position: absolute;
+  top: 0;
+  bottom: -200px;
+  right: 0;
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  @media (max-width: 991px) {
+    display: none;
+  }
+  @media (min-width: 1700px) {
+    width: 60vw;
+  }
+}
+}
+
+
+// Sekcja o budnynku
+#section2 {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: -5px;
+  position: relative;
+  @media (max-width: 991px) {
+    text-align: center;
+     @include special_header_mobile;
+  }
+  #section3_anchor {
+  position: absolute;
+  bottom: 200px;
+  }
+
+  img {
+    margin: 0 auto;
+    width: 100vw;
+  }
+  img.foto1 {
+
+  }
+  img.foto2 {
+    margin-top: -2px;
+
+  }
+  .float_container {
+
+    .row>div {
+      top: -200px;
+    }
+  }
+}
+
+#section2_anchor {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 30%;
+  bottom: 0%;
+}
+
+#section3_anchor {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: -30%;
+  bottom: 0%;
+}
+
+//Sekcja otoczenie biznesowe
+#section3 {
+  padding-top: 0;
+  margin-top: -15px;
+  position: relative;
+  img {
+    width: 100vw;
+    margin-top: -1px;
+    @media (min-width: 992px) and (max-width: 1025px) {
+      margin-top: 100px;
+    }
+  }
+  h2.special_header {
+    margin-top:-30px;
+    margin-bottom: 20px;
+  }
+ @include special_header_mobile;
+ p {
+   margin: 0 auto;
+   max-width: 1000px;
+ }
+  .float_container {
+    .row>div {
+      top: -150px;
+    }
+  }
+}
+
+
+// Sekcja Slider1
+.slick-arrow, .slick-arrow:hover {
+  width: 50px;
+  height: 50px;
+  background-color: #000!important;
+  background-size: auto 20px!important;
+  background-repeat: no-repeat!important;
+  z-index: 2;
+  transition-duration: none;
+  transform: none;
+  top: calc(50% - 25px);
+  &:before {display: none;}
+}
+
+
+.slick-prev {
+  background-image: url('img/arrow-left.svg')!important;
+left: 0;
+  background-position: 15px!important;
+}
+
+.slick-next {
+  background-image: url('img/arrow-right.svg')!important;
+right: 0;
+  background-position: 22px!important;
+}
+
+.slick-prev:hover {
+  background-image: url('img/arrow-left-hover.svg')!important;
+}
+
+.slick-next:hover {
+  background-image: url('img/arrow-right-hover.svg')!important;
+}
+
+
+#section4 {
+  padding: 70px 0px;
+  padding-top: 50px;
+  margin-top: -1px;
+  position: relative;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    @media (min-width: 1700px) {
+      height: 550px;
+    }
+
+  @media (max-width: 991px) {
+    height: auto;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 0;
+    text-align: center;
+    @include special_header_mobile;
+  }
+
+
+
+  .slider_section4 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 55%;
+    @media (max-width: 991px) {
+      display: block;
+      margin-top: 70px;
+      position: relative;
+      left: 0;
+    }
+
+
+   .slider_item {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 550px;
+     @media (max-width: 567px) {
+       height: 400px;
+     }
+   }
+   .slick-dots {
+     display: none!important;
+   }
+  }
+
+}
+
+
+
+
+
+
+/*======================================
+// PROGREMO Build app
+======================================*/
+#section5 {
+// .special_header {
+//   margin-bottom: 10px;
+// }
+}
+
+
+
+#app_image {
+  // display: none;
+  margin: 0;
+  margin-top: -2px;
+  padding: 0 !important;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  background-color: #fff;
+}
+
+#app_image #build_shema {
+  position: relative;
+  width: 100vw;
+  margin-bottom: -7px;
+  .title_float_container {
+    position: absolute;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+
+    @media (max-width: 991px) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      transform: none;
+      margin-top: 0px;
+      padding-top: 30px;
+    @include special_header_mobile;
+
+    }
+    .main_paragraph {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
+    .main_paragraph p {
+      font-size: 32px;
+      text-align: right;
+      line-height: 42px;
+      max-width: 480px;
+      margin-top: 30px;
+      @media (max-width: 991px) {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .main_paragraph h6 {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      @media (max-width: 991px) {
+        margin: 30px auto;
+      }
+      &:before {
+        float: left;
+        margin-right: 10px;
+        margin-top: 5px;
+        display: block;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('img/warning.svg');
+        @media (max-width: 991px) {
+          float: none;
+          height: 30px;
+          width: 30px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  #build_svg {
+    @media (max-width: 991px) {
+      width: 110vw;
+      margin-left: -5vw;
+    }
+
+    @media (max-width: 767px) {
+      width: 120vw;
+      margin-left: -10vw;
+    }
+
+    @media (max-width: 567px) {
+      width: 150vw;
+      margin-left: -15vw;
+    }
+    @media (max-width: 450px) {
+      width: 160vw;
+      margin-left: -16vw;
+    }
+  }
+
+  .floor_shape {
+    opacity: 0;
+    // fill: #ffffff;
+    // stroke-width:3;
+    stroke:#fff;
+    stroke-width: 3;
+    cursor: pointer;
+    fill: rgb(254, 170, 10);
+  }
+  .floor_shape:hover {
+    opacity: 0.6;
+  }
+
+}
+
+
+#app_image #floor_panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #fff;
+  color: #000;
+  z-index: -1;
+  transition-duration: 1s;
+  background-image: url('img/bg7-std.jpg');
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 991px) {
+
+    text-align: center;
+
+  }
+  @media (max-width: 567px) {
+      @include special_header_mobile;
+      .special_header {
+        margin-bottom: 10px;
+      }
+  }
+
+&.active {
+  opacity: 1;
+  z-index: 1;
+  /* transition-delay: s; */
+  transition-duration: 1s;
+}
+  #close {
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    width: 250px;
+    @media (max-width: 991px) {
+      margin: 30px auto;
+      justify-content: center;
+    }
+    @media (max-width: 567px) {
+      margin: 15px auto;
+    }
+    &:before {
+      width: 20px;
+      height: 20px;
+      display: block;
+      content: '';
+      // float: left;
+      margin-right: 10px;
+      background-image: url('img/back.svg');
+      background-size: contain;
+    }
+  }
+  #floor_title {
+    @media (max-width: 567px) {
+      margin: 0 auto;
+    }
+  }
+
+
+
+.floor_info {
+  padding-top: 15px;
+  padding-left: 5%;
+  @media (max-width: 991px) {
+    padding-left: 0;
+    margin-top: -30px;
+  }
+
+  @media (max-width: 567px) {
+    margin-top: 0px;
+  }
+
+  #floor_desc {
+    margin-bottom: 30px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .mobile_flex {
+    @media (max-width: 567px) {
+      margin-top: -20px;
+    }
+  }
+  h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    @media (max-width: 567px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+  h6 {
+    font-weight: bold;
+    @media (max-width: 567px) {
+      font-weight: 300;
+    }
+  }
+  img {
+    margin: 15px 0px 25px 0px;
+    @media (max-width: 1200px) {
+      margin: 5px 0px 5px 0px;
+    }
+  @media (max-width: 567px) {
+    margin:10px auto;
+  }
+  }
+  .btn {
+    display: inline;
+    padding: 9px 30px;
+    @media (max-width: 767px) {
+      margin: 15px auto;
+      display: block;
+      width: 200px;
+    }
+  }
+
+}
+}
+
+
+#app_image #floor_panel #floor_shema_box {
+    @media (max-width: 1350px) {
+      width: 90%
+    }
+    @media (max-width: 991px) {
+      margin: 0 auto;
+    }
+
+    image {
+      border: 10px solid red;
+    }
+    #tooltip-box {
+        display:none!important;
+        color: #fff;
+        padding: 5px;
+        z-index: 22;
+        overflow: hidden;
+        position: absolute;
+        border: 0;
+        background-color: rgb(0, 0, 0);
+        // transition-duration: 0.2s;
+        @media (max-width: 567px) {
+          transform: scale(0.7);
+        }
+        .content {
+
+          font-weight: bold;
+          transform: scale(0.9);
+
+        }
+        h6 {
+          color: $c1;
+          font-weight: 600;
+          margin-bottom: 0;
+          margin-left: 8px;
+        }
+        strong {
+          margin-left: 8px;
+        }
+
+        .status {
+          text-align: center;
+          color: #000;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: bold;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          margin-bottom: 5px;
+          position: relative;
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -15px;
+            bottom: 0px;
+            left: -15px;
+            right: -15px;
+            z-index: -1;
+          }
+
+        }
+        .status.Wolny::before {background-color:rgb(3, 206, 107)}
+        .status.Zarezerwowany::before {background-color:rgb(252, 191, 2) }
+        .status.Sprzedany::before {background-color:rgb(255, 64, 74)}
+    }
+    &:hover #tooltip-box {
+        display:block!important;
+        position:fixed;
+        overflow:hidden;
+    }
+
+
+
+  .flat_shape {
+    opacity: 0.6;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  .flat_shape.Sprzedany {
+    opacity: 0.3;
+    fill: rgb(76, 76, 76);
+  }
+  .flat_shape.Wolny {
+    fill: rgb(250, 153, 21);
+  }
+  .flat_shape.Zarezerwowany {
+    opacity: 0.3;
+    fill: rgb(216, 216, 216);
+  }
+  .flat_shape:hover {
+    opacity: 0.9;
+    transition-duration: 0.2s;
+  }
+}
+
+
+/*======================================
+// PROGREMO Build app end
+======================================*/
+
+
+// Sekcja standard
+#section6 {
+  background-color: #1D1D1D;
+  margin-top: -10px;
+  position: relative;
+  margin-bottom: 0px;
+  @media (min-width: 1600px) {
+    .row:nth-child(2) {
+      justify-content: space-between;
+    }
+    .row>div {
+      max-width: 650px;
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 991px) {
+    text-align: center;
+    @include special_header_mobile
+  }
+ .tech_loop_item {
+   position: relative;
+   padding-right: 30px;
+   padding-left: calc(70px + 2vw);
+   @media (max-width: 991px) {
+     padding: 0px 15px;
+   }
+   p {
+     margin: 0;
+   }
+ }
+ .tech_loop_item:before {
+   display: block;
+   content: '';
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 55px;
+   height: 55px;
+   left: 15px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   @media (max-width: 991px) {
+     position: static;
+     margin: 20px auto 0px auto;
+   }
+ }
+ .tech_loop_item:nth-child(1):before {background-image: url('img/icon-01.svg');}
+ .tech_loop_item:nth-child(2):before {background-image: url('img/icon-02.svg');}
+ .tech_loop_item:nth-child(3):before {background-image: url('img/icon-03.svg');}
+ .tech_loop_item:nth-child(4):before {background-image: url('img/icon-04.svg');}
+ .tech_loop_item:nth-child(5):before {background-image: url('img/icon-05.svg');}
+ .tech_loop_item:nth-child(6):before {background-image: url('img/icon-06.svg');}
+
+ .slider_section6 {
+   margin: 0;
+   margin-top: 90px;
+
+  .slider_item {
+    height: 345px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (min-width: 1600px) {
+      height: 380px;
+    }
+    @media (max-width: 991px) {
+      height: 300px;
+    }
+    @media (max-width: 767px) {
+      height: 250px;
+    }
+    @media (max-width: 567px) {
+      height: 350px;
+    }
+    @media (max-width: 380px) {
+      height: 250px;
+    }
+  }
+ }
+
+
+}
+
+
+
+/*======================================
+// PROGREMO GALLERY Lightbox
+======================================*/
+
+
+// Gallery lightbox
+.backdrop2 {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  cursor: pointer;
+}
+.backdrop {
+  opacity: 0;
+visibility: hidden;
+  transition-duration: 0.5s;
+  background-color: #000;
+  position: fixed;
+  width: 110vw;
+  height: 100vh;
+  z-index: 9999;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  opacity: 0.9;
+}
+
+
+.lighbox_container {
+  // opacity: 0;
+  transform: scale(0);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+z-index: 9999;
+  transition-duration: 0.5s;
+
+
+  .prgrm_lightbox {
+      transition-duration: 0.5s;
+    position: relative;
+    opacity: 1;
+    background-color: #fff;
+    margin: 0 auto;
+    // padding: 4px;
+    // border-radius: 3px;
+    margin: 0 auto;
+// z-index: 9999;
+    .close {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      color: #fff;
+      opacity: 0.6;
+      width: 50px;
+      height: 50px;
+      background-size: 40px 40px;
+      background-image: url('./img/close.svg');
+      transition-duration: 0.1s;
+      text-decoration: none;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 9999;
+    }
+
+    .close:hover, .lightbox-arrow:hover {
+      // transition-duration: 0.3s;
+  // filter: brightness(0.7);
+  transition-duration: 0.5s;
+  box-shadow: 0;
+  opacity: 1;
+  }
+
+    .LigthboxContent {
+      overflow: hidden;
+      max-width: 90vw;
+      max-height:90vh;
+        z-index: 9999;
+        transition-duration: 0.5s;
+        img {
+
+          max-width: 90vw;
+          max-height: 90vh;
+            transition-duration: 0.5s;
+        }
+    }
+
+ #loader {
+   // width: 50px;
+   // height: 50px;
+   // border: 1px solid red;
+   img {
+
+     width: 50px;
+     // height: 200px;
+   }
+   background-color: #000;
+   padding: 10px;
+   opacity: 0;
+   transition-duration: 0.3s;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+    .lightbox_cont_prev,
+    .lightbox_cont_next{
+     cursor: pointer;
+     display: block;
+     width: 40%;
+     height: 90%;
+     position: absolute;
+     top: 50%;
+     bottom: 0;
+     transform: translateY(-50%);
+     margin: 10px;
+     margin-left: 5px;
+     margin-top: 0;
+     opacity: 0.7;
+     background-color: transparent;
+   }
+   .lightbox_cont_next  {
+   right: 0;
+   margin-right: 5px;
+   }
+
+   .lightbox_prev,
+   .lightbox_next  {
+     width: 40px;
+     height: 40px;
+     position: absolute;
+     top: 50%;
+     background-size: auto 60%;
+     transform: translateY(-50%);
+     background-color: #000;
+     background-position: center;
+     background-repeat: no-repeat;
+   }
+
+   .lightbox_prev {
+    left: 0;
+    background-image: url('./img/arrow-left.svg');
+  }
+
+   .lightbox_next {
+    right: 0;
+    background-image: url('./img/arrow-right.svg');
+  }
+
+
+     .lightbox_prev:hover {
+      background-image: url('./img/arrow-left-h.svg');
+    }
+
+     .lightbox_next:hover {
+      background-image: url('./img/arrow-right-h.svg');
+    }
+
+  }
+}
+
+
+.prgrm_lightbox:hover .lighbox_prev,
+.prgrm_lightbox:hover .lighbox_next {
+opacity: 0.95s;
+transition-duration: 0.3s;
+cursor: pointer;
+border: 2px solid green;
+}
+
+
+/*======================================
+// PROGREMO GALLERY Lightbox end
+======================================*/
+
+
+// Sekcja Developer
+#section7 {
+  background-color: #ffff;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 991px) {
+    @include special_header_mobile
+    text-align: center;
+    img {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .executie {
+    max-width: 260px;
+  }
+  .logo_box {
+    background-image: url('img/merari-bw.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 130px;
+    transition-duration: 0.5s;
+    text-align: center;
+    margin: 0 auto;
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+      margin-top: -10px;
+    }
+  }
+  .logo_box:hover {
+    background-image: url('img/merari-hover.svg');
+    transition-duration: 0.5s;
+  }
+
+  .logo2_box {
+    background-image: url('img/grimbud-bw.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 0.5s;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    @media (max-width: 991px) {
+      margin: 15px auto;
+    }
+  }
+  .logo2_box:hover {
+    background-image: url('img/grimbud-hover.png');
+    transition-duration: 0.5s;
+  }
+
+
+}
+
+
+#section8 {
+  @media (max-width: 567px) {
+    text-align: center;
+    @include special_header_mobile;
+  }
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: $c1;
+  }
+}
+
+
+/*======================================
+// PROGREMO Contact standard section
+======================================*/
+#kontakt-form2 {
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    label,
+    input,
+    button,
+    textarea {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      padding: 5px;
+      outline: none!important;
+      border: 1px solid #595959;
+      color: #fff;
+    }
+    input, textarea, button {
+      border: 0;
+    }
+
+   textarea {
+     height: 200px;
+   }
+    #check {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -20px;
+      border: 0px;
+      input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        margin-left: -15px;
+        margin-right: 15px;
+     }
+     #text-cookies {
+       font-size: 12px;
+       line-height: 18px;
+     }
+    }
+
+    #new_form_submit {
+      	border-radius: 35px;
+        background: linear-gradient(90deg, #FFAE07 0%, #F78F1C 100%);
+        height: 70px;
+        margin-bottom: 30px;
+        transition-duration:   0.5s;
+        cursor: pointer;
+    }
+    #new_form_submit:hover{
+      transition-duration:   0.5s;
+      background: linear-gradient(90deg, #FF982C 0%, #FA7816 100%);
+
+    }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    opacity: 0.5;
+    transition-duration: 0.3s;
+    color: #898989;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    opacity: 0.5;
+    color: #898989;
+    transition-duration: 0.3s;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    opacity: 0.5;
+    color: #898989;
+    transition-duration: 0.3s;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    opacity: 0.5;
+    color: #323133;
+    transition-duration: 0.3s;
+  }
+
+  :focus::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: transparent;
+    transition-duration: 0.3s;
+  }
+
+  :focus::-moz-placeholder {
+    /* Firefox 19+ */
+    color: transparent;
+    transition-duration: 0.3s;
+  }
+
+  :focus::-ms-input-placeholder {
+    /* IE 10+ */
+    color: transparent;
+    transition-duration: 0.3s;
+  }
+
+  :focus::-moz-placeholder {
+    /* Firefox 18- */
+    color: transparent;
+    transition-duration: 0.3s;
+  }
+
+  .ajax-loader {
+    display: none !important;
+    position: fixed;
+    bottom: -1000px;
+  }
+
+
+
+
+  span.wpcf7-not-valid-tip,
+  div.wpcf7-validation-errors,
+  div.wpcf7-acceptance-missing {
+    color: red;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+  }
+
+}
+
+#map {
+  height: 320px;
+  margin-bottom: 20px;
+  @media (max-width: 991px) {
+    margin-top: 50px;
+  }
+}
+
+
+/*======================================
+// PROGREMO Contact standard section end
+======================================*/
+
+
+
+/*======================================
+// PROGREMO Footer style
+======================================*/
+
+#prgrm-footer {
+  padding-top: 50px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  background-color: $c2;
+
+  .footer_menu {
+    a {
+      display: block;
+      line-height: 36px;
+    }
+  }
+  a:hover {
+    color: $c1;
+  }
+  #col1 a {
+    display: inline-block;
+  }
+
+  .facebook_image {
+    display: flex;
+    @media (max-width: 567px) {
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    &:before{
+      width: 35px;
+      height: 35px;
+      display: block;
+      content: '';
+      background-image: url('img/fb.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-right: 15px;
+    }
+  }
+
+}
+
+/*======================================
+// PROGREMO Footer style
+======================================*/

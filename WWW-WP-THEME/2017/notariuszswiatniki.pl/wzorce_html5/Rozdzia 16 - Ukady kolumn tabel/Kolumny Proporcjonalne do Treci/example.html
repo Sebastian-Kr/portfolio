@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title>Kolumny Proporcjonalne do Treści</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+
+</head>
+
+<body>
+
+<h1>Kolumny Proporcjonalne do Treści</h1>
+
+<h2>Tabela o konkretnym rozmiarze</h2>
+<table class="auto-layout sized"> 
+ <tr> <td class="auto-width">auto</td> 
+      <td class="auto-width">auto (więcej treści — większa szerokość)</td></tr></table> 
+
+<h2>Tabela rozciągliwa</h2>
+<table class="auto-layout stretched"> 
+ <tr> <td class="auto-width">auto (taka sama treść — taka sama szerokość)</td> 
+      <td class="auto-width">auto (taka sama treść — taka sama szerokość)</td></tr></table>
+
+<h2>Tabela kurczliwa</h2>
+<table class="auto-layout shrinkwrapped"> 
+ <tr> <td class="auto-width">auto (mniej treści — mniejsza szerokość)</td> 
+      <td class="auto-width">auto (dodatkowa treść zamienia kurczliwe kolumny 
+                             w kolumny proporcjonalne do treści)</td></tr></table>
+       
+</body>
+</html>

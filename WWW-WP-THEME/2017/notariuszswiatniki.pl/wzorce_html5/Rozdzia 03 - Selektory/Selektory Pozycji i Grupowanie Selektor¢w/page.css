@@ -1,0 +1,13 @@
+/* Grupowanie selektorów */
+p,ol,li { border:1px solid black; padding-left:10px; font-family:monospace;
+  margin:10px; margin-left:0px; }
+
+ol { margin-left:0px; padding-left:40px; margin-top:20px; }
+
+/* Selektory pozycji */
+div *.my-class { font-size:1.2em; font-weight:bold; }  /* Selektor potomka */
+#my-id   p { background-color:gold; }                  /* Selektor potomka */
+#my-id > * { border:3px solid black; }                 /* Selektor dziecka */
+
+li:first-child { font-weight:bold; color:red; }        /* Selektor pierwszego dziecka */
+li + li { font-style:italic; color:blue; }             /* Selektor elementu siostrzanego */

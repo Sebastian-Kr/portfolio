@@ -1,0 +1,54 @@
+// SPECIAL SECTION GENERATOR - TILES_HOVER_V2 MODULE - DROPDOWN THEME
+
+#tiles_hover_dropdown {
+
+    .single_till {
+      margin: 0 auto;
+      max-width: 300px;
+      height: 300px;
+      border: 10px solid $color1;
+      margin-bottom: 0px;
+      background-size: 75%;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow: hidden;
+      .single_till_content {
+        // border: 1px solid green;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 86%;
+        bottom: 0px;
+        text-align: center;
+        background-color: $color1;
+        color: #fff;
+        transition-duration: 1s;
+      }
+    }
+  
+    .single_till:hover .single_till_content {
+      top: 50%;
+      transition-duration: 1s;
+    }
+    .single_till_bottom {
+      margin: 0 auto;
+      max-width: 300px;
+      margin-bottom: 30px;
+      background-color: $color2;
+      height: 50px;
+      text-align: center;
+      color: #fff;
+  line-height: 50px;
+      h3 {
+        margin: 0px;
+        display: inline;
+        font-size: 17px;
+        margin-right: 5px;
+      }
+    }
+  
+  
+  }
+  
+  // SPECIAL SECTION GENERATOR - TILES_HOVER_V2 MODULE - DROPDOWN THEME END

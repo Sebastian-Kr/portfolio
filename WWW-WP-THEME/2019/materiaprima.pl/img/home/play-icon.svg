@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="75px" height="65px" viewBox="0 0 75 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>play-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-91" transform="translate(-1153.000000, -942.000000)">
+            <g id="play-icon-copy-11" transform="translate(1190.500000, 974.000000) rotate(-10.000000) translate(-1190.500000, -974.000000) translate(1148.000000, 931.000000)">
+                <path d="M33.6279627,11.0430105 L15.913128,19.1351086 C12.9354539,21.3925722 10.4540588,25.8930115 8.46894271,32.6364266 C5.49126859,42.7515492 4.13231705,51.5469644 8.46894271,58.6275502 C12.8055684,65.708136 16.8358968,75.3175025 37.5284056,75.3175025 C51.3234115,75.3175025 61.8098906,73.5730389 68.9878429,70.0841119 L78.8513884,48.4906959 L72.8960402,25.8857676 C70.9838682,22.9684503 65.4026678,19.7653282 56.152439,16.2764011 C46.9022102,12.7874741 39.3940515,11.0430105 33.6279627,11.0430105 Z" id="Path-6-Copy" fill="#FFFFFF" transform="translate(42.277096, 43.180257) scale(-1, -1) rotate(12.000000) translate(-42.277096, -43.180257) "></path>
+                <polygon id="Triangle-2" fill="#000000" transform="translate(46.428957, 43.934783) rotate(100.000000) translate(-46.428957, -43.934783) " points="46.4289568 32.3902174 63.8570144 55.4793478 29.0008993 55.4793478"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,114 @@
+/*Theme Name:prgrm-theme*/
+
+
+// IMPORT BOOTSTRAP STYLESHEET
+//
+// @import bootstrap-4.0A.0/dist/css/bootstrap.css
+
+// IMPORT PRGRM_LIBLARY STYLESHEET
+// @import prgrm_lib/prgrm_class.sass
+
+
+
+
+
+// project variables
+
+$c1: rgb(122, 0, 53)
+$c2: #f2b000
+$c3: #333
+$font: 16px
+
+// end project variables
+
+
+.hidden
+  display: none
+
+
+@media (max-width: 480px)
+  .hidden-xxs
+    display: none !important
+
+
+
+/*vertical center container*/
+.vcc
+  position: relative
+
+
+.hc
+  position: absolute
+  left: 50%
+  -webkit-transform: translateX(-50%)
+  -ms-transform: translateX(-50%)
+  transform: translate(-50%)
+
+
+.vc
+  position: absolute
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+
+.vhc
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+
+
+.semisepar
+  height: 80px
+
+.unsemisepar
+  margin-bottom: -50px !important
+
+.separ
+  height: 100px
+
+
+.mt
+  margin-top: 150px
+.mb
+  margin-bottom: 150px
+
+.padtb
+  padding-top: 50px
+  padding-bottom: 50px
+
+
+
+
+@media (max-width: 480px)
+  .semisepar
+    height: 30px
+
+  .separ
+    height: 60px
+
+
+@media (max-width: 767px)
+  .mobihide
+    display: none
+
+  .mobisemisepar
+    height: 50px
+
+
+.noborder
+  border: none !important
+
+.fullimg
+  width: auto !important
+
+// /* ==============================
+// END UNIVERAL CLASS / MIXINS
+// ================================= */
+// /* ==============================
+// CUSTOM GLOBAL STYLE
+// ================================= */

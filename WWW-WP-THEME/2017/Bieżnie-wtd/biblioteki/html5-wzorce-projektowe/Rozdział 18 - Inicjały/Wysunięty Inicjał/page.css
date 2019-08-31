@@ -1,0 +1,4 @@
+
+.hanging-indent  { padding-left:80px;  text-indent:-70px; margin-top:-25px; }
+.hanging-dropcap { position:relative; top:0.55em; left:-13px;
+                    font-size:60px; line-height:60px; font-weight:bold; }

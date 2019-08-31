@@ -1,0 +1,1520 @@
+// project variables
+
+$c1: rgb(122, 0, 53)
+$c2: #f2b000
+$c3: #242424
+$font: 16px
+
+// end project variables
+
+.anime
+  -webkit-transition: all 0.5s ease
+  -moz-transition: all 0.5s ease
+  transition: all 0.5s ease
+
+
+@keyframes zoomIn
+  from
+    opacity: 0
+    transform: scale3d(.3, .3, .3)
+
+
+  50%
+    opacity: 1
+
+
+@keyframes fadeIn
+  from
+    opacity: 0
+
+
+  to
+    opacity: 1
+
+
+
+
+.vpc_hide
+  opacity: 0
+
+.vpc_visable2
+  // -webkit-transition: all 3s ease
+  // -moz-transition: all 3s ease
+  // transition: all 3s ease
+  animation-name: fadeIn
+  animation-iteration-count: 1
+  animation-duration: 1.5s
+  animation-fill-mode: both
+
+.vpc_visable
+  // -webkit-transition: all 3s ease
+  // -moz-transition: all 3s ease
+  // transition: all 3s ease
+  animation-name: zoomIn
+  animation-iteration-count: 1
+  animation-duration: 1s
+  animation-fill-mode: both
+
+.hidden
+  display: none
+
+
+.mmt
+  margin-top: -60px
+  @extend .anime
+
+@media (max-width: 480px)
+  .hidden-xxs
+    display: none !important
+
+
+/*vertical center container*/
+.vcc
+  position: relative
+
+.vc
+  position: absolute
+  top: 50%
+  right: 50%
+  -ms-transform: translate(50%, -100%)
+  /* IE 9 */
+  -webkit-transform: translate(50%, -100%)
+  /* Safari */
+  transform: translate(50%, -100%)
+
+.vc2
+  position: absolute
+  top: 50%
+  right: 50%
+  -ms-transform: translate(50%, -50%)
+  /* IE 9 */
+  -webkit-transform: translate(50%, -50%)
+  /* Safari */
+  transform: translate(50%, -50%)
+
+.vcr
+  position: absolute
+  top: 50%
+  -ms-transform: translate(-50%)
+  /* IE 9 */
+  -webkit-transform: translate(-50%)
+  /* Safari */
+  transform: translateY(-50%)
+  right: 0px
+
+.semisepar
+  height: 80px
+
+.unsemisepar
+  margin-bottom: -50px !important
+
+.separ
+  height: 160px
+
+
+.mt
+  margin-top: 50px
+.mb
+  margin-bottom: 50px
+
+  .mt2
+    margin-top: 100px
+  .mb2
+    margin-bottom: 100px
+
+.padtb
+  padding-top: 50px
+  padding-bottom: 50px
+
+
+.bg
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  min-height: 300px
+
+.full-bar
+  padding-top: 15px
+  padding-bottom: 15px
+  margin-top: 50px
+  margin-bottom: 50px
+
+.btn
+  @extend .bordo
+  color: $c2
+  width: 100px
+  margin: 0 auto
+  display: block
+  border-radius: 0px
+  width: 200px
+  padding: 5px
+  font-size: $font*1.5
+  margin-bottom: 20px
+  transition-duration: 0.5
+.btn:hover, .btn:focus
+  background-color: $c2
+  color: $c1
+  transition-duration: 0.5s
+
+@media (max-width: 568px)
+  .semisepar
+    height: 30px
+
+  .separ
+    height: 60px
+
+  .triplesepar
+    height: 230px
+
+
+@media (max-width: 767px)
+  .mobihide
+    display: none
+@media (min-width: 767px)
+  .mobishow
+    display: none
+
+  .mobisemisepar
+    height: 50px
+
+
+.noborder
+  border: none !important
+
+.fullimg
+  width: auto !important
+#autor
+  background-color: #000
+  border-top: 1px solid #2f2f2f
+  opacity: 0.8
+  position: absolute
+  bottom: 0px
+  padding-bottom: 10px
+  padding-top: 10px
+  margin: 0
+  left: 0
+  right: 0
+  font-size: $font*0.8
+  a
+    color: $c2
+    text-decoration: none
+  a:hover
+      color: #fff !important
+
+
+// /* ==============================
+// END UNIVERAL CLASS / MIXINS
+// ================================= */
+// /* ==============================
+// CUSTOM GLOBAL STYLE
+// ================================= */
+/*TYPOGRAFIA*/
+.title
+
+  text-transform: uppercase
+
+.subtitle
+  font-size: 34px
+  color: #57595b
+  // font-weight: 400
+
+.block
+  background-color: #fff
+
+
+html
+  min-width: 250px
+  overflow-x: hidden
+
+
+body
+  font-size: $font
+  color: $c3
+  line-height: 1.2
+  font-family: 'Lato', sans-serif
+  font-weight: 300
+
+@media (max-width:568px)
+  body
+    font-size: $font * 0.8
+
+h1,h2,h3,h4,h5,h6
+  text-align: center
+  margin-top: 10px
+  margin-bottom: 10px
+
+
+
+img
+  max-width: 100%
+
+
+a
+  color: $c1
+  transition-duration: 0.2s
+  &:hover
+    transition-duration: 0.2s
+    text-decoration: none
+
+
+
+a:hover, a:focus
+  color: #80546D !important
+
+
+
+
+@media (max-width: 768px)
+  p, div,h1,h2,h3,h4,h5,h6
+    text-align: center
+
+
+
+@media (max-width: 576px)
+  p, div
+  font-size: 18px
+
+.bordo
+  background-color: $c1
+  text-align: center
+  h1,h2,h3,h4,h5,h6
+    color: $c2
+.bordo2
+  background-color: $c1
+  text-align: left
+  p
+    color: #fff
+    font-size: $font*0.9
+    max-width: 680px
+  padding: 20px
+  h1,h2,h3,h4,h5,h6
+    color: $c2
+    text-align: left
+
+.hrcont
+  h2
+    margin-bottom: 20px
+    text-align: left
+
+
+
+hr
+  margin: 0
+  padding: 0
+  background-color: $c1
+  border-top: none
+  margin-top: -5px
+  height: 1px
+  color: $c1
+  width: 40%
+
+hr.right
+  text-align: right
+  float: right
+hr.left
+  text-align: left
+  margin-bottom: 20px
+  width: 150px
+hr.center
+  text-align: center
+  margin: 0 auto
+  float: none
+  margin-bottom: 20px
+  width: 100px
+hr.gold
+  background-color: $c2
+  color: $c2
+hr.short
+  width: 100px
+hr.fullhr
+  width: 100%
+  height: 3px
+  margin: 0
+  padding: 0
+
+.prgrm_iconbox
+  width: 100%
+  height: 60px
+  margin-top: 10px
+  span
+    display: block
+  span.glyphicon
+    float: left
+    font-size: 24px
+    padding: 10px
+    color: $c1
+.adress
+  font-weight: 400
+
+  p
+    float: left
+  p:first-child
+    width: 50px
+
+
+@media (max-width:768px)
+  .hrcont
+    h2
+      text-align: center
+  hr
+    width: 100%
+  .adress
+    width: 40%
+    text-align: center
+    margin: 0 auto
+  .prgrm_iconbox
+    width: 230px
+    margin: 0 auto
+.smallcont
+  max-width: 800px
+
+//
+// /*========================================================================
+// 	END -- GLOBAL CSSS
+//    =========================================================================*/
+// /*========================================================================
+//      MAIN MENU
+//       =========================================================================*/
+#wrapper
+  min-width: 250px
+  position: fixed
+  top: 0px
+  width: 100%
+  z-index: 222
+  background-color: #fff
+  -moz-box-shadow: 1px 1px 7px #797979
+  -webkit-box-shadow: 1px 1px 7px #797979
+  box-shadow: 1px 1px 7px #797979
+  .content-header
+    box-shadow: 1px 1px 3px #333
+
+#wrapper #menu-menu-glowne2
+
+  top: 10px
+  right: 20px
+  max-width: 1170px
+  margin: 0 auto
+
+  nav
+    max-width: 1170px
+    margin: 0 auto
+
+#wrapper ul
+  background-color: transparent
+  margin: 0px
+  padding: 0px
+  padding-top: 18px
+
+#wrapper ul li
+  background-color: transparent
+  padding: 0
+  margin: 0
+  padding-left: 10px
+  padding-right: 10px
+  list-style-type: none
+  -webkit-transition: all 2s ease
+  -moz-transition: all 2s ease
+  transition: all 2s ease
+
+#sidebar-wrapper ul li a
+  line-height: 40px
+  padding-top: 0
+  padding-bottom: 0
+  font-size: 15px
+  color: $c3
+
+
+#wrapper .logo
+  height: 45px
+  width: 240px
+  background-image: url('img/logo.png')
+  background-size: contain
+  position: relative
+  top: 0px
+  left: 20px
+  background-color: transparent
+  padding: 30px
+  background-position: left
+  background-repeat: no-repeat
+  margin-left: -15px;
+
+
+#wrapper ul li a img
+  display: none
+
+#wrapper
+  .pretopmenu
+    @extend .anime
+    .top-contact
+      margin-top: 15px
+      width: 24%
+      float: right
+      margin-left: 10px
+      font-size: 12px
+      .glyphicon
+        font-size: 30px
+        margin-right: 20px
+        color: $c1
+      p
+        float: right
+        span
+          display: block
+        a
+          color: $c3
+    .short
+      width: 22%
+@media (min-width: 992px)
+  #wrapper
+    .logo2
+      display: relative
+      float: left
+      margin-top: 5px
+
+
+
+  .content-header
+    display: none
+
+  #wrapper ul li
+    float: left
+
+  #wrapper ul
+    float: right
+    margin: 0
+    position: relative
+
+  .bg-scroll
+    background-color: #fff
+    // box-shadow: 0px 2px 4px 1px rgba(29, 28, 32, 0.15)
+  .dark-menu
+    background-color: $c3
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    transition: all 0.5s ease
+    ul
+      padding-top: 0px !important
+    .logo
+      display: none
+      -webkit-transition: all 0s ease
+      -moz-transition: all 0s ease
+      transition: all 0s ease
+
+    a
+      color: #fff !important
+      -webkit-transition: all 2s ease
+      -moz-transition: all 2s ease
+      transition: all 2s ease
+
+@media (max-width: 992px)
+  #wrapper
+    .logo2
+      display: none
+    .pretopmenu
+      display: none
+  #sidebar-wrapper
+    background-color: #fff
+
+
+  #wrapper ul
+    padding-bottom: 20px
+
+    li
+      border-bottom: 1px solid #eaeaea
+
+  .content-header
+    display: inherit
+    text-align: left
+    position: fixed
+    top: 0px
+    left: 0px
+    background-color: #fff
+    width: 100%
+    z-index: 900
+
+  #sidebar-wrapper
+    margin-left: 0
+    left: 0
+    width: 100%
+    position: fixed
+    height: auto
+    overflow-y: auto
+    z-index: 700
+    transition: all 0.4s ease 0s
+    top: -250px
+
+  #wrapper .active
+    top: 60px
+
+  #wrapper .glyphicon,
+
+
+    background-color: none
+    padding: 10px
+    font-size: 36px
+
+  #hsome
+    line-height: 50px
+    position: fixed
+    right: 10px
+    top: -16px
+
+  #hsome .glyphicon
+    top: 0px
+    right: 10px
+    text-decoration: none
+    margin-top: 20px
+
+
+
+
+  #menu-menu-glowne2
+    text-align: center
+    background-color: #fff
+
+
+@media (max-width: 325px)
+  #wrapper .logo
+    width: 150px
+    background-size: 150px
+
+
+  // END -- MAIN MENU
+
+
+//       CHARACTER SECTION
+//       ======================================= */
+
+      .character
+        text-align: center
+        img
+          width: 100px
+          height: 100px
+          margin: 20px
+
+
+        h2
+          height: 60px
+
+
+
+      @media (max-width: 576px)
+        .character
+          img
+          height: 70px
+          width: 70px
+
+
+
+// /* ====================================
+//       END CHARACTER SECTION
+//    ======================================= */
+
+
+// ===================================
+//MAIN SLIDER
+// ===================================
+
+
+#main-slider
+  margin-top: 60px
+  .carousel-indicators li
+    border: 2px solid $c2
+    width: 20px
+    height: 20px
+  .carousel-indicators .active
+    background-color: $c1
+  .carousel-inner .item
+    height: 600px
+    background-position: bottom
+    background-size: cover
+  .carousel-caption
+    background: rgba(255, 255, 255, 0.7)
+    color: #000!important
+    text-shadow: none
+    text-align: right
+    padding-right: 30px
+    bottom: 20%
+    right: 10%
+    left: auto
+    width: 500px
+    font-weight: 300
+    font-size: $font * 1.5
+    transition-duration: 0.3s
+    h6
+      font-size: $font * 2
+      text-align: right
+      animation-name: fadeIn
+      animation-iteration-count: 1
+      animation-duration: 1s
+      animation-fill-mode: both
+      animation-delay: 1s
+    h5
+      font-size: $font * 2.5
+      text-align: right
+      color: $c1
+      margin-bottom: 10px
+      animation-name: fadeIn
+      animation-iteration-count: 1
+      animation-duration: 1s
+      animation-delay: 1.5s
+      animation-fill-mode: both
+    p
+      animation-name: zoomIn
+      animation-iteration-count: 1
+      animation-duration: 1s
+      animation-delay: 3s
+      animation-fill-mode: both
+
+@media (max-width:768px)
+  #main-slider .carousel-caption
+    width: 100%
+    width: 100%
+    right: 0
+    left: 0
+    text-align: center
+    top: 20%
+    bottom: auto
+    transition-duration: 0.3s
+    h6
+      text-align: center
+      font-size: 24px
+    h5
+      text-align: center
+      font-size: 30px
+    p
+      font-size: 18px
+    hr.right
+      float: none
+      margin: 0 auto
+
+  #main-slider .carousel-inner .item
+    height: 450px
+
+@media (max-width: 568px)
+  #main-slider .carousel-caption
+    top: 10%
+  .carousel-control
+    display: none
+
+// ===================================
+//MAIN SLIDER
+// ===================================
+
+
+
+
+// /*========================================================================
+//   CONTACT SECTION
+// =========================================================================*/
+.wpcf7:focus::-webkit-input-placeholder
+  /* Chrome/Opera/Safari */
+  color: #333
+
+.wpcf7:focus::-moz-placeholder
+  /* Firefox 19+ */
+  color: #333
+
+.wpcf7:focus::-ms-input-placeholder
+  /* IE 10+ */
+  color: #333
+
+.wpcf7:focus::-moz-placeholder
+  /* Firefox 18- */
+  color: #333
+
+/*// #contact-form #code #code2 input
+//     z-index: 999
+//     position: relative
+//   */
+.wpcf7 .wpcf7-form-control,
+.wpcf7 label,
+.wpcf7 span
+  width: 100%
+  background-color: #fff
+
+
+.wpcf7
+  float: right
+  width: 90%
+  input:focus
+    box-shadow: 0px 0px 3px #333
+    border: 2px solid $c1
+    background-color: #fff
+    outline: none
+  select
+    outline: none
+  label
+    font-weight: 300
+    color: $c1
+  input, select, #code1
+    height: 50px
+  input, textarea, select
+    color: #333
+    border: 1px solid #333
+    font-weight: 300
+
+
+
+img.wpcf7-form-control
+  width: auto
+
+.wpcf7 input,
+.wpcf7 textarea
+  border: 1px solid #333
+
+.wpcf7 textarea
+  height: 190px
+
+
+label span input,
+#code span input,
+textarea
+  padding: 5px
+  border-radius: 0px
+  border: none
+
+.wpcf7 input.wpcf7-submit
+  @extend .btn
+  text-align: center
+  background-color: $c1
+  width: 100%
+  border: 0px
+  padding: 5px
+  border: none
+  transition-duration: 0.5s
+  margin-top: 5px
+  font-size: 24px
+
+.wpcf7-submit:hover
+
+  transition-duration: 0.5s
+
+.screen-reader-response
+  display: none
+
+div.wpcf7-mail-sent-ok,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-validation-errors
+  border: none
+
+span.wpcf7-not-valid-tip
+  color: $c1
+  float: right
+  font-size: $font
+  font-weight: 300
+
+div.wpcf7-response-output
+  margin: 0
+  padding: 0
+
+#code #code1
+  width: 49%
+  float: left
+  margin-top: 15px
+  border: 1px solid
+  text-align: center
+
+
+
+#code #code1 img
+  width: auto
+  margin: 0 auto
+  height: 90%
+#code2
+  border: 1px solid
+  width: 49%
+  float: right
+  margin-top: 15px
+.price
+  border: 2px solid  $c1
+  padding-top: 20px
+  .wpcf7
+    margin: 0 auto
+    float: none
+
+@media (max-width: 768px)
+  .wpcf7
+    margin: 0  auto
+    float: none
+    width: 100%
+
+
+
+// /*========================================================================
+//   CONTACT SECTION
+// =========================================================================*/
+
+
+
+// /* ====================================
+// single post
+// ======================================= */
+#news-body h1
+  margin-bottom: 60px
+
+#news-body #main-slider .item
+  height: 500px
+
+#news-body .carousel
+  height: inherit
+  margin-bottom: 50px
+
+#seealso #portfolio .item .item-img
+  height: auto
+  width: 100%
+
+#seealso #portfolio .col-news
+  width: 50%
+  float: left
+  padding-left: 1%
+  padding-right: 1%
+  max-width: 500px
+  margin: 0 auto
+
+#seealso #portfolio .alsopost
+  margin: 0 auto
+  max-width: 1000px
+
+@media (max-width: 768px)
+  #seealso #portfolio .col-news
+    float: none
+    width: 90%
+
+
+@media (max-width: 768px)
+  #seealso #portfolio img
+    width: 100%
+    height: auto
+    height: 300px
+
+
+// /* ====================================
+// end single post
+// ======================================= */
+
+
+
+// /* ====================================
+// header template part
+// ======================================= */
+
+#header
+  margin-top: 60px
+  height: 250px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  hr
+    background-color: #fff
+  h1
+    color: #fff
+  @extend .vcc
+  margin-bottom: 50px
+  .square
+    @extend .vc2
+
+// /* ====================================
+// end header template part
+// ======================================= */
+
+
+
+// /* ====================================
+// rotate tiles
+// ======================================= */
+
+#rot-tiles
+
+  .item-filtr
+    background-color: $c1
+    position: absolute
+    opacity: 0.7
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    transition-duration: 1s
+  .item
+    position: relative
+    color: #fff
+    height: 300px
+    text-align: center
+
+    @extend .bg
+    transition-duration: 1s
+
+
+    h2
+      color: $c2
+      transition-duration: 1s
+    .content
+      opacity: 0
+  .item:hover
+    .content
+      opacity: 1
+      transition-duration: 1s
+
+    h2
+      opacity: 0
+    .item-filtr
+      opacity: 0.95
+      transition-duration: 1s
+
+@media (max-width: 568px)
+  #rot-tiles
+    .zoombox
+      min-height: 200px
+    .item
+      height: 200px
+
+// /* ====================================
+// paralax1
+// ======================================= */
+#paralax1
+  position: relative
+  background-image: url("./img/biuro-rachunkowe-ropczyce-rzeszow.jpg")
+  height: 500px
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: right
+  .container
+    height: 500px
+  .glass
+    width: 480px
+    float: right
+    background-color: rgba(0, 0, 0, 0.5)
+    color: #fff
+    padding: 30px
+    font-size: $font
+  h2
+    text-align: right
+    color: $c1
+    font-size: $font * 2.3
+  p
+    margin-top: 20px
+@media (max-width:586px)
+  #paralax1 .glass
+    width: 100%
+    font-size: 14px
+
+  // /* ====================================
+  // END paralax1
+  // ======================================= */
+
+
+
+  // /* ====================================
+  // quest
+  // ======================================= */
+@keyframes flash
+  from, 50%, to
+    opacity: 1
+  25%, 75%
+    opacity: 0
+
+
+
+#quest
+  .row
+      padding-top: 40px
+      padding-bottom: 40px
+  a
+    font-weight: 400
+  .cut
+    background-color: $c1
+    width: 35%
+    color: #fff
+    text-align: left
+    height: 50px
+    position: relative
+    .triangle
+      background-color: transparent
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 50px 0 0 50px
+      border-color: transparent transparent transparent $c1
+      position: absolute
+      right: -50px
+  h5
+    position: absolute
+    top: -45px
+    font-size: 25px
+    color: #fff
+  img
+    height: 300px
+
+
+  .callcont
+    position: absolute
+    bottom: 0
+    right: 10%
+
+    .callnow
+      animation-name: flash
+      animation-duration: 6s
+      animation-iteration-count: infinite
+      width: 90px
+      position: absolute
+      top: 60px
+      right: 80px
+      color: $c2
+      // font-weight: 700
+      text-align: center
+      p
+        text-align: center
+      a
+        color: $c2
+
+@media (min-width:568px)
+  #quest
+    p
+      text-align: left
+
+
+
+@media (max-width:768px)
+  #quest
+    img
+      height: 250px
+    .callcont
+      right: -5%
+      .callnow
+        top: 55px
+        right: 60px
+        font-size: 14px
+
+@media (max-width:568px)
+  #quest
+    img
+
+    .cut
+      width: 75%
+
+  // /* ====================================
+  // END quest
+  // ======================================= */
+
+
+  // /* ====================================
+  //  Footer
+  // ======================================= */
+footer
+
+  background-image: url('img/baner-4-szyba2.jpg')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  color: #969696
+  position: relative
+
+  .fot-filter
+    background-color: rgba(0, 0, 0, 0.85)
+    padding-top: 30px
+    padding-bottom: 50px
+  .logo
+    height: 45px
+    width: 240px
+    background-image: url("img/logo.png")
+    background-size: contain
+    position: relative
+    top: 10px
+    padding: 30px
+    padding-left: 0px
+    background-position: left
+    background-repeat: no-repeat
+    margin-left: -15px
+    margin-bottom: 20px
+  h6
+    text-align: left
+    font-size: 24px
+  .logo2
+        background-image: url("img/logo2.png")
+  a
+    color: $c2
+  a:hover, a:focus
+    color: $c1
+
+@media (max-width:768px)
+  footer
+    h6
+      text-align: center
+      margin-top: 35px
+    .logo
+      margin: 0 auto
+      background-position: center
+      margin-bottom: 30px
+    #autor
+      line-height: 1.4
+
+  // /* ====================================
+  // END Footer
+  // ======================================= */
+
+
+  // /* ====================================
+  // COUNT
+  // ======================================= */
+
+#count
+  background-color: $c3
+  color: #fff
+  margin: 0
+  .stat
+    width: 25%
+  .statistics
+      background-color: $c3
+      margin: 0
+      padding: 0
+      .count-title
+        height: 50px
+
+@media (max-width:650px)
+  #count
+    .stat
+      width: 90%
+      margin: 0
+      padding: 0
+  // /* ====================================
+  // END COUNT
+  // ======================================= */
+
+
+  // /* ====================================
+  // gtiles
+  // ======================================= */
+#gallery
+  margin-top: 50px
+  .intro
+    background-color: $c1
+    @extend .vcc
+    color: #fff
+    margin-bottom: 30px !important
+    .dd
+      @extend .vc2
+  .gtiles
+    height: 200px
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: top
+    margin: 0 auto
+    max-width: 450px
+    img
+      max-height: 100%
+      max-width: 100%
+  .gallery2 .gtiles
+    background-size: cover
+
+  // /* ====================================
+  // end gtiles
+  // ======================================= */
+
+
+  // /* ====================================
+  // offer-hide
+  // ======================================= */
+
+#offer-hide
+  img
+    max-width: 350px
+  .offer-head
+    text-transform: uppercase
+    margin-top: 35px
+    margin-bottom: 35px
+    font-weight: 300
+    color: $c1
+    font-size: $font * 1.3
+    background-image: url(./img/plus.jpg)
+    background-size: 25px 25px
+    background-repeat: no-repeat
+    background-position: right
+    transition-duration: 0.3s
+    border-bottom: 1px solid #f2f2f2
+    cursor: pointer
+    padding-right: 30px
+  .offer-head-open
+    background-image: url(./img/minus.jpg)
+    transition-duration: 0.3s
+  .offer-part
+    margin: 0px 20px
+@media (max-width: 768px)
+ #offer-hide  img
+  max-width: 100%
+
+
+  // /* ====================================
+  // offer-hide END
+  // ======================================= */
+
+
+  // /* ====================================
+  // #doradca
+  // ======================================= */
+#doradca
+  .til
+    background-color: #fff
+    border: 1px solid
+    width: 46%
+    margin: 2%
+    min-height: 200px
+    text-align: left
+    padding-top: 10px
+    font-size: $font*0.8
+    line-height: 1.6
+    p::first-line
+      font-weight: 700
+      line-height: 2.5
+
+@media (max-width: 768px)
+  #doradca .til
+    width: 90%
+    margin-left: 5%
+    margin-right: 5%
+    padding: 5%
+
+    // /* ====================================
+    // #doradca END
+    // ======================================= */
+
+
+    // /* ====================================
+    // #about12
+    // ======================================= */
+#about12
+
+  margin: 0 auto
+  margin-bottom: 50px
+  img
+    border: 1px solid $c2
+    max-width: 300px
+  h5
+    text-align: left
+    font-size: $font *1.5
+  .foto
+    width: 40%
+    float: right
+    top: 50%
+    position: absolute
+    -ms-transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    padding: 10px
+  .content
+    width: 60%
+    float: right
+    right: 0px
+    padding: 10px
+
+@media (max-width: 768px)
+  #about12
+    h5
+      text-align: center
+      font-size: $font *1.2
+    hr
+      width: 100%
+
+
+@media (max-width: 586px)
+  #about12
+    img
+      display: none
+    .content
+      width: 90%
+      float: none
+      margin: 0 auto
+
+    // /* ====================================
+    // #about12 END
+    // ======================================= */
+
+
+    // /* ====================================
+    // .iconrow1
+    // ======================================= */
+.iconrow1
+  .text
+    height: 220px
+  img
+    width: 120px
+    height: 120px
+    display: inherit
+    margin: 0 auto
+    margin-top: -15px
+    @extend .anime
+  h4
+    height: 55px
+    font-size: $font*1.1
+.iconrow1 .text:hover
+  img
+    width: 130px
+    height: 130px
+    @extend .anime
+  h4
+    color: $c1
+    @extend .anime
+@media (max-width: 400px)
+  .iconrow1
+    display: none
+    // /* ====================================
+    // .iconrow1 end
+    // ======================================= */
+
+
+.headerhr
+  background-color: $c1
+  height: 3px
+  margin-top: -50px
+  margin-bottom: 50px
+
+
+// /* ====================================
+// /* PARTNERS SECTION
+// ======================================= */
+#partners img
+
+  max-width: 200px
+  display: inline-block
+  margin-top: 0px
+  margin-bottom: 0px
+  padding-left: 3%
+  max-width: 100%
+
+@media (max-width: 920px)
+  #partners img
+    margin: 0px
+
+
+#partners
+  text-align: center
+
+
+// /* ====================================
+// END PARTNERS SECTION
+// ======================================= */
+
+
+// /* ====================================
+// END jquery progremo lightbox 1
+// ======================================= */
+
+
+.backdrop
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #000
+  opacity: 0
+  filter: alpha(opacity=0)
+  z-index: 55
+  display: none
+
+.box
+  position: fixed
+  top: 54%
+  right: 50%
+  -ms-transform: translate(50%, -50%)
+  -webkit-transform: translate(50%, -50%)
+  transform: translate(50%, -50%)
+  max-width: 80vw
+  max-height: 80vh
+  display: block
+  background-color: #fff
+  border: 10px solid #fff
+  border-radius: 4px
+  display: none
+  z-index: 66
+  overflow: hidden
+.close
+  position: absolute
+  right: 10px
+  top: 10px
+  width: 26px
+  background-color: #fff
+  border-radius: 12px
+  cursor: pointer
+  padding: 0px
+  font-size: 12px
+  line-height: 20px
+  text-align: center
+  font-weight: 300
+  border: 1px solid #333
+  padding: 2px
+
+.zoombox
+  position: relative
+  overflow: hidden
+  border: 2px solid $c1
+  max-width: 450px
+  margin: 0 auto
+  margin-bottom: 30px
+
+.zoom .gtiles
+  background-position: center
+  transition: all 1s ease
+  -moz-transition: all 1s ease
+  -ms-transition: all 1s ease
+  -webkit-transition: all 1s ease
+  // -o-transition: all 1s ease
+.hoverbox
+  @extend .vc2
+  opacity: 0
+  width: 90%
+  height: 80%
+  transition-duration: 0.5s
+  text-align: center
+  z-index: 11
+  background-color: rgba(0, 0, 0, 0.7)
+
+  p
+    @extend .vc2
+    font-size: $font*1.5
+    color: #fff
+.zoom:hover
+  .gtiles
+    transform: scale(1.3)
+    -moz-transform: scale(1.3)
+    -webkit-transform: scale(1.3)
+    // -o-transform: scale(1.5)
+    -ms-transform: scale(1.3)
+  .hoverbox
+    opacity: 1
+    transition-duration: 0.5s
+
+@media (max-width: 568px)
+  .box
+    max-width: 95vw
+    max-height: 95vh
+    width: 85%
+
+
+  // progremo lightbox2
+
+
+// /* ====================================
+// END jquery progremo lightbox 1
+// ======================================= */
+
+
+/* MAP */
+
+#map-container
+  border-top: 4px solid #ffb333
+  position: relative
+
+
+#map-container #pl-map
+  position: absolute
+  top: 20px
+  z-index: 999
+  width: 200px
+  height: 200px
+  right: 10px
+
+
+
+
+/* END MAP */

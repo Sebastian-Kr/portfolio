@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title> Kolumny o Stałej Szerokości</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+
+</head>
+
+<body>
+
+<h1> Kolumny o Stałej Szerokości</h1>
+
+<h2>Kurczliwa tabela</h2>
+<table class="auto-layout shrinkwrapped"> 
+  <tr> <td class="sized1">200 px</td> <td class="sized2">300 px</td></tr></table> 
+
+<h2>Tabela o stałym układzie</h2>
+<table class="fixed-layout min-width1"> 
+  <tr> <td class="sized1">200 px</td> <td class="sized2">300 px</td></tr></table>
+
+<h2>Kolumny o maksymalnej szerokości</h2>
+<div class="sized2">  <table class="auto-layout shrinkwrapped"> 
+    <tr> <td class="sized1">200 px</td> 
+         <td class="sized2">300 px</td></tr></table> </div>
+
+<h2>Kolumny o minimalnej szerokości</h2>
+<table class="fixed-layout min-width2"> 
+  <tr> <td class="sized1">200 px</td> <td class="sized2">300 px</td></tr></table>
+
+</body>
+</html>

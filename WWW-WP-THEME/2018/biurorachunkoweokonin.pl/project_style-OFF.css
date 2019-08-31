@@ -1,0 +1,10 @@
+div {
+	border: 0px solid green;
+}
+.white_text {
+	color:#fff;
+}
+.center {
+	text-align:center;
+	margin:0 auto;
+}

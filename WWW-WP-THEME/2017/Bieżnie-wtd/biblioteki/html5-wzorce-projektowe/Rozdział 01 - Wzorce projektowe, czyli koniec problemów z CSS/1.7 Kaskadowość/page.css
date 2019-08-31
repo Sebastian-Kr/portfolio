@@ -1,0 +1,11 @@
+html, body { border-style:none!important; }
+
+*     { border:0px  solid black; }            /* Selektor uniwersalny */
+div   { border:2px  solid black; }            /* Selektor elementu */
+*.c10 { border:4px  solid black; }            /* Selektor drugorzędny */
+#i100 { border:6px  solid black; }            /* Selektor identyfikatora */
+
+*     { border:8px  solid black!important; }  /* Selektor uniwersalny !important */
+div   { border:10px solid black!important; }  /* Selektor elementu  !important */
+*.c10 { border:12px solid black!important; }  /* Selektor drugorzędny  !important */
+#i100 { border:14px solid black!important; }  /* Selektor identyfikatora  !important */

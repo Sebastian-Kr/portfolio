@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+ <head><title>Sprawdzanie Poprawności Formularzy</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+  <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+  <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+  <![endif]-->
+ </head>
+ 
+ <body>
+ 
+<h1>Sprawdzanie Poprawności Formularzy</h1>
+
+<p>Wypełnij formularz:</p>
+  <form method="post">
+    <label>E-mail: <input type="email" required></label>
+    <label>URL: <input type="url" required></label>
+    <label>Liczba: <input type="number" max="100" min="0" step="2" required></label>
+    <input type="submit" value="Wyślij"></form>
+  </form>
+
+   
+ </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title>Struktura Wizualna (ten sam przykład, co do wzorca Znaczenie Strukturalne)</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+  		
+  		<script>
+  			document.createElement('header');
+  			document.createElement('footer');
+  			document.createElement('section');
+  			document.createElement('aside');
+  			document.createElement('nav');
+  			document.createElement('article');
+		</script>
+
+</head>
+
+ 
+ <body>
+ <div id="wrapper">
+		
+		<header>
+			<h1>Struktura Wizualna</h1>
+			<p>(ten sam przykład, co do wzorca Znaczenie Strukturalne)</p>
+		</header>
+		
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Element nawigacji</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<article>
+			
+			<header>
+				<h1>Przykład znaczenia strukturalnego</h1>
+			</header>
+			
+			<section>
+				
+				<header>
+					<hgroup>
+						<h1>Ten nagłówek określa temat całej sekcji.</h1>
+						<p>Ten akapit zawiera wprowadzenie do tematu.</p>
+						<p>Ten akapit zawiera rozwinięcie tematu.</p>
+					</hgroup>
+				</header>
+				
+				<p>Wszystko w tym dokumencie jest ze sobą wzajemnie powiązane. Struktura blokowa 
+  tego dokumentu określa porządek i siłę tych relacji. Im więcej elementów otacza dany fragment
+  treści, tym ściślej jest on związany z przodkami i treścią siostrzaną.</p>
+  
+  
+  				<ul>
+     				<li>To jest lista nieuporządkowana.</li>
+     				<li>Elementy list są ze sobą ściślej powiązane niż elementy sekcji.</li>
+     				<li>Kolejność elementów w liście nieuporządkowanej nie ma znaczenia.</li>
+     			</ul>
+
+
+				<h3>Nowe elementy strukturalne</h3>
+				<table>
+					<tbody>
+						<tr>
+							<td>article</td>
+							<td>Artykuł lub inna kompletna publikacja</td>
+						</tr>
+						<tr>
+							<td>aside</td>
+							<td>Treść drugorzędna, np. pasek boczny</td>
+						</tr>
+						<tr>
+							<td>footer</td>
+							<td>Stopka</td>
+						</tr>
+						<tr>
+							<td>header</td>
+							<td>Nagłówek</td>
+						</tr>
+						<tr>
+							<td>nav</td>
+							<td>Nawigacja</td>
+						</tr>
+						<tr>
+							<td>section</td>
+							<td>Logicznie wydzielony obszar strony</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			
+			<footer>
+				<p>W stopce zazwyczaj znajdują się informacje o sekcji, np. o jej autorze.</p>
+			</footer>
+			
+		</article>
+		
+		<aside id="sidebar"> 
+			W elemencie &lt;aside&gt; umieszcza się informacje, które są luźno powiązane z treścią główną. Można 
+            na przykład służyć jako pasek boczny.
+		</aside> 
+		
+	</div>
+    
+ </body>
+</html>

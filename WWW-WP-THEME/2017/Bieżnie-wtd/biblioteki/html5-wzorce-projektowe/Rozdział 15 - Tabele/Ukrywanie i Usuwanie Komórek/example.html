@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+	<head>
+		<title>Ukrywanie i Usuwanie Komórek</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+
+</head>
+ 
+ <body>
+ 
+<h1>Ukrywanie i Usuwanie Komórek</h1>
+
+<h3>Komórka 1 jest ukryta, a 3 — usunięta. <br /> To powoduje przeniesienie komórki 4 
+    na miejsce komórki 3 i powstanie pustego miejsca po brakującej komórce na końcu.</h3>
+
+<br /><div>Collapsed Borders</div>
+<table class="collapsed" cellspacing="0" >
+ <tr><td          >1</td><td>2</td><td          >3</td><td>4</td></tr>
+ <tr><td class="h">1</td><td>2</td><td class="x">3</td><td>4</td></tr></table>
+
+<br /><div>Separated Borders</div>
+<table class="separated" cellspacing="5" >
+ <tr><td          >1</td><td>2</td><td          >3</td><td>4</td></tr>
+ <tr><td class="h">1</td><td>2</td><td class="x">3</td><td>4</td></tr></table>
+
+<!-- Ukrywanie i usuwanie kolumn -->
+<br />
+<br /><h2>Usunięta kolumna w tabeli ze scalonymi krawędziami</h2>
+<table class="collapsed" cellspacing="0" >
+ <tr><td>1</td><td>2</td><td class="x">3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td class="x">3</td><td>4</td></tr></table>
+
+<br /><h2>Ukryta kolumna w tabeli ze rozdzielonymi krawędziami</h2>
+<table class="separated" cellspacing="5" >
+ <tr><td>1</td><td>2</td><td class="h">3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td class="h">3</td><td>4</td></tr></table>
+
+<br /><h2>Usunięta kolumna w tabeli ze scalonymi krawędziami<br />
+          Usunięto przy użyciu elementu &lt;col&gt; — działa tylko w IE.</h2>
+<table class="collapsed" cellspacing="0" >
+ <colgroup> <col />    <col />    <col class="x" /> <col /></colgroup>
+ <tr>       <td>1</td> <td>2</td> <td>3</td>        <td>4</td> </tr>
+ <tr>       <td>1</td> <td>2</td> <td>3</td>        <td>4</td> </tr></table>
+
+<br /><h2>Ukryta kolumna w tabeli z rozdzielonymi krawędziami<br />
+          Usunięto przy użyciu elementu &lt;col&gt; — działa tylko w IE.</h2>
+<table class="separated" cellspacing="5" >
+ <colgroup> <col />    <col />    <col class="h" /> <col /></colgroup>
+ <tr>       <td>1</td> <td>2</td> <td>3</td>        <td>4</td> </tr>
+ <tr>       <td>1</td> <td>2</td> <td>3</td>        <td>4</td> </tr></table>
+
+<!-- Ukryte i usunięte wiersze -->
+<br />
+<br /><h2>Ukryty wiersz w tabeli ze scalonymi krawędziami</h2>
+<table class="collapsed" cellspacing="0" >
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr class="h"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+
+<br /><h2>Ukryty wiersz w tabeli ze rozdzielonymi krawędziami</h2>
+<table class="separated" cellspacing="5" >
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr class="h"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+  
+<br /><h2>Usunięty wiersz w tabeli ze scalonymi krawędziami</h2>
+<table class="collapsed" cellspacing="0" >
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr class="x"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+
+<br /><h2>Usunięty wiersz w tabeli z rozdzielanymi krawędziami</h2>
+<table class="separated" cellspacing="5" >
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr class="x"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr          ><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+
+<!-- Ukryte i usunięte grupy wierszy -->
+<br />
+<br /><h2>Ukryta grupa wierszy w tabeli ze scalonymi krawędziami</h2>
+<table class="collapsed" cellspacing="0" >
+ <thead class="h">
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></thead>
+ <tbody>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></tbody></table> 
+
+<br /><h2>Ukryta grupa wierszy w tabeli z rozdzielonymi krawędziami</h2>
+<table class="separated" cellspacing="5" >
+ <thead class="h">
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></thead>
+ <tbody>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></tbody></table> 
+  
+<br /><h2>Usunięta grupa wierszy w tabeli ze scalonymi krawędziami</h2>
+<table class="collapsed" cellspacing="0" >
+ <thead class="x">
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></thead>
+ <tbody>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></tbody></table> 
+
+<br /><h2>Usunięta grupa wierszy w tabeli z rozdzielonymi krawędziami</h2>
+<table class="separated" cellspacing="5" >
+ <thead class="x">
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></thead>
+ <tbody>
+  <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></tbody></table> 
+
+
+<!-- Ukryte i usunięte tabele -->
+<br />
+<br /><h4>Ukryta tabela ze scalonymi krawędziami</h4>
+<table class="collapsed hidden" cellspacing="0" >
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+
+<h4>Ukryta tabela z rozdzielonymi krawędziami</h4>
+<table class="separated hidden" cellspacing="5" >
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+
+<h4>Usunięta tabela ze scalonymi krawędziami</h4>
+<table class="collapsed x" cellspacing="0" >
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+
+<h4>Usunięta tabela z rozdzielonymi krawędziami</h4>
+<table class="separated x" cellspacing="5" >
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+ <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table> 
+
+<h2>Koniec przykładu</h2>
+
+
+</body>
+</html>

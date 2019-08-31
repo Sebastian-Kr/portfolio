@@ -1,0 +1,82 @@
+
+
+figure.snip1480 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  border: 1px solid #969696;
+}
+figure.snip1480 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+figure.snip1480 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.snip1480 figcaption {
+  background-color: $color3-75;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+figure.snip1480 h3 {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+figure.snip1480:before {
+  background: $color3-75;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  top: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+figure.snip1480 p {
+  position: absolute;
+  font-size: 0.8em;
+  min-width: 100%;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 10px;
+  text-align: center;
+}
+figure.snip1480 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1480:hover:before,
+figure.snip1480.hover:before {
+  bottom: 0;
+}
+figure.snip1480:hover p,
+figure.snip1480.hover p {
+  opacity: 1;
+}
+figure.snip1480:hover figcaption,
+figure.snip1480.hover figcaption {
+  background-color: #fff;
+  color: $color3;
+}

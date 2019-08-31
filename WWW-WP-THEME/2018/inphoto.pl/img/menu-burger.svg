@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1258.000000, -38.000000)" fill="#F89F03">
+            <g id="Page-1" transform="translate(1258.000000, 38.000000)">
+                <path d="M14.4516129,0 L1.5483871,0 C0.696774194,0 0,0.50625 0,1.125 C0,1.74375 0.696774194,2.25 1.5483871,2.25 L14.4516129,2.25 C15.3032258,2.25 16,1.74375 16,1.125 C16,0.50625 15.3032258,0 14.4516129,0" id="Fill-1"></path>
+                <path d="M14.4516129,5 L1.5483871,5 C0.696774194,5 0,5.50625 0,6.125 C0,6.74375 0.696774194,7.25 1.5483871,7.25 L14.4516129,7.25 C15.3032258,7.25 16,6.74375 16,6.125 C16,5.50625 15.3032258,5 14.4516129,5" id="Fill-3"></path>
+                <path d="M14.4516129,10 L1.5483871,10 C0.696774194,10 0,10.50625 0,11.125 C0,11.74375 0.696774194,12.25 1.5483871,12.25 L14.4516129,12.25 C15.3032258,12.25 16,11.74375 16,11.125 C16,10.50625 15.3032258,10 14.4516129,10" id="Fill-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

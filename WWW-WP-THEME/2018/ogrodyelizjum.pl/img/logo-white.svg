@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="287.8232 733.5903" i:rulerOrigin="-287.8232 -116.8027" i:pageBounds="287.8232 733.5903 2546.8223 116.8027"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="2258.999px" height="616.788px" viewBox="0 0 2258.999 616.788"
+	 enable-background="new 0 0 2258.999 616.788" xml:space="preserve">
+<metadata>
+	<variableSets  xmlns="&ns_vars;">
+		<variableSet  varSetName="binding1" locked="none">
+			<variables></variables>
+			<v:sampleDataSets  xmlns:v="&ns_vars;" xmlns="&ns_custom;"></v:sampleDataSets>
+		</variableSet>
+	</variableSets>
+</metadata>
+<g id="Warstwa_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
+	<g>
+		<path i:knockout="Off" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M88.43,159.211
+			c-118.325,174.085,5.216,414.93,219.964,414.93c54.131,0,106.481-16.314,150.69-46.814
+			C253.534,517.887,79.455,367.029,88.43,159.211 M327.481,43.34c6.443,142.74,102.385,246.167,246.498,255.725
+			C569.268,163.928,462.837,52.932,327.481,43.34z M572.068,341.672C407.16,331.162,291.693,211.359,284.813,43.682
+			c-53.604,4.723-104.223,25.508-145.754,59.896c-17.452,73.773-7.373,149.418,30.483,215.403
+			c67.997,118.532,205.415,174.036,338.053,165.284C543.009,444.186,565.441,394.661,572.068,341.672z M308.394,0
+			c170.315,0,308.394,138.078,308.394,308.394c0,170.31-138.084,308.394-308.394,308.394C138.084,616.788,0,478.704,0,308.394
+			C0,138.078,138.079,0,308.394,0z"/>
+		<path i:knockout="Off" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M1484.155,345.968l-61.604-165.424
+			l-61.24,165.424H1484.155z M1272.984,442.316l118.354-309.404h65.163l134.251,350.962h-55.854l-36.142-98.079h-152.14
+			l-36.05,98.079h-41.252h-12.229h-218.49V132.912h52.935v309.446h177.785L1272.984,442.316z M1822.386,231.716
+			c0-10.218-2.008-19.31-6.115-27.275c-4.107-7.885-10.495-14.402-19.074-19.471c-7.484-4.345-16.154-7.482-26.193-9.253
+			c-9.948-1.85-22.36-2.735-37.145-2.735h-52.479v132.517h46.546c15.15,0,28.84-1.208,40.978-3.541
+			c12.139-2.333,22.452-7.241,31.031-14.644c7.666-6.597,13.324-14.402,16.975-23.574
+			C1820.56,254.647,1822.386,243.946,1822.386,231.716z M2152.401,345.968l-61.604-165.424l-61.239,165.424H2152.401z
+			 M1928.688,475.101l130.896-342.189h65.163l134.252,350.962h-55.854l-36.142-98.079h-152.14l-36.051,98.079h-41.98h-11.5h-57.224
+			l-126.038-139.516h-60.691v139.516h-52.934V132.912h102.674c22.816,0,41.982,1.126,57.406,3.299
+			c15.423,2.173,30.025,7.322,43.989,15.288c13.872,7.885,24.916,18.022,33.038,30.413c8.123,12.472,12.139,27.839,12.139,46.264
+			c0,25.747-7.393,47.31-22.178,64.528c-14.785,17.299-34.955,30.091-60.418,38.459L1928.688,475.101z M731.397,483.875V132.912
+			H980.37v41.517H784.331v96.149h182.714v41.516H784.331v130.264H980.37v41.517H731.397z"/>
+	</g>
+</g>
+</svg>

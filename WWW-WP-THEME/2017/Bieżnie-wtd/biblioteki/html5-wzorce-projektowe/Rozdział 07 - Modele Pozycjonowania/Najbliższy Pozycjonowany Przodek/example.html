@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Najbliższy Pozycjonowany Przodek</title>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="site.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="page.css"   media="all"    type="text/css" />
+ <link rel="stylesheet" href="print.css"  media="print"  type="text/css" />
+ <!--[if lte IE 6]>
+ <link rel="stylesheet" href="ie6.css"    media="all"    type="text/css" />
+ <![endif]-->
+</head>
+
+<body>
+ <h1>Najbliższy Pozycjonowany Przodek</h1>
+
+ <div class="static ggp">Niepozycjonowany pradziadek
+   <div class="absolute sized bottom-right box1">Bezwzględny nr 1, bottom right
+     <em class="absolute offset box2">Zagnieżdżony bezwzględny</em></div>
+   <div class="relative gp">Pozycjonowany dziadek
+     <div class="static parent">Niepozycjonowany rodzic
+        <span class="absolute sized bottom-right box1">Bezwzględny nr 2, bottom right
+          <em class="absolute offset box2">Zagnieżdżony bezwzględny</em></span>
+     </div></div></div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* Mniej ważne style */
+
+*.positioned { height:120px; border:2px solid black; }
+*.absolute   { padding:5px; text-align:center; 
+               border:5px solid black; background-color:gold; }
+
+
+/* Ważne style */
+
+*.positioned { position:relative; }
+*.absolute   { position:absolute; top:10px; left:10px; }
+

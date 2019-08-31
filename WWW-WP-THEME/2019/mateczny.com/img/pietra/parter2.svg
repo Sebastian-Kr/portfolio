@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="918.88px" height="736.91px" viewBox="0 0 918.88 736.91" enable-background="new 0 0 918.88 736.91" xml:space="preserve">
+<g>
+	<g>
+		<image overflow="visible" width="919" height="737" xlink:href="parter.png"  transform="matrix(0.9999 0 0 0.9999 0 0)">
+		</image>
+		
+			<image display="none" overflow="visible" width="919" height="737" xlink:href="pierwsze.png"  transform="matrix(0.9999 0 0 0.9999 0 0)">
+		</image>
+		
+			<image display="none" overflow="visible" width="919" height="737" xlink:href="drugie.png"  transform="matrix(0.9999 0 0 0.9999 0 0)">
+		</image>
+		
+			<image display="none" overflow="visible" width="919" height="737" xlink:href="trzecie.png"  transform="matrix(0.9999 0 0 0.9999 0 0)">
+		</image>
+	</g>
+	<polygon opacity="0.5" fill="#FF0000" points="459.661,570.76 459.661,500.094 459.661,481.092 409.327,481.092 409.327,491.76 
+		371.328,491.76 371.328,481.092 346.661,481.092 346.661,456.426 209.328,456.426 209.328,500.094 54.994,500.094 54.994,663.094 
+		106.993,663.094 106.993,663.428 462.325,663.428 462.325,570.76 	"/>
+	<polygon opacity="0.5" fill="#FF0000" points="640.661,444.096 640.661,456.428 541.661,456.428 541.661,480.428 514.661,480.428 
+		514.661,571.096 509.993,571.096 509.993,701.428 836.327,701.428 836.327,574.428 836.327,571.096 836.327,444.096 	"/>
+	<polygon opacity="0.5" fill="#FF0000" points="836.327,125.928 831.501,125.928 831.501,112.928 515.493,112.928 515.493,431.928 
+		541.493,431.928 541.493,444.096 541.493,456.428 640.661,456.428 640.661,444.096 836.327,444.096 	"/>
+	<polygon opacity="0.5" fill="#FF0000" points="364.994,118.428 160.994,118.428 160.994,299.428 160.994,336.678 55.494,336.678 
+		55.494,499.844 209.494,499.844 209.494,456.594 346.494,456.594 346.494,432.094 364.994,432.094 	"/>
+</g>
+</svg>

@@ -1,0 +1,200 @@
+/* ==========================================================================
+   SK custom default styles
+
+ * Version - 3.5.1
+ * Copyright (c) 2016 Sebastian Krajewski
+
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+LESS VARIABLES LESS
+============================================================================= */
+
+@dgray: #121212;
+@mgray: #333;
+@ac-color: #982b2e;
+@ac-color2: #4eafc0;
+
+
+/* ==========================================================================
+UNIWERSAL MIXINS LESS
+============================================================================= */
+
+.copyright {
+
+	color: #fff;
+	background-color: @dgray;
+	text-align: center;
+	font-size: 12px;
+	padding: 5px;
+	
+	width: 100%;
+}
+
+.footer {
+	color: #fff;
+	background-color: @mgray;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px; 
+	min-height: 200px;
+	text-align: center;
+
+	a {color: #fff;}
+	ul {list-style-type: none;}
+	li {margin-top: 5px; margin-bottom: 5px;}
+}
+
+
+.glass-container {
+	text-align: center;
+	background: url('../img/tlo.jpg');
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
+	.glass {
+	
+			background-color: rgba(152, 43, 46, 0.5);
+		
+			padding-top: 50px;
+			padding-bottom: 50px;
+			color: #fff;
+
+			button {
+				background-color: @ac-color2; 
+				width: 30%; 
+				min-width: 100px;
+				margin-top: 30px;
+				min-width: 150px;
+				border: 0px;
+				padding: 5px;
+				font-size: 20px;
+				opacity: 1;
+					}
+			button:hover {
+				background-color: @ac-color;
+			}
+
+			.container {
+				width: 70%;
+			}
+			
+		}
+	
+}
+
+
+.full-bar {
+	background-color: @ac-color2;
+	font-size: 24px;
+	text-align: center;  
+	padding: 15px;
+	margin-right: -20px;
+	margin-left: -20px;
+	color: #fff;
+	font-weight: 100; 
+	button {
+		background-color: transparent;
+		border: 1px solid #fff;
+		padding: 5px;
+		margin-top: 10px;
+			}
+	button:hover {
+			background-color: @ac-color;
+			transition-duration:1s;
+			}
+		a {color: #fff;}	
+}
+
+.full-bar2 {
+	background-color: @mgray;
+	font-size: 24px;
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	font-weight: 100; 
+	button {
+		background-color: transparent;
+		border: 1px solid #fff;
+		padding: 5px;
+		margin-top: 10px;
+			}
+	button:hover {
+			background-color: @ac-color2;
+			transition-duration:1s;
+			}
+	a {color: #fff;}
+}
+
+
+
+.feature {
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	span {
+		font-size: 30px;
+		background-color: @ac-color2;
+		padding: 20px;
+		border-radius: 50%;
+		color: #fff;
+	}
+	span:hover {background-color: @ac-color; transition-duration:1s;}
+}
+
+
+// Klasy do efektu z vievporchecker.js
+.hider {
+	opacity:0
+}
+ 
+.show {
+	opacity: 1;
+}
+
+
+// .section {
+// 	text-align: center;
+// 	margin: 0 auto;
+// }
+
+.space {
+	height: 30px;
+	border-top: 1px solid #dedede;
+}
+
+.vertical-center {
+	/* position: relative;
+	div {position: relative; top: 50%; transform: translateY(-50%);} */
+
+}
+
+
+.blog-article {
+	border: 1px solid #e4e4e4;
+	margin-bottom: 30px;
+	padding: 5px;
+	h4 {text-align: left;}
+	:last-child {text-align: center;}
+
+}
+
+.blog-article:hover {
+    
+    border: 1px solid gray;
+    transition-duration: 1s;
+}
+
+.foot-item {
+
+	text-align: left;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	padding-right: 25px;
+	padding-left: 25px;
+	h2 {text-align: left;}
+
+}

@@ -1,0 +1,270 @@
+@import 'mixins.scss';
+@import 'progremo-lightbox.scss';
+
+body {
+  background-color: #000;
+  padding-top: 50px;
+}
+.btn {
+  padding-bottom: 10px;
+  padding: 12px;
+  width: 200px;
+  border: 2px solid #f89f03;
+  color: #fff;
+  margin: 15px auto;
+
+	color: #FFFFFF;
+  font-family: Lato;
+  	font-size: 16px;
+    	font-weight: bold;
+      // line-height: 19px;\
+      transition-duration: 0.3s;
+      text-align: center;
+      border-radius: 0px;
+
+    }
+
+    .btn:hover {
+      background-color: #f89f03;
+      transition-duration: 0.3s;
+    }
+
+
+
+// FILTER GALLERY MODULE //////////////////
+.hidden {
+  display: none;
+}
+
+#Filtergallery {
+  position: relative;
+
+  &:before {
+    height: 10px;
+    background-color: #fff;
+    margin-top: -5px;
+    display: block;
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 100%;
+  }
+// Filterbox
+  .filterbox {
+  justify-content: center;
+      display: flex;
+      background-color: #fff;
+      padding-bottom: 80px;
+      margin-top: -2px;
+      margin-bottom: -3px;
+      border: 0px transparent;
+      outline: none!important;
+  .filter {
+    // margin-right: 20px;
+    margin-left: 50px;
+    position: relative;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .filter.active {
+    color: #F89F03;
+    // font-weight: bold;
+    transition-duration: 0.3s;
+  }
+  .filter:after {
+    content: '';
+    display: block;
+    background-color: #4A4A4A;
+    width: 2px;
+    height: 20px;
+    margin-top: -20px;
+    right: -25px;
+    position: absolute;
+  }
+  .filter:last-child:after{
+    display: none;
+  }
+  }
+
+
+
+  //Galery body
+  text-align: center;
+  background-color: #000;
+.fotos {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 2fr;
+   // grid-template-rows:repeat(auto-fill, 1fr);
+   .item {
+     @include bg-320;
+     // // //////////////////////////////
+     // min-height: 200px;
+     min-width: 33%;
+     // //////////////////////////////
+     background-position: center;
+     background-size: cover;
+     filter: grayscale(1);
+     // transition-duration: 0.1s;
+   }
+
+   .item:hover {
+     filter: grayscale(0);
+     cursor: pointer;
+     transition-duration: 0.5s;
+   }
+
+}
+
+
+
+
+
+  .gallery_item:nth-child(3n) {
+    grid-column:  1 / span 2;
+    grid-row: span 2;
+  }
+
+    .gallery_item:nth-child(6n) {
+      grid-column: 2 / span 2;
+    }
+
+  .gallery_item:nth-child(3) {grid-row: 1 / 3;}
+  .gallery_item:nth-child(6) {grid-row: 3 / 5;}
+  .gallery_item:nth-child(9) {grid-row: 5 / 7;}
+  .gallery_item:nth-child(12) {grid-row: 7 / 9;}
+  .gallery_item:nth-child(15) {grid-row: 9 / 11;}
+  .gallery_item:nth-child(18) {grid-row: 11 / 13;}
+  .gallery_item:nth-child(21) {grid-row: 13 / 15;}
+  .gallery_item:nth-child(24) {grid-row: 15 / 17;}
+  .gallery_item:nth-child(27) {grid-row: 17 / 19;}
+  .gallery_item:nth-child(30) {grid-row: 19 / 21;}
+  .gallery_item:nth-child(33) {grid-row: 21 / 23;}
+  .gallery_item:nth-child(36) {grid-row: 23 / 25;}
+  .gallery_item:nth-child(39) {grid-row: 25 / 27;}
+  .gallery_item:nth-child(42) {grid-row: 27 / 29;}
+  .gallery_item:nth-child(45) {grid-row: 29 / 31;}
+  .gallery_item:nth-child(48) {grid-row: 31 / 33;}
+  .gallery_item:nth-child(51) {grid-row: 33 / 35;}
+  .gallery_item:nth-child(54) {grid-row: 35 / 37;}
+  .gallery_item:nth-child(57) {grid-row: 37 / 39;}
+  .gallery_item:nth-child(60) {grid-row: 39 / 41;}
+  .gallery_item:nth-child(63) {grid-row: 41 / 43;}
+  .gallery_item:nth-child(66) {grid-row: 43 / 45;}
+  .gallery_item:nth-child(69) {grid-row: 45 / 47;}
+  .gallery_item:nth-child(72) {grid-row: 47 / 49;}
+  .gallery_item:nth-child(75) {grid-row: 49 / 51;}
+  .gallery_item:nth-child(78) {grid-row: 51 / 53;}
+  .gallery_item:nth-child(81) {grid-row: 53 / 55;}
+  .gallery_item:nth-child(84) {grid-row: 55 / 57;}
+  .gallery_item:nth-child(87) {grid-row: 57 / 59;}
+  .gallery_item:nth-child(90) {grid-row: 59 / 61;}
+  .gallery_item:nth-child(93) {grid-row: 61 / 63;}
+  .gallery_item:nth-child(96) {grid-row: 63 / 65;}
+  .gallery_item:nth-child(99) {grid-row: 65 / 67;}
+  .gallery_item:nth-child(102) {grid-row: 67 / 69;}
+  .gallery_item:nth-child(105) {grid-row: 69 / 71;}
+
+} // #Filtergallery end
+
+@media (min-width: 768px) {
+  .gallery_item {
+    filter: grayscale(1);
+  }
+  .gallery_item:hover {
+    filter: grayscale(0);
+  }
+}
+
+
+@media (min-width:568px) and (max-width: 768px) {
+  #Filtergallery .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width:567px) {
+  #Filtergallery .fotos {
+display: block;
+
+}
+
+  #Filtergallery .filterbox {
+    flex-direction: column;
+    .filter {
+margin: 0 auto;
+    }
+    .filter:after {
+      position: relative;
+      width: 20px;
+      height: 2px;
+      position: static;
+      margin: 10px auto;
+    }
+  }
+}
+
+
+
+  @supports not (display: grid) {
+    #Filtergallery .fotos {
+    display: flex;
+  flex-wrap: wrap;
+  .item  {
+  width: 100%;
+  }
+  }
+}
+
+
+
+    @media (min-width: 568px) {
+      @supports not (display: grid) {
+        #Filtergallery .fotos {
+        display: flex;
+      flex-wrap: wrap;
+      .item  {
+      width: 50%;
+      }
+      }
+    }
+    }
+
+    @media (min-width: 992px) {
+      @supports not (display: grid) {
+        #Filtergallery .fotos {
+        display: flex;
+      flex-wrap: wrap;
+      .item  {
+      width: 33.3333%;
+      }
+      }
+    }
+    }
+
+
+//  Custom position in fotos
+#Filtergallery {
+
+  .poz0 {background-position: 0% 0% !important;}
+  .poz10 {background-position: 0% 10% !important;}
+  .poz20 {background-position: 0% 20% !important;}
+  .poz30 {background-position: 0% 30% !important;}
+  .poz40 {background-position: 0% 40% !important;}
+  .poz50 {background-position: 0% 50% !important;}
+  .poz60 {background-position: 0% 60% !important;}
+  .poz70 {background-position: 0% 70% !important;}
+  .poz80 {background-position: 0% 80% !important;}
+  .poz90 {background-position: 0% 90% !important;}
+  .poz100 {background-position: 0% 100% !important;}
+
+}
+
+// FILTER GALLERY MODULE END //////////////////

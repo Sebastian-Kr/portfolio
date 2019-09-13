@@ -1,0 +1,375 @@
+
+@mixin special_header_mobile {
+  .special_header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    span {
+      margin: 15px auto 30px auto;
+    }
+  }
+}
+// VARIABLE PROJECT
+$c1: #f7901c;
+$c2: #202020;
+$c3: #ffad07;
+
+/*======================================
+// mateczny.com-svg_info_app
+======================================*/
+#section5 {
+// .special_header {
+//   margin-bottom: 10px;
+// }
+}
+
+
+
+#app_image {
+  // display: none;
+  margin: 0;
+  margin-top: -2px;
+  padding: 0 !important;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  background-color: #fff;
+}
+
+#app_image #build_shema {
+  position: relative;
+  width: 100vw;
+  margin-bottom: -7px;
+  .title_float_container {
+    position: absolute;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+
+    @media (max-width: 991px) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      transform: none;
+      margin-top: 0px;
+      padding-top: 30px;
+    @include special_header_mobile;
+
+    }
+    .main_paragraph {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
+    .main_paragraph p {
+      font-size: 32px;
+      text-align: right;
+      line-height: 42px;
+      max-width: 480px;
+      margin-top: 30px;
+      @media (max-width: 991px) {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .main_paragraph h6 {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      @media (max-width: 991px) {
+        margin: 30px auto;
+      }
+      &:before {
+        float: left;
+        margin-right: 10px;
+        margin-top: 5px;
+        display: block;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('img/warning.svg');
+        @media (max-width: 991px) {
+          float: none;
+          height: 30px;
+          width: 30px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  #build_svg {
+    @media (max-width: 991px) {
+      width: 110vw;
+      margin-left: -5vw;
+    }
+
+    @media (max-width: 767px) {
+      width: 120vw;
+      margin-left: -10vw;
+    }
+
+    @media (max-width: 567px) {
+      width: 150vw;
+      margin-left: -15vw;
+    }
+    @media (max-width: 450px) {
+      width: 160vw;
+      margin-left: -16vw;
+    }
+  }
+
+  .floor_shape {
+    opacity: 0;
+    // fill: #ffffff;
+    // stroke-width:3;
+    stroke:#fff;
+    stroke-width: 3;
+    cursor: pointer;
+    fill: rgb(254, 170, 10);
+  }
+  .floor_shape:hover {
+    opacity: 0.6;
+  }
+
+}
+
+
+#app_image #floor_panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #fff;
+  color: #000;
+  z-index: -1;
+  transition-duration: 1s;
+  background-image: url('img/bg7-std.jpg');
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 991px) {
+
+    text-align: center;
+
+  }
+  @media (max-width: 567px) {
+      @include special_header_mobile;
+      .special_header {
+        margin-bottom: 10px;
+      }
+  }
+
+&.active {
+  opacity: 1;
+  z-index: 1;
+  /* transition-delay: s; */
+  transition-duration: 1s;
+}
+  #close {
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    width: 250px;
+    @media (max-width: 991px) {
+      margin: 30px auto;
+      justify-content: center;
+    }
+    @media (max-width: 567px) {
+      margin: 15px auto;
+    }
+    &:before {
+      width: 20px;
+      height: 20px;
+      display: block;
+      content: '';
+      // float: left;
+      margin-right: 10px;
+      background-image: url('img/back.svg');
+      background-size: contain;
+    }
+  }
+  #floor_title {
+    @media (max-width: 567px) {
+      margin: 0 auto;
+    }
+  }
+
+
+
+.floor_info {
+  padding-top: 15px;
+  padding-left: 5%;
+  @media (max-width: 991px) {
+    padding-left: 0;
+    margin-top: -30px;
+  }
+
+  @media (max-width: 567px) {
+    margin-top: 0px;
+  }
+
+  #floor_desc {
+    margin-bottom: 30px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .mobile_flex {
+    @media (max-width: 567px) {
+      margin-top: -20px;
+    }
+  }
+  h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    @media (max-width: 567px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+  h6 {
+    font-weight: bold;
+    @media (max-width: 567px) {
+      font-weight: 300;
+    }
+  }
+  img {
+    margin: 15px 0px 25px 0px;
+    @media (max-width: 1200px) {
+      margin: 5px 0px 5px 0px;
+    }
+  @media (max-width: 567px) {
+    margin:10px auto;
+  }
+  }
+  .btn {
+    display: inline;
+    padding: 9px 30px;
+    @media (max-width: 767px) {
+      margin: 15px auto;
+      display: block;
+      width: 200px;
+    }
+  }
+
+}
+}
+
+
+#app_image #floor_panel #floor_shema_box {
+    @media (max-width: 1350px) {
+      width: 90%
+    }
+    @media (max-width: 991px) {
+      margin: 0 auto;
+    }
+
+    image {
+      border: 10px solid red;
+    }
+    #tooltip-box {
+        display:none!important;
+        color: #fff;
+        padding: 5px;
+        z-index: 22;
+        overflow: hidden;
+        position: absolute;
+        border: 0;
+        background-color: rgb(0, 0, 0);
+        // transition-duration: 0.2s;
+        @media (max-width: 567px) {
+          transform: scale(0.7);
+        }
+        .content {
+
+          font-weight: bold;
+          transform: scale(0.9);
+
+        }
+        h6 {
+          color: $c1;
+          font-weight: 600;
+          margin-bottom: 0;
+          margin-left: 8px;
+        }
+        strong {
+          margin-left: 8px;
+        }
+
+        .status {
+          text-align: center;
+          color: #000;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: bold;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          margin-bottom: 5px;
+          position: relative;
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -15px;
+            bottom: 0px;
+            left: -15px;
+            right: -15px;
+            z-index: -1;
+          }
+
+        }
+        .status.Wolny::before {background-color:rgb(3, 206, 107)}
+        .status.Zarezerwowany::before {background-color:rgb(252, 191, 2) }
+        .status.Sprzedany::before {background-color:rgb(255, 64, 74)}
+    }
+    &:hover #tooltip-box {
+        display:block!important;
+        position:fixed;
+        overflow:hidden;
+    }
+
+
+
+  .flat_shape {
+    opacity: 0.6;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  .flat_shape.Sprzedany {
+    opacity: 0.3;
+    fill: rgb(76, 76, 76);
+  }
+  .flat_shape.Wolny {
+    fill: rgb(250, 153, 21);
+  }
+  .flat_shape.Zarezerwowany {
+    opacity: 0.3;
+    fill: rgb(216, 216, 216);
+  }
+  .flat_shape:hover {
+    opacity: 0.9;
+    transition-duration: 0.2s;
+  }
+}
+
+
+/*======================================
+// mateczny.com-svg_info_app
+======================================*/

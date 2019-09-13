@@ -1,0 +1,163 @@
+
+// Gallery lightbox
+.backdrop2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+.backdrop {
+  opacity: 0;
+visibility: hidden;
+  transition-duration: 0.5s;
+  background-color: #000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+}
+
+
+.lighbox_container {
+  // opacity: 0;
+  transform: scale(0);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+z-index: 9999;
+  transition-duration: 0.5s;
+
+
+  .prgrm_lightbox {
+      transition-duration: 0.5s;
+    position: relative;
+    opacity: 1;
+    background-color: #fff;
+    margin: 0 auto;
+    // padding: 4px;
+    // border-radius: 3px;
+    margin: 0 auto;
+// z-index: 9999;
+    .close {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      color: #fff;
+      opacity: 0.6;
+      width: 50px;
+      height: 50px;
+      background-size: 40px 40px;
+      background-image: url('http://inphoto.pl/wp-content/themes/prgrm-theme/img/close.svg');
+      transition-duration: 0.1s;
+      text-decoration: none;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 9999;
+    }
+
+    .close:hover, .lightbox-arrow:hover {
+      // transition-duration: 0.3s;
+  // filter: brightness(0.7);
+  transition-duration: 0.5s;
+  box-shadow: 0;
+  opacity: 1;
+  }
+
+    .LigthboxContent {
+      overflow: hidden;
+      max-width: 100vw;
+      max-height:100vh;
+        z-index: 9999;
+        transition-duration: 0.5s;
+        img {
+
+          max-width: 100vw;
+          max-height: 100vh;
+            transition-duration: 0.5s;
+        }
+    }
+
+ #loader {
+   // width: 50px;
+   // height: 50px;
+   // border: 1px solid red;
+   img {
+
+     width: 50px;
+     // height: 200px;
+   }
+   background-color: #000;
+   padding: 10px;
+   opacity: 0;
+   transition-duration: 0.3s;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+    .lightbox_cont_prev,
+    .lightbox_cont_next{
+     cursor: pointer;
+     display: block;
+     width: 40%;
+     height: 90%;
+     position: absolute;
+     top: 50%;
+     bottom: 0;
+     transform: translateY(-50%);
+     margin: 10px;
+     margin-left: 5px;
+     margin-top: 0;
+     opacity: 0.6;
+     background-color: transparent;
+   }
+   .lightbox_cont_next  {
+   right: 0;
+   margin-right: 5px;
+   }
+
+   .lightbox_prev,
+   .lightbox_next  {
+     width: 40px;
+     height: 40px;
+     position: absolute;
+     top: 50%;
+     background-size: contain!important;
+     transform: translateY(-50%);
+   }
+
+   .lightbox_prev {
+    left: 0;
+    background: url('http://inphoto.pl/wp-content/themes/prgrm-theme/img/left.svg') left 48% no-repeat;
+  }
+
+   .lightbox_next {
+    right: 0;
+    background: url('http://inphoto.pl/wp-content/themes/prgrm-theme/img/right.svg') right 48% no-repeat;
+  }
+
+  }
+}
+
+
+.prgrm_lightbox:hover .lighbox_prev,
+.prgrm_lightbox:hover .lighbox_next {
+opacity: 0.95s;
+transition-duration: 0.3s;
+cursor: pointer;
+border: 2px solid green;
+}

@@ -1,0 +1,176 @@
+@mixin bg-320 {
+
+  min-height: 240px;
+  transition-duration: 0.5s;
+
+  @media (min-width: 400px) {
+    min-height: 280px;
+    transition-duration: 0.5s;
+  }
+
+  @media (min-width: 500px) {
+    min-height: 320px;
+    transition-duration: 0.5s;
+  }
+
+  @media (min-width: 600px) {
+    min-height: 380px;
+    transition-duration: 0.5s;
+  }
+
+  @media (min-width: 800px) {
+    min-height: 240px;
+    transition-duration: 0.5s;
+  }
+
+  @media (min-width: 1100px) {
+    min-height: 280px;
+    transition-duration: 0.5s;
+  }
+
+  @media (min-width: 1400px) {
+    min-height: 320px;
+    transition-duration: 0.5s;
+  }
+
+  @media (min-width: 1700px) {
+    min-height: 380px;
+    transition-duration: 0.5s;
+  }
+}
+
+
+
+
+
+// UNIVERSAL ANIMATE EFFECT 
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+@keyframes fade-in2 {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+
+
+
+
+@media (min-width: 769px) {
+  .animate.content, .fade-in-element.content {
+    animation-name: none!important;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate.grid1-row, .fade-in-element.grid1-row {
+    animation-name: none!important;
+    opacity: 1;
+  }
+}
+
+
+.fade-in-element.content {
+  animation-duration: 1s!important;
+}
+
+.fade-in-element {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+}
+
+
+
+.fade-in-element2 {
+  // animation: fade-in2 0.8s;
+  // animation: flipInY 1s;
+  // animation: flipInX 1s;
+  // animation: fadein 0.8s;
+  opacity: 0;
+  animation: fadeInUp 0.3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-element3 {
+  // animation: fade-in2 0.8s;
+  // animation: flipInY 1s;
+  // animation: flipInX 1s;
+  // animation: fadein 0.8s;
+  opacity: 0;
+  animation: fadeInUp 0.3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animate {
+  opacity: 0;
+}
+.fade-in-element2 {
+  opacity: 0;
+}
+
+.fadein {
+// visibility: visible;
+animation-delay: 1s;
+    -webkit-animation: fadein 0.6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.6s; /* Firefox < 16 */
+        -ms-animation: fadein 0.6s; /* Internet Explorer */
+         -o-animation: fadein 0.6s; /* Opera < 12.1 */
+            animation: fadein 0.6s;
+            animation-timing-function: ease-outs;
+            animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: scale(0)}
+    to   { opacity: 1!important; transform: scale(1)!important}
+}
+
+
+.fadeout {
+    -webkit-animation: fadein 0.6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.6s; /* Firefox < 16 */
+        -ms-animation: fadein 0.6s; /* Internet Explorer */
+         -o-animation: fadein 0.6s; /* Opera < 12.1 */
+            animation: fadein 0.6s;
+            // animation-timing-function: ease-outs;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; transform: scale(1)}
+    to   { opacity: 0; transform: scale(0)}
+}

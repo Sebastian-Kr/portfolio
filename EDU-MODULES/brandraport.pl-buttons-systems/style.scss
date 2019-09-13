@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&display=swap');
+
+
+$c1: #17EAA6;
+$c1-06: #17EAA6;
+$c2: #30375C;
+$c3: #14D5BA;
+$c3-75: #14D5BA;
+$c4: #777E98;
+$c5: #c8d4e2;
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+    background-color: #333;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  font-family: 'Muli', sans-serif;
+  color: #777E98;
+}
+
+
+.button {
+  font-size: 1.5rem;
+	padding: 16px 35px;
+	padding-top: 18px;
+  font-weight: 700;
+	outline: none;
+	border: none;
+  display:inline-block;
+  margin: 0 auto;
+	cursor: pointer;
+	border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  &:after, &:before {
+    border-radius: 50px;
+  display: block;
+  content: '';
+  position: absolute;
+  transition-duration: 0.5s;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  opacity: 1;
+  }
+  &:before {
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+  }
+&:after {
+  opacity: 1;
+  right: 100%;
+  z-index: 2;
+  // border-radius: 0;
+}
+  span {
+    z-index: 3;
+    position: relative;
+      transition-duration: 0.5s;
+  }
+  &:hover:after {
+    opacity: 1;
+    right: 0;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+	 }
+  	&:hover:before {
+
+	 }
+  }
+
+
+
+
+  .btn-v1 {
+    span {color: $c2;}
+    &:after {background-color: #fff;}
+    &:before {background: linear-gradient(270deg, $c3 0%, $c1 100%);}
+  }
+
+  .btn-v2 {
+    border: 2px solid $c1;
+    padding-bottom: 14px;
+  	padding-top: 16px;
+    &:after {
+      background: linear-gradient(270deg, $c3 0%, $c1 100%);
+      opacity: 1;
+    }
+    &:before {
+      opacity: 0;
+    background: linear-gradient(270deg, $c3 0%, $c1 100%);
+     top: -3px;
+     bottom: -3px;
+     right: -3px;
+     left: -3px;
+    }
+    span {color: #fff;}
+    &:hover {
+      &:before {
+        opacity: 1;
+        transition-delay: 0.2s;
+      }
+      span {color: $c2;}
+    }
+  }
+
+  .btn-v3 {
+    span {color: $c2;}
+    &:before {background-color: #fff;}
+    &:after {background: linear-gradient(270deg, $c3 0%, $c1 100%);}
+  }
+
+  .btn-v4 {
+    span {color: #fff;}
+    &:before {background: linear-gradient(270deg, #170D6A 0%, #0A3F6B 100%);}
+    &:after {background-color: #fff;}
+    &:hover {
+      span {color: $c2;}
+    }
+  }
+  .btn-v5 {
+    span {color: $c1;}
+    &:before {background-color: #fff;}
+    &:after {background: linear-gradient(270deg, #170D6A 0%, #0A3F6B 100%);}
+  }
+
+  .btn-v6 {
+    span {color: #fff;}
+    &:before {background: linear-gradient(270deg, #170D6A 0%, #0A3F6B 100%);}
+    &:after {background: linear-gradient(270deg, $c3 0%, $c1 100%)}
+    &:hover {
+      span {color: $c2;}
+    }
+  }
+
+  .btn-v7 {
+    background-color: #d4d6ef;
+    span {color: $c2;}
+    &:before {
+      background-color: #fff;
+      opacity: 1!important;
+      z-index: 2;
+      top: 2px;
+      bottom: 2px;
+      left: 2px;
+      right: 2px;
+    }
+    &:after {
+      background: linear-gradient(270deg, $c3 0%, $c1 100%);
+      z-index: 1;
+    }
+    &:hover {
+      span {color: $c2;}
+    }
+  }
+
+
+
+  .btn-medium {
+    padding: 12px 35px;
+    padding-top: 14px;
+  }
+
+  .btn-small {
+    padding: 5px 35px;
+    padding-top: 7px;
+  }
+
+.btn-icon {
+  span {
+    position: relative;
+  }
+  span:after {
+    content: '';
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.btn-icon-left {
+  span {margin-left: 20px;}
+  span:after {left: -25px;}
+}
+
+.btn-icon-right {
+  span {margin-right: 20px;}
+  span:after {right: -25px;}
+}
+
+.btn-icon-check1 {
+  span:after {
+      background-image: url('./img/yes3.svg');
+  }
+  &:hover span:after {
+      background-image: url('./img/yes2.svg');
+  }
+}
+
+.btn-icon-check2 {
+  span:after {
+      background-image: url('./img/yes11.svg');
+  }
+}
+
+.btn-icon-arrow1 {
+  span:after {
+      background-image: url('./img/arrow1.svg');
+  }
+  &:hover span:after {
+      background-image: url('./img/arrow11.svg');
+  }
+}
+
+.btn-icon-arrow2 {
+  span:after {
+      background-image: url('./img/arrow-2.svg');
+  }
+}
+
+.btn-icon-arrow3 {
+  span:after {
+      background-image: url('./img/arrow-3.svg');
+  }
+  &:hover span:after {
+      background-image: url('./img/arrow-3.svg');
+  }
+}

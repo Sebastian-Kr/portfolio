@@ -1,0 +1,109 @@
+
+// KALKULATOR
+.kalkulator_box {
+position: relative;
+margin-top: 100px;
+@media (max-width: 991px) {
+  margin-top: -20px;
+}
+
+.kalkulator_bg {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #669966;
+  top: 0;
+  bottom: 0;
+  left: -20000px;
+  @media (max-width: 767px) {right: -2000px;}
+  right: 0;
+  // z-index: ;
+}
+.kalkulator_content {
+  position: relative;
+  padding: 50px;
+  padding-left: inherit;
+  @media (max-width: 767px) {
+    padding: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  z-index: 2;
+  color: #fff;
+
+  h4 {margin-top: 30px;
+    margin-top: 40px;
+    // margin-bottom: 20px;
+   span {
+     font-size: 36px;
+   }
+  }
+  h4:before, h4:after {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+
+  }
+
+}
+}
+
+
+
+.kalkulator_content #kalkulator-slider {
+background-color: transparent;
+border-bottom: 3px solid #fff;
+margin-bottom: 30px;
+margin-top: 50px;
+font-size: 25px;
+position: relative;
+
+
+.start, .stop, .content{
+  position: absolute;
+  width: 20px;
+  top: -45px;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+  .start {
+    left: 0px;
+    right: auto;
+    font-size: 25px;
+    text-align: center;
+    &:after {
+      background-color: #669966;
+      background-image: url('https://apartamentyprzywinnicy.pl/wp-content/themes/prgrm-theme/img/point.svg');
+      top: 38px;
+    }
+  }
+  .content {
+    &:after {
+      height: 43px;
+      background-image: url('https://apartamentyprzywinnicy.pl/wp-content/themes/prgrm-theme/img/point+arrow.svg');
+      top: 23px;
+    }
+  }
+  .stop {
+    right: 0;
+    left: auto;
+    font-size: 25px;
+  }
+
+}
+
+// KALKULATOR END

@@ -1,4 +1,4 @@
-I. WSTĘPNE ZAŁOŻENIA DOTYCZĄCE FUNKCJONALNOŚCI APLIKACJI NA PROJEKT ZALICZENIOWY AGH PAW 2018
+I. WSTĘPNE ZAŁOŻENIA DOTYCZĄCE FUNKCJONALNOŚCI APLIKACJI
 
 1. Możliwość rezerwacji dowolnej ilość i rodzaju usługi/towaru --
 administrator będzie miał możliwość dodawania nowych towarów do modułu
@@ -43,14 +43,12 @@ JavaScript + jQuery v3.2.1
 jQuery UI v1.12.1
 Bootstrap 4.0.0
 
-IV. GOTOWA APLIKACJA JEST DOSTĘPNA NA:
+IV. GOTOWA APLIKACJA JEST DOSTĘPNA RÓWNIEŻ ONLINE
 http://progremo.pl/AGH-PAW-2017/
 http://progremo.pl/AGH-PAW-2017//admin
-
 Katalog jest zabezpieczony z poziomu serwera:
-user = progremo
-pass = progremo2019
-
+user = admin
+pass = %&^$%TGRWDGH4352GY
 Dostęp do panelu administracyjnego aplikacji (tylko po zalogowaniu):
 user = admin
 pass = admin123

@@ -23,9 +23,9 @@ foreach($results as $row) {
 $js_dates = '';
 
 $av_dates = explode("; ", $row['product_dates']);
-echo '<br>Tablica data:';
-print_r($av_dates);
-echo '<br>';
+// echo '<br>Tablica data:';
+// print_r($av_dates);
+// echo '<br>';
 
 foreach($av_dates as $one_date) {
   $js_dates .= '"'.$one_date.'",';
@@ -34,7 +34,7 @@ foreach($av_dates as $one_date) {
 
 substr_replace($js_dates ,"",-1);
 $js_dates = rtrim($js_dates, ",");
-echo $js_dates;
+// echo $js_dates;
   ?>
 
 

@@ -49,7 +49,7 @@ http://progremo.pl/AGH-PAW-2017//admin
 
 Katalog jest zabezpieczony z poziomu serwera:
 user = progremo
-pass = progremo2019
+pass = Rg53Rtese%3
 
 Dostęp do panelu administracyjnego aplikacji (tylko po zalogowaniu):
 user = admin

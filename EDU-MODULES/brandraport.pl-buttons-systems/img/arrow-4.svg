@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#14D5BA" offset="0%"></stop>
+            <stop stop-color="#17EAA6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Test-2---Pytania" transform="translate(-1312.000000, -1269.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="button" transform="translate(1132.000000, 1248.000000)">
+                <g id="Group-20" transform="translate(44.000000, 17.000000)">
+                    <g id="arrow-4" transform="translate(136.000000, 4.000000)">
+                        <path d="M15.2941623,5.80492807 C15.2939726,5.80474129 15.2939726,5.80474129 15.2941623,5.80492807 L9.6910893,0.287871985 C9.30127567,-0.0959573284 8.6690378,-0.0959573284 8.27922417,0.287871985 C7.88922085,0.671701298 7.88922085,1.29423322 8.27922417,1.67806253 L12.1779295,5.516916 L0.99834021,5.516916 C0.446910419,5.516916 0,5.95696557 0,6.49992996 C0,7.04289434 0.446910419,7.48294391 0.99834021,7.48294391 L12.1779295,7.48294391 L8.27922417,11.3217974 C7.88922085,11.7056267 7.88922085,12.3281586 8.27922417,12.7119879 C8.47422583,12.903996 8.7297387,13 8.98506189,13 C9.24038507,13 9.49608764,12.903996 9.69089961,12.7119879 L15.2937829,7.19511862 C15.2937829,7.19511862 15.2937829,7.19511862 15.2939726,7.19493184 L16,6.49992996 L15.2941623,5.80492807 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

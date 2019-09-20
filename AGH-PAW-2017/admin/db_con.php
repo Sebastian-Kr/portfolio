@@ -2,18 +2,12 @@
 
 <?php
 
-// 
-// $host = '127.0.0.1';
-// $db   = 'pawdb2';
-// $user = 'pawuser';
-// $pass = '123';
-// $charset = 'utf8';
 
 
-$host = 'localhost';
-$db   = 'progremo_paw_agh';
-$user = 'progremo_paw2017';
-$pass = 'EABvad23';
+$host = '192.168.101.57';
+$db   = 'progremo_agh_paw2017aa';
+$user = 'progremo_paw_aghAA';
+$pass = '&Yhgj45$2364$$@';
 $charset = 'utf8';
 
 
